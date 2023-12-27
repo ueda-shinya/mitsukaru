@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* リーリース時には消すこと!!! */
+* {
+  /* outline: 1px rgba(255, 0, 0, 0.8) solid; */
+}
+/* 変数の定義 */
+:root {
+  --content-width: 1440px;
+  --min-content-width: 375px;
+}
+html {
+  /* コンテンツ幅でのフォントサイズ */
+  font-size: clamp(1px, 1.11vw, 16px);
+  max-width: var(--content-width);
+}
+.box {
+  width: 50%;
+  height: auto;
+  border: 2px solid blue;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.size20 {
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+.size19 {
+  font-size: 1.1875rem;
+  text-align: justify;
+}
+.size16 {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/************************************************
+    レスポンシブ */
+
+@media screen and (max-width: 767.98px) {
+  /* 変更点。0.02引く。 */
+  /* ここにSP向けのCSS指定 */
+}
+@media screen and (min-width: 768px) {
+  /* ここにPC向けのCSS指定 */
+}
+
+/* モバイル向けのスタイル */
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+}
+
+@media screen and (min-width: 1200px) {
+  /* スクリーンサイズが1200px以上の場合に適用 */
+}
