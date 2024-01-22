@@ -22,26 +22,595 @@
   <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
   <link rel="icon" href="./images/favicon.ico" sizes="any">
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="./css/destyle.css">
+
+  <!-- bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
   <!-- リリース時PHPの部分削除 -->
-  <link rel="stylesheet" href="./css/style.css?timestamp=<?php echo time(); ?>">
+  <!-- <link rel="stylesheet" href="./css/style.css?timestamp=<?php echo time(); ?>"> -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-  <header>
-    <picture>
-      <source srcset="images/pc-.webp" media="(min-width: 768px)" type="image/webp" width="" height="">
-      <img src="images/sp-.webp" alt="" width="" height="" decoding="async" loading="lazy">
-    </picture>
+  <header class="y24-header">
+    <div class="y24-header-logo">
+      <picture class="y24-header-logo_pic">
+        <source srcset="images/sp-logo.svg" media="(max-width: 767px)" type="image/svg+xml" width="174" height="23">
+        <img class="y24-header-logo_img" src="images/sp-logo.svg" alt="ミツカル合宿免許" width="174" height="23"
+          decoding="async" loading="lazy">
+      </picture>
+    </div>
+
+    <div class="y24-sp-menu-btn"></div>
   </header>
 
   <main>
 
+    <!-- section-01 ファーストビュー -->
+    <section id="y24-firstview" class="y24-section y24-bck-color-green">
+
+      <h1 class="y24-title_h1">
+        <picture>
+          <source srcset="images/sp-s01-title.svg" media="(max-width: 767px)" type="image/svg+xml" width="346"
+            height="172">
+          <img src="images/sp-s01-title.svg" alt="ミツカル合宿免許ならスグ見つかる!" width="346" height="172">
+        </picture>
+      </h1>
+
+
+      <div class="y24-submenu"></div>
+
+      <div class="y24-sercharea"></div>
+
+    </section>
+
+
+    <!-- section-02 NEWS お知らせ  -->
+    <section id="y24-news" class="y24-section y24-bck-color-blue">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s02-title-news.svg" media="(max-width: 767px)" type="image/svg+xml" width="163"
+            height="40">
+          <img class="y24-section-title_img" src="images/sp-s02-title-news.svg" alt="NEWS" width="163" height="40">
+        </picture>
+        お知らせ
+      </h2>
+
+      <div class="y24-news-area">
+        <div class="y24-news-card">
+          <div class="y24-news-card-date">2024.01.02</div>
+          <div class="y24-news-card-text">
+            緊急のお知らせ
+          </div>
+        </div>
+        <div class="y24-news-card">
+          <div class="y24-news-card-date">2023.12.11</div>
+          <div class="y24-news-card-text">
+            年末年始休業日のお知らせ年末年始休業日のお知らせ年末年始休業日のお知らせ年末年始休業日のお知らせ年末年始休業日のお知らせ年末年始休業日のお知らせ年末年始休業日のお知らせ
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- section-03 PICK UP 最安値おすすめプラン  -->
+    <section id="y24-pickup" class="y24-section y24-bck-color-white">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s03-title-pickup.svg" media="(max-width: 767px)" type="image/svg+xml" width="221"
+            height="40">
+          <img class="y24-section-title_img" src="images/sp-s03-title-pickup.svg" alt="PICK UP" width="221" height="40">
+        </picture>
+        最安値おすすめプラン
+      </h2>
+      <div class="y24-section_p">
+        <p>「夏休みに短期集中」「新生活スタートまで<br>に」「来月中ならいつでも」など、<br>通いたい日が決まったらまずは安い順で検索！<br>格安の合宿自動車学校を見つけましょう。</p>
+      </div>
+
+
+      <div class="y24-slider">
+        スライダー
+      </div>
+
+      <!-- 車が動くボタン -->
+      <a href="#" class="y24-btn-movecar_a">
+        <div class="y24-btn-movecar">
+          <picture class="y24-btn-movecar-car_pic">
+            <source srcset="images/sp-btn-car-hutuusya.svg" media="(max-width: 767px)" type="image/svg+xml" width="91"
+              height="45">
+            <img class="y24-btn-movecar-car_img" src="images/sp-btn-car-hutuusya.svg" alt="PICK UP" width="91"
+              height="45">
+          </picture>
+
+          <picture class="y24-btn-movecar-text_pic">
+            <source srcset="images/sp-btn-text-readmore.svg" media="(max-width: 767px)" type="image/svg+xml" width="128"
+              height="17">
+            <img class="y24-btn-movecar-text_img" src="images/sp-btn-text-readmore.svg" alt="READ MORE" width="128"
+              height="17">
+          </picture>
+        </div>
+      </a>
+
+
+    </section>
+
+    <!-- section-04 SEASONAL 季節のお得プラン  -->
+    <section id="y24-seasonal" class="y24-section y24-bck-color-green">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s04-title-seasonal.svg" media="(max-width: 767px)" type="image/svg+xml" width="301"
+            height="40">
+          <img class="y24-section-title_img" src="images/sp-s04-title-seasonal.svg" alt="SEASONAL" width="301"
+            height="40">
+        </picture>
+        季節のお得プラン
+      </h2>
+
+      <div class="y24-section_p">
+        <p>友達や家族と通える夏休み＆冬休みプラン、<br>月別のお得プラン、今だけのセール情報も！<br>料金の安いプランで<br>お得に免許を取得しましょう。</p>
+      </div>
+
+      <div class="y24-seasonal-cards">
+
+        <div class="y24-seasonal-3cards">
+          <a class="y24-seasonal-card_a">
+            <picture class="y24-seasonal-card_pic">
+              <img sizes="(max-width: 660px) 100vw, 660px" srcset="
+              images/sp-btn-img-seaconal01_3x_kubc8d_c_scale,w_200.webp 200w,
+              images/sp-btn-img-seaconal01_3x_kubc8d_c_scale,w_660.webp 660w"
+                src="images/sp-btn-img-seaconal01_3x_kubc8d_c_scale,w_660.webp" alt="1月" width="660" height="660">
+            </picture>
+          </a>
+
+          <a class="y24-seasonal-card_a">
+            <picture class="y24-seasonal-card_pic">
+              <img sizes="(max-width: 660px) 100vw, 660px" srcset="
+              images/sp-btn-img-seaconal02_3x_cafnod_c_scale,w_200.webp 200w,
+              images/sp-btn-img-seaconal02_3x_cafnod_c_scale,w_660.webp 660w"
+                src="images/sp-btn-img-seaconal02_3x_cafnod_c_scale,w_660.webp" alt="２月" width="660" height="660">
+            </picture>
+          </a>
+
+          <a class="y24-seasonal-card_a">
+            <picture>
+              <img sizes="(max-width: 660px) 100vw, 660px" srcset="
+              images/sp-btn-img-seaconal03_3x_otngjr_c_scale,w_200.webp 200w,
+              images/sp-btn-img-seaconal03_3x_otngjr_c_scale,w_660.webp 660w"
+                src="images/sp-btn-img-seaconal03_3x_otngjr_c_scale,w_660.webp" alt="3月" width="660" height="660">
+            </picture>
+          </a>
+        </div>
+
+        <div class="y24-seasonal-3cards">
+          <a class="y24-seasonal-card_a">
+            <picture>
+              <img
+              sizes="(max-width: 660px) 100vw, 660px"
+              srcset="
+              images/sp-btn-img-seaconal04_3x_h6x3ft_c_scale,w_200.webp 200w,
+              images/sp-btn-img-seaconal04_3x_h6x3ft_c_scale,w_660.webp 660w"
+              src="images/sp-btn-img-seaconal04_3x_h6x3ft_c_scale,w_660.webp"
+              alt="4月" width="660" height="660">
+              </picture>
+          </a>
+
+          <a class="y24-seasonal-card_a">
+            <picture>
+              <img
+              sizes="(max-width: 660px) 100vw, 660px"
+              srcset="
+              images/sp-btn-img-seaconal05_3x_nuxpvl_c_scale,w_200.webp 200w,
+              images/sp-btn-img-seaconal05_3x_nuxpvl_c_scale,w_586.webp 586w,
+              images/sp-btn-img-seaconal05_3x_nuxpvl_c_scale,w_660.webp 660w"
+              src="images/sp-btn-img-seaconal05_3x_nuxpvl_c_scale,w_660.webp"
+              alt="5月" width="660" height="660">
+              </picture>
+          </a>
+
+          <a class="y24-seasonal-card_a">
+            <picture>
+              <img
+              sizes="(max-width: 660px) 100vw, 660px"
+              srcset="
+              images/sp-btn-img-seaconal06_3x_b3qak5_c_scale,w_200.webp 200w,
+              images/sp-btn-img-seaconal06_3x_b3qak5_c_scale,w_660.webp 660w"
+              src="images/sp-btn-img-seaconal06_3x_b3qak5_c_scale,w_660.webp"
+              alt="6月" width="660" height="660">
+              </picture>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="y24-seasonal-3cards">
+        <a class="y24-seasonal-card_a">
+          <picture>
+            <img
+            sizes="(max-width: 660px) 100vw, 660px"
+            srcset="
+            images/sp-btn-img-seaconal07_3x_xosqrx_c_scale,w_200.webp 200w,
+            images/sp-btn-img-seaconal07_3x_xosqrx_c_scale,w_642.webp 642w,
+            images/sp-btn-img-seaconal07_3x_xosqrx_c_scale,w_660.webp 660w"
+            src="images/sp-btn-img-seaconal07_3x_xosqrx_c_scale,w_660.webp"
+            alt="7月" width="660" height="660">
+            </picture>
+        </a>
+
+        <a class="y24-seasonal-card_a">
+          <picture>
+            <img
+            sizes="(max-width: 660px) 100vw, 660px"
+            srcset="
+            images/sp-btn-img-seaconal08_3x_fihkmz_c_scale,w_200.webp 200w,
+            images/sp-btn-img-seaconal08_3x_fihkmz_c_scale,w_660.webp 660w"
+            src="images/sp-btn-img-seaconal08_3x_fihkmz_c_scale,w_660.webp"
+            alt="8月" width="660" height="660">
+            </picture>
+        </a>
+
+        <a class="y24-seasonal-card_a">
+          <picture>
+            <img
+            sizes="(max-width: 660px) 100vw, 660px"
+            srcset="
+            images/sp-btn-img-seaconal09_3x_hsm4f2_c_scale,w_200.webp 200w,
+            images/sp-btn-img-seaconal09_3x_hsm4f2_c_scale,w_660.webp 660w"
+            src="images/sp-btn-img-seaconal09_3x_hsm4f2_c_scale,w_660.webp"
+            alt="9月" width="660" height="660">
+            </picture>
+        </a>
+      </div>
+
+      <div class="y24-seasonal-3cards">
+        <a class="y24-seasonal-card_a">
+          <picture>
+            <img
+            sizes="(max-width: 660px) 100vw, 660px"
+            srcset="
+            images/sp-btn-img-seaconal10_3x_oukfvo_c_scale,w_200.webp 200w,
+            images/sp-btn-img-seaconal10_3x_oukfvo_c_scale,w_660.webp 660w"
+            src="images/sp-btn-img-seaconal10_3x_oukfvo_c_scale,w_660.webp"
+            alt="10月" width="660" height="660">
+            </picture>
+        </a>
+
+        <a class="y24-seasonal-card_a">
+          <picture>
+            <img
+            sizes="(max-width: 660px) 100vw, 660px"
+            srcset="
+            images/sp-btn-img-seaconal11_3x_gydgqy_c_scale,w_200.webp 200w,
+            images/sp-btn-img-seaconal11_3x_gydgqy_c_scale,w_660.webp 660w"
+            src="images/sp-btn-img-seaconal11_3x_gydgqy_c_scale,w_660.webp"
+            alt="11月" width="660" height="660">
+            </picture>
+        </a>
+
+        <a class="y24-seasonal-card_a">
+          <picture>
+            <img
+            sizes="(max-width: 660px) 100vw, 660px"
+            srcset="
+            images/sp-btn-img-seaconal12_3x_ul7i5q_c_scale,w_200.webp 200w,
+            images/sp-btn-img-seaconal12_3x_ul7i5q_c_scale,w_660.webp 660w"
+            src="images/sp-btn-img-seaconal12_3x_ul7i5q_c_scale,w_660.webp"
+            alt="12月" width="660" height="660">
+            </picture>
+        </a>
+      </div>
+
+      <div class="y24-seasonal-3cards">
+        <a class="y24-seasonal-card_a">
+          <picture>
+            <img
+            sizes="(max-width: 660px) 100vw, 660px"
+            srcset="
+            images/sp-btn-img-coming-soon-spring_3x_muriqm_c_scale,w_200.webp 200w,
+            images/sp-btn-img-coming-soon-spring_3x_muriqm_c_scale,w_660.webp 660w"
+            src="images/sp-btn-img-coming-soon-spring_3x_muriqm_c_scale,w_660.webp"
+            alt="春" width="660" height="660">
+            </picture>
+        </a>
+
+        <a class="y24-seasonal-card_a">
+          <picture>
+            <img
+            sizes="(max-width: 660px) 100vw, 660px"
+            srcset="
+            images/sp-btn-img-coming-soon-summer_3x_jkx6vj_c_scale,w_200.webp 200w,
+            images/sp-btn-img-coming-soon-summer_3x_jkx6vj_c_scale,w_660.webp 660w"
+            src="images/sp-btn-img-coming-soon-summer_3x_jkx6vj_c_scale,w_660.webp"
+            alt="夏" width="660" height="660">
+            </picture>
+        </a>
+
+        <a class="y24-seasonal-card_a">
+          <picture>
+            <img
+            sizes="(max-width: 660px) 100vw, 660px"
+            srcset="
+            images/sp-btn-img-coming-soon-autumn_3x_yyioq0_c_scale,w_200.webp 200w,
+            images/sp-btn-img-coming-soon-autumn_3x_yyioq0_c_scale,w_660.webp 660w"
+            src="images/sp-btn-img-coming-soon-autumn_3x_yyioq0_c_scale,w_660.webp"
+            alt="秋" width="660" height="660">
+            </picture>
+        </a>
+      </div>
+
+      <div class="y24-seasonal-3cards">
+        <a class="y24-seasonal-card_a">
+          <picture>
+            <img
+            sizes="(max-width: 660px) 100vw, 660px"
+            srcset="
+            images/p-btn-img-coming-soon-winter_3x_wqjqs3_c_scale,w_200.webp 200w,
+            images/sp-btn-img-coming-soon-winter_3x_wqjqs3_c_scale,w_660.webp 660w"
+            src="images/sp-btn-img-coming-soon-winter_3x_wqjqs3_c_scale,w_660.webp"
+            alt="冬" width="660" height="660">
+            </picture>
+        </a>
+
+        <a class="y24-seasonal-card_a">
+          
+        </a>
+
+        <a class="y24-seasonal-card_a">
+          
+        </a>
+      </div>
+
+    </div>
+
+
+
+
+
+    </section>
+
+    <!-- section-05 SEARCH 特車から探す  -->
+
+    <section id="y24-search" class="y24-section y24-bck-color-blue">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s05-title-serch.svg" media="(max-width: 767px)" type="image/svg+xml" width="217"
+            height="40">
+          <img src="images/sp-s05-title-serch.svg" alt="SEARCH" width="217" height="40">
+        </picture>
+        特車から探す
+      </h2>
+
+
+
+
+      <!-- 車が動くボタン -->
+      <a href="#" class="y24-btn-movecar_a">
+        <div class="y24-btn-movecar">
+          <picture class="y24-btn-movecar-car_pic">
+            <source srcset="images/sp-btn-car-hutuusya.svg" media="(max-width: 767px)" type="image/svg+xml" width="91"
+              height="45">
+            <img class="y24-btn-movecar-car_img" src="images/sp-btn-car-hutuusya.svg" alt="PICK UP" width="91"
+              height="45">
+          </picture>
+
+          <picture class="y24-btn-movecar-text_pic">
+            <source srcset="images/sp-btn-text-readmore.svg" media="(max-width: 767px)" type="image/svg+xml" width="128"
+              height="17">
+            <img class="y24-btn-movecar-text_img" src="images/sp-btn-text-readmore.svg" alt="READ MORE" width="128"
+              height="17">
+          </picture>
+        </div>
+      </a>
+
+
+
+
+
+
+
+    </section>
+
+    <!-- section-06 POPULAR 人気のプラン  -->
+    <section id="y24-popular" class="y24-section y24-bck-color-white">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s06-title-popular.svg" media="(max-width: 767px)" type="image/svg+xml" width="269"
+            height="40">
+          <img class="y24-section-title_img" src="images/sp-s06-title-popular.svg" alt="POPULAR" width="269"
+            height="40">
+        </picture>
+        人気のプラン
+      </h2>
+
+
+
+
+
+      <!-- 車が動くボタン -->
+      <a href="#" class="y24-btn-movecar_a">
+        <div class="y24-btn-movecar">
+          <picture class="y24-btn-movecar-car_pic y24-movetrack">
+            <source srcset="images/sp-btn-car-truck.svg" media="(max-width: 767px)" type="image/svg+xml" width="91"
+              height="45">
+            <img class="y24-btn-movecar-car_img" src="images/sp-btn-car-truck.svg" alt="PICK UP" width="91" height="45">
+          </picture>
+
+          <div class="y24-btn-movecar-text">大型・準中型・二種はこちら</div>
+
+        </div>
+      </a>
+
+
+    </section>
+
+    <!-- section-07 AREA 全国教習所一覧  -->
+    <section id="y24-area" class="y24-section y24-bck-color-green">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s07-title-area.svg" media="(max-width: 767px)" type="image/svg+xml" width="154"
+            height="38">
+          <img class="y24-section-title_img" src="images/sp-s07-title-area.svg" alt="AREA" width="154" height="38">
+        </picture>
+        全国教習所一覧
+      </h2>
+
+
+    </section>
+
+    <!-- section-08 REASON 合宿免許がおすすめの理由  -->
+    <section id="y24-reason" class="y24-section y24-bck-color-blue">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s08-title-reason.svg" media="(max-width: 767px)" type="image/svg+xml" width="231"
+            height="40">
+          <img class="y24-section-title_img" src="images/sp-s08-title-reason.svg" alt="REASON" width="231" height="40">
+        </picture>
+        合宿免許がおすすめの理由
+      </h2>
+
+
+    </section>
+
+    <!-- section-09 POINT ミツカル合宿免許の特徴  -->
+    <section id="point" class="y24-section y24-bck-color-green">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s09-title-point.svg" media="(max-width: 767px)" type="image/svg+xml" width="175"
+            height="40">
+          <img class="y24-section-title_img" src="images/sp-s09-title-point.svg" alt="POINT" width="175" height="40">
+        </picture>
+        ミツカル合宿免許の特徴
+      </h2>
+
+
+    </section>
+
+    <!-- section-10 DEFFERENCE 他社との違い  -->
+    <section id="y24-defference" class="y24-section y24-bck-color-blue">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s10-title-defference.svg" media="(max-width: 767px)" type="image/svg+xml"
+            width="340" height="40">
+          <img class="y24-section-title_img" src="images/sp-s10-title-defference.svg" alt="DEFFERENCE" width="340"
+            height="40">
+        </picture>
+        他社との違い
+      </h2>
+
+
+    </section>
+
+    <!-- section-11 PAYMENT お支払い方法  -->
+    <section id="y24-payment" class="y24-section y24-bck-color-green">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s11-title-payment.svg" media="(max-width: 767px)" type="image/svg+xml" width="265"
+            height="39">
+          <img class="y24-section-title_img" src="images/sp-s11-title-payment.svg" alt="PAYMENT" width="265"
+            height="39">
+        </picture>
+        お支払い方法
+      </h2>
+
+
+
+
+    </section>
+
+    <!-- section-12 SUPPORT 合宿期間中の万が一にも安心サポート  -->
+    <section id="y24-support" class="y24-section y24-bck-color-blue">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s12-title-support.svg" media="(max-width: 767px)" type="image/svg+xml" width="263"
+            height="40">
+          <img class="y24-section-title_img" src="images/sp-s12-title-support.svg" alt="SUPPORT" width="263"
+            height="40">
+        </picture>
+        合宿期間中の万が一にも<br>安心サポート
+      </h2>
+
+
+    </section>
+
+    <!-- section-13 APPLICATION お申し込み後の流れ  -->
+    <section id="y24-application" class="y24-section y24-bck-color-white">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s13-title-application.svg" media="(max-width: 767px)" type="image/svg+xml"
+            width="351" height="37">
+          <img class="y24-section-title_img" src="images/sp-s13-title-application.svg" alt="APPLICATION " width="351"
+            height="37">
+        </picture>
+        お申し込み後の流れ
+      </h2>
+
+
+
+    </section>
+
+    <!-- section-14 FAQ よくある質問  -->
+    <section id="y24-faq" class="y24-section y24-bck-color-blue">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s14-title-faq.svg" media="(max-width: 767px)" type="image/svg+xml" width="112"
+            height="43">
+          <img class="y24-section-title_img" src="images/sp-s14-title-faq.svg" alt="FAQ" width="112" height="43">
+        </picture>
+        よくある質問
+      </h2>
+
+
+    </section>
+
+    <!-- section-15 BLOG ミツカル合宿免許ブログ  -->
+    <section id="y24-blog" class="y24-section y24-bck-color-white">
+
+      <h2 class="y24-section-title_h2">
+        <picture class="y24-section-title_pic">
+          <source srcset="images/sp-s15-title-blog.svg" media="(max-width: 767px)" type="image/svg+xml" width="142"
+            height="37">
+          <img class="y24-section-title_img" src="images/sp-s15-title-blog.svg" alt="BLOG" width="142" height="37">
+        </picture>
+        ミツカル合宿免許ブログ
+      </h2>
+
+
+    </section>
+
+
+
+
+
+
+
   </main>
 
-  <footer>
+  <footer class="y24-footer">
+    <picture>
+      <source srcset="images/sp-logo.svg" media="(max-width: 767px)" type="image/svg+xml" width="174" height="23">
+      <img src="images/sp-logo.svg" alt="ミツカル合宿免許" width="174" height="23" decoding="async" loading="lazy">
+    </picture>
 
   </footer>
+  <script src="js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
 
 </html>

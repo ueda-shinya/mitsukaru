@@ -6,51 +6,366 @@
 }
 /* 変数の定義 */
 :root {
-  --content-width: 1440px;
+  --content-width: 960px;
   --min-content-width: 375px;
+  --maincolor-green: #d6e816;
+  --maincolor-white: #ffffff;
+  --maincolor-blue: #6fbada;
+  --sp-btn-color: #f15779;
+  --textcolor-black: #333333;
 }
 html {
   /* コンテンツ幅でのフォントサイズ */
   font-size: clamp(1px, 1.11vw, 16px);
+  min-width: var(--min-content-width);
   max-width: var(--content-width);
+  color: var(--textcolor-black);
 }
-.box {
-  width: 50%;
-  height: auto;
-  border: 2px solid blue;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.size20 {
-  font-size: 1.25rem;
-  text-align: justify;
-}
-
-.size19 {
-  font-size: 1.1875rem;
-  text-align: justify;
-}
-.size16 {
-  font-size: 1rem;
-  text-align: justify;
-}
-
 /************************************************
     レスポンシブ */
 
-@media screen and (max-width: 767.98px) {
-  /* 変更点。0.02引く。 */
-  /* ここにSP向けのCSS指定 */
-}
-@media screen and (min-width: 768px) {
-  /* ここにPC向けのCSS指定 */
-}
-
 /* モバイル向けのスタイル */
 
+.y24-header {
+  display: block;
+  width: 100%;
+  height: 66px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.y24-header-logo {
+  width: 287px;
+  height: 54px;
+  background-color: var(--maincolor-green);
+  border-radius: 0 0 39px 0;
+}
+.y24-header-logo_pic {
+  display: block;
+  width: 174px;
+  height: 23px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.y24-header-logo_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.y24-sp-menu-btn {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  background-color: var(--sp-btn-color);
+  border-radius: 20px;
+  bottom: 0;
+  right: 10px;
+}
+
+#y24-firstview {
+  width: 100%;
+  height: auto;
+  background-image: url('../images/sp-mv-backgraund.svg'),
+    url('../images/sp-main-image@3x.webp');
+  background-size: 102% auto, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 290px, center 0;
+  padding-bottom: 49px;
+  overflow-x: hidden;
+}
+.y24-title_h1 {
+  display: block;
+  width: 346px;
+  height: 172px;
+  margin-top: 269px;
+  margin-left: 44px;
+}
+
+/* common */
+.y24-section {
+  padding-top: 72px;
+  padding-bottom: 184px;
+}
+.y24-section-title_h2 {
+  display: block;
+  width: 350px;
+  height: auto;
+  /* margin-top: 72px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-bottom: 48px;
+  text-align: center;
+  font-family: 'Zen Maru Cothic';
+  font-size: 24px;
+  font-weight: bold;
+  /* color: var(--textcolor-black); */
+}
+.y24-section-title_pic {
+  display: block;
+  width: fit-content;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+.y24-section-title_img {
+  display: block;
+  width: fit-content;
+  height: auto;
+}
+.y24-section_p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.y24-bck-color-blue {
+  background-color: var(--maincolor-blue);
+}
+.y24-bck-color-white {
+  background-color: var(--maincolor-white);
+}
+.y24-bck-color-green {
+  background-color: var(--maincolor-green);
+}
+/* 車が動くボタン */
+.y24-btn-movecar {
+  width: 360px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: white;
+  border: solid var(--textcolor-black) 3px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.y24-btn-movecar-car_pic {
+  display: block;
+  position: absolute;
+  width: fit-content;
+  height: auto;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-40px);
+  transition: 0.5s all;
+}
+.y24-movetrack{
+  bottom: -10px;
+  left:20px;
+}
+.y24-btn-movecar:hover .y24-btn-movecar-car_pic {
+  transform: translateX(-30px);
+}
+.y24-btn-movecar-car_img {
+  display: block;
+  width: fit-content;
+  height: auto;
+}
+
+.y24-btn-movecar-text_pic {
+  display: block;
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.y24-btn-movecar-text_img {
+  display: block;
+  width: fit-content;
+  height: auto;
+}
+.y24-btn-movecar-text {
+  
+  width: 100%;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--textcolor-black);
+  top: 50%;
+  text-align: center;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  transform: translateY(-50%);
+}
+/*  */
+
+/* section-01 */
+.y24-submenu {
+  width: 327px;
+  height: 134px;
+  margin-top: 19px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aqua;
+}
+
+.y24-sercharea {
+  width: 360px;
+  height: 427px;
+  margin-top: 47px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  background-color: aqua;
+}
+
+/* section-02 news  */
+.y24-news-area {
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: solid var(--textcolor-black) 2px; */
+  background-color: white;
+}
+.y24-news-card {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 16px 38px 16px 12px;
+  /* border: dashed var(--textcolor-black) 1px; */
+}
+.y24-news-card:not(:last-child) {
+  border-bottom: dashed var(--textcolor-black) 1px;
+}
+.y24-news-card::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  top: 50%;
+  right: 0;
+}
+.y24-news-card-date {
+  display: block;
+  width: fit-content;
+  height: auto;
+  background-color: var(--maincolor-blue);
+  font-size: 14px;
+  color: white;
+}
+
+.y24-news-card-text {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+/* section-03 pick up  */
+#y24-pickup {
+  background-image: url('../images/sp-s03-bckimg.svg');
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+}
+.y24-slider {
+  width: auto;
+  height: 271px;
+  margin-top: 12px;
+  background-color: aqua;
+}
+
+/* section-04 seasonal    */
+#y24-seasonal {
+  background-image: url('../images/sp-s04-bckimg.svg');
+  background-position: left 0 bottom 0;
+  background-repeat: no-repeat;
+}
+
+/* section-05 search    */
+#y24-search {
+  background-image: url('../images/sp-s05-bckimg.svg');
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+}
+
+/* section-06 popular    */
+#y24-popular {
+  background-image: url('../images/sp-s06-bckimg.svg');
+  background-position: left 0 bottom 0;
+  background-repeat: no-repeat;
+}
+
+/* section-07 area    */
+#y24-area {
+  background-image: url('../images/sp-s07-bckimg.svg');
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+}
+
+/* section-08 reason    */
+#y24-reason {
+  background-image: url('../images/sp-s08-bckimg.svg');
+  background-position: left 0 bottom 0;
+  background-repeat: no-repeat;
+}
+
+/* section-09 point    */
+#y24-point {
+  background-image: url('../images/sp-s09-bckimg.svg');
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+}
+
+/* section-10 defference    */
+#y24-defference {
+  background-image: url('../images/sp-s10-bckimg.svg');
+  background-position: left 0 bottom 0;
+  background-repeat: no-repeat;
+}
+
+/* section-11 payment    */
+#y24-payment {
+  background-image: url('../images/sp-s11-bckimg.svg');
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+}
+
+/* section-12 support    */
+#y24-support {
+  background-image: url('../images/sp-s12-bckimg.svg');
+  background-position: left 0 bottom 0;
+  background-repeat: no-repeat;
+}
+
+/* section-13 application    */
+#y24-application {
+  background-image: url('../images/sp-s13-bckimg.svg');
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+}
+
+/* section-14 faq    */
+#y24-faq {
+  background-image: url('../images/sp-s14-bckimg.svg');
+  background-position: left 0 bottom 0;
+  background-repeat: no-repeat;
+}
+
+/* section-15 blog    */
+#y24-blog {
+  background-image: url('../images/sp-s15-bckimg.svg');
+  background-position: right 0 bottom -3px;
+  background-repeat: no-repeat;
+}
+
+.y24-footer{
+
+background-color: #CFE01A;}
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
 }
 
 @media screen and (min-width: 1200px) {
