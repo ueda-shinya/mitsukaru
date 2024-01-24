@@ -13,6 +13,8 @@
   --maincolor-blue: #6fbada;
   --sp-btn-color: #f15779;
   --textcolor-black: #333333;
+  --textcolor-pink: #f15779;
+  --textcolor-green: #8a8e2f;
 }
 html {
   /* コンテンツ幅でのフォントサイズ */
@@ -20,7 +22,10 @@ html {
   min-width: var(--min-content-width);
   max-width: var(--content-width);
   color: var(--textcolor-black);
+  font-family: 'Zen Kaku Gothic New';
+  font-weight: 500;
 }
+
 /************************************************
     レスポンシブ */
 
@@ -89,6 +94,23 @@ html {
   padding-top: 72px;
   padding-bottom: 184px;
 }
+.y24-section-inner {
+  padding-left: 4.167%;
+  padding-right: 4.167%;
+}
+.y24-font-zenmaru {
+  font-family: 'Zen Maru Gothic';
+  font-weight: bold;
+}
+.y24-text-pink {
+  color: var(--textcolor-pink);
+}
+.y24-text-green {
+  color: var(--textcolor-green);
+}
+.y24-text-bold {
+  font-weight: bold;
+}
 .y24-section-title_h2 {
   display: block;
   width: 350px;
@@ -99,8 +121,8 @@ html {
   margin-bottom: 0;
   padding-bottom: 48px;
   text-align: center;
-  font-family: 'Zen Maru Cothic';
   font-size: 24px;
+  font-family: 'Zen Maru Gothic';
   font-weight: bold;
   /* color: var(--textcolor-black); */
 }
@@ -118,7 +140,10 @@ html {
   height: auto;
 }
 .y24-section_p {
+  margin-bottom: unset;
   font-size: 16px;
+  font-family: 'Zen Kaku Gothic New';
+  font-weight: 500;
   text-align: center;
 }
 
@@ -153,9 +178,9 @@ html {
   transform: translateX(-40px);
   transition: 0.5s all;
 }
-.y24-movetrack{
+.y24-movetrack {
   bottom: -10px;
-  left:20px;
+  left: 20px;
 }
 .y24-btn-movecar:hover .y24-btn-movecar-car_pic {
   transform: translateX(-30px);
@@ -181,10 +206,10 @@ html {
   height: auto;
 }
 .y24-btn-movecar-text {
-  
   width: 100%;
   height: auto;
   position: absolute;
+  font-family: 'Zen Kaku Gothic New';
   font-size: 18px;
   font-weight: bold;
   color: var(--textcolor-black);
@@ -250,6 +275,8 @@ html {
   height: auto;
   background-color: var(--maincolor-blue);
   font-size: 14px;
+  font-family: 'Zen Kaku Gothic New';
+  font-weight: 500;
   color: white;
 }
 
@@ -259,6 +286,8 @@ html {
   margin-top: 6px;
   text-align: justify;
   font-size: 16px;
+  font-family: 'Zen Kaku Gothic New';
+  font-weight: 500;
 }
 
 /* section-03 pick up  */
@@ -280,7 +309,39 @@ html {
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
 }
-
+.y24-seasonal-cards {
+  width: 100%;
+  height: auto;
+  padding-top: 24px;
+}
+.y24-seasonal-3cards {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-bottom: 14px;
+  justify-content: space-around;
+}
+.y24-seasonal-card_a {
+  display: block;
+  width: 30.556%;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+.y24-seasonal-card_a:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.y24-seasonal-card_pic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-seasonal-card_pic img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /* section-05 search    */
 #y24-search {
   background-image: url('../images/sp-s05-bckimg.svg');
@@ -294,12 +355,66 @@ html {
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
 }
+.y24-section_p:nth-of-type(2) {
+  margin-top: 24px;
+  padding-bottom: 24px;
+}
+/* POPULAR バナー */
+.y24-popular-cards {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.y24-popular-card {
+  display: block;
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+.y24-popular-card_a {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+.y24-popular-card_a:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.y24-popular-card_pic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+.y24-popular-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-popular-card_p {
+  margin-top: 4px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Zen Kaku Gothic New';
+  font-weight: bold;
+}
 /* section-07 area    */
 #y24-area {
   background-image: url('../images/sp-s07-bckimg.svg');
   background-position: right 0 bottom 0;
   background-repeat: no-repeat;
+}
+#y24-area .y24-maparea {
+  display: block;
+  width: 100%;
+  height: 320px;
+  background-color: aqua;
 }
 
 /* section-08 reason    */
@@ -307,6 +422,51 @@ html {
   background-image: url('../images/sp-s08-bckimg.svg');
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
+  padding-bottom: 160px;
+}
+#y24-reason .y24-section_p {
+  margin-bottom: unset;
+  padding-bottom: 48px;
+}
+.y24-reason-crads {
+}
+.y24-reason-card {
+  display: flex;
+  width: 350px;
+  height: 94px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  margin-bottom: 12px;
+}
+.y24-reason-card:last-of-type {
+  margin-bottom: unset;
+}
+.y24-reason_pic {
+  display: block;
+  width: 88px;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 28px;
+  transform: translateY(-50%);
+}
+.y24-reason_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-reason-card_p {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: 50%;
+  left: 44px;
+  transform: translateY(-50%);
 }
 
 /* section-09 point    */
@@ -314,6 +474,165 @@ html {
   background-image: url('../images/sp-s09-bckimg.svg');
   background-position: right 0 bottom 0;
   background-repeat: no-repeat;
+  padding-bottom: 160px;
+}
+
+#y24-point .y24-section-inner .y24-section_p:last-of-type {
+  margin-bottom: 30px;
+}
+
+.y24-point-cards,
+.y24-deff-cards,
+.y24-payment-cards {
+}
+.y24-point-card,
+.y24-deff-card,
+.y24-payment-card {
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  background-color: white;
+  border-radius: 10px;
+}
+.y24-deff-card {
+  padding-bottom: 12px;
+}
+.y24-payment-card {
+  padding-bottom: 24px;
+}
+.y24-point-card:last-of-type,
+.y24-deff-card:last-of-type {
+  margin-bottom: unset;
+}
+.y24-point-card:nth-of-type(2) {
+  padding-bottom: 36px;
+}
+.y24-point-card:nth-of-type(3) {
+  padding-bottom: 12px;
+}
+
+.y24-point-card-thum {
+  display: block;
+  width: 220px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-deff-card-thum {
+  display: block;
+  width: 230px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-payment-card-thum4 {
+  display: flex;
+  width: 225px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+.y24-payment-card-thum3 {
+  display: flex;
+  width: 280px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.y24-point-card_pic,
+.y24-deff-card_pic {
+  display: block;
+  width: 220px;
+  height: auto;
+}
+.y24-payment-card-thum4 .y24-payment-card_pic {
+  display: block;
+  width: 97px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-payment-card-thum3 .y24-payment-card_pic {
+  display: block;
+  width: 72px;
+  height: auto;
+}
+
+.y24-point-card_img,
+.y24-deff-card_img,
+.y24-payment-card_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-point-card-num_pic {
+  display: block;
+  width: 65px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.y24-point-card-text,
+.y24-deff-card-text {
+  width: 310px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-payment-card-text {
+  width: 280px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.y24-point-card_h3,
+.y24-deff-card_h3,
+.y24-payment-card_h3 {
+  padding-top: 14px;
+  padding-bottom: 22px;
+  font-family: 'Zen Kaku Gothic New';
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+.y24-point-card_p,
+.y24-deff-card_p {
+  padding-bottom: 12px;
+  font-family: 'Zen Kaku Gothic New';
+  font-weight: 500;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.643;
+}
+.y24-payment-card_p {
+  padding-bottom: 12px;
+  font-family: 'Zen Kaku Gothic New';
+  font-weight: 500;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.643;
+}
+.y24-payment-card_p.y24-fs14 {
+  font-size: 14px;
+}
+
+.y24-payment-card-box_p {
+  font-family: 'Zen Kaku Gothic New';
+  font-weight: 500;
+  font-size: 10px;
+  text-align: center;
 }
 
 /* section-10 defference    */
@@ -321,6 +640,7 @@ html {
   background-image: url('../images/sp-s10-bckimg.svg');
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
+  padding-bottom: 184px;
 }
 
 /* section-11 payment    */
@@ -328,6 +648,7 @@ html {
   background-image: url('../images/sp-s11-bckimg.svg');
   background-position: right 0 bottom 0;
   background-repeat: no-repeat;
+  padding-bottom: 136px;
 }
 
 /* section-12 support    */
@@ -358,9 +679,9 @@ html {
   background-repeat: no-repeat;
 }
 
-.y24-footer{
-
-background-color: #CFE01A;}
+.y24-footer {
+  background-color: #cfe01a;
+}
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
 }

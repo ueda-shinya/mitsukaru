@@ -4,3 +4,4 @@ Thumbs.db
 *.ttf
 *.bck
 .htaccess
+/fonts
