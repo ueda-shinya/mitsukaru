@@ -483,11 +483,13 @@ html {
 
 .y24-point-cards,
 .y24-deff-cards,
-.y24-payment-cards {
+.y24-payment-cards,
+.y24-support-cards {
 }
 .y24-point-card,
 .y24-deff-card,
-.y24-payment-card {
+.y24-payment-card,
+.y24-support-card {
   width: 350px;
   height: auto;
   margin-left: auto;
@@ -583,7 +585,8 @@ html {
   left: 0;
 }
 .y24-point-card-text,
-.y24-deff-card-text {
+.y24-deff-card-text,
+.y24-support-card-text {
   width: 310px;
   height: auto;
   margin-left: auto;
@@ -607,6 +610,18 @@ html {
   text-align: center;
   line-height: 1.5;
 }
+.y24-support-card_h3 {
+  padding-top: 14px;
+  padding-bottom: 22px;
+  font-family: 'Zen Kaku Gothic New';
+  font-weight: bold;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+.y24-support-card-fs18 {
+  font-size: 18px;
+}
 .y24-point-card_p,
 .y24-deff-card_p {
   padding-bottom: 12px;
@@ -616,7 +631,8 @@ html {
   text-align: justify;
   line-height: 1.643;
 }
-.y24-payment-card_p {
+.y24-payment-card_p,
+.y24-support-card_p {
   padding-bottom: 12px;
   font-family: 'Zen Kaku Gothic New';
   font-weight: 500;
@@ -624,7 +640,8 @@ html {
   text-align: justify;
   line-height: 1.643;
 }
-.y24-payment-card_p.y24-fs14 {
+.y24-payment-card_p.y24-fs14,
+.y24-support-card_p.y24-fs14 {
   font-size: 14px;
 }
 
@@ -656,15 +673,28 @@ html {
   background-image: url('../images/sp-s12-bckimg.svg');
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
+  padding-bottom: 160px;
 }
 
 /* section-13 application    */
 #y24-application {
   background-image: url('../images/sp-s13-bckimg.svg');
-  background-position: right 0 bottom 0;
+  background-position: right 0 bottom -56px;
   background-repeat: no-repeat;
+  padding-bottom: 184px;
 }
-
+.y24-application_pic {
+  display: block;
+  width: 361px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-application_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /* section-14 faq    */
 #y24-faq {
   background-image: url('../images/sp-s14-bckimg.svg');
@@ -672,16 +702,244 @@ html {
   background-repeat: no-repeat;
 }
 
-/* section-15 blog    */
-#y24-blog {
-  background-image: url('../images/sp-s15-bckimg.svg');
-  background-position: right 0 bottom -3px;
+.y24-container {
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* background-color: lightblue; */
+  /* min-height: 100vh; */
+  /* padding: 40px; */
+}
+.y24-list {
+  /* display: grid; */
+  /* row-gap: 20px; */
+  /* padding: 20px; */
+}
+/* ここまで調整用スタイル */
+
+.y24-details {
+  display: block;
+  width: 100%;
+  margin-bottom: 4px;
+  padding-top: 18px;
+
+  padding-left: 41px;
+  padding-right: 28px;
+  background-color: white;
+  border-radius: 10px;
+}
+.y24-summary {
+  display: block;
+  /* width: 100%; */
+  /* padding-left: 41px; */
+  /* padding-right: 28px; */
+  position: relative;
+  padding-right: 30px;
+  padding-bottom: 18px;
+  color: #2297c8;
+  font-size: 14px;
+  line-height: 1.643;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: justify;
+  /* font-weight: bold; */
+  /* padding: 20px; */
+}
+.y24-summary::before {
+  content: '';
+  width: 15px;
+  height: 22px;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  background-image: url('../images/sp-faq-q-pic.svg');
   background-repeat: no-repeat;
 }
+.y24-details[open] .y24-summary::after {
+  /* background-image: url('../images/sp-faq-open-pic.svg'); */
+  transform: rotate(180deg);
+}
+.y24-summary::after {
+  content: '';
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  top: 5px;
+  right: -16px;
+  background-image: url('../images/sp-faq-close-pic.svg');
+  background-repeat: no-repeat;
+  transition: 0.2s all;
+}
 
+.y24-answer {
+  width: 100%;
+  /* overflow: hidden; */
+}
+.y24-answer_p {
+  /* display: block; */
+  /* width: 281px; */
+  width: 100%;
+  height: auto;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.643;
+  /* padding-left: 41px; */
+  /* padding-right: 28px; */
+  padding-bottom: 18px;
+}
+.y24-answer_p::before {
+  content: '';
+  width: 13px;
+  height: 22px;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  background-image: url('../images/sp-faq-a-pic.svg');
+  background-repeat: no-repeat;
+}
+/* section-15 blog    */
+#y24-blog {
+  padding-bottom: unset;
+}
+.y24-blog-slider {
+  width: 100%;
+  height: 289px;
+  margin-bottom: 24px;
+  background-color: aqua;
+}
+/* footer */
 .y24-footer {
   background-color: #cfe01a;
 }
+.y24-footer-top {
+  width: 100%;
+  height: 76px;
+  background-image: url('../images/sp-s15-bckimg.svg');
+  background-position: right 0 bottom -3px;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.y24-footer_pic {
+  display: block;
+  width: 174px;
+  height: auto;
+  margin-top: 59px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 25px;
+}
+.y24-footer-linkbtn-area {
+  display: flex;
+  width: 354px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+}
+.y24-footer-linkbtn_a {
+  display: grid;
+  width: 160px;
+  height: 47px;
+
+  background-color: white;
+  border-radius: 50px;
+  border: solid #f05778 2px;
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f05778;
+  text-align: center;
+  align-items: center;
+}
+
+.y24-footer-navmenu {
+  width: 360px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-footer-navmenu .y24-details {
+  background-color: unset;
+  border-radius: unset;
+  padding-top: 16px;
+}
+.y24-footer-navmenu .y24-details::before {
+  content: '';
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  margin-left: -40px;
+  border-bottom: dotted var(--textcolor-black) 2px;
+}
+.y24-footer-navmenu .y24-details[open]:last-of-type::before {
+  content: '';
+  }
+  
+.y24-footer-navmenu .y24-details:last-of-type::before {
+content: none;
+}
+.y24-footer-navmenu .y24-summary {
+  width: 100%;
+  color: var(--textcolor-black);
+  padding-left: 14px;
+  padding-bottom: 14px;
+}
+.y24-footer-navmenu .y24-summary::before {
+  content: unset;
+}
+.y24-footer-navmenu .y24-answer {
+  width: 260px;
+  height: auto;
+  /* position: relative; */
+  /* right:0; */
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.y24-answer_a {
+  display: grid;
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  color: var(--textcolor-black);
+  text-align: left;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+}
+.y24-answer_a::before {
+  content: '';
+  width: 110%;
+  height: 48px;
+  position: absolute;
+  border-bottom: dotted var(--textcolor-black) 2px;
+}
+.y24-footer-sns-area {
+  display: flex;
+  width: 87px;
+height: auto;
+margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 12px;
+  justify-content: space-between;
+}
+.y24-footer-cr{
+display: block;
+width: fit-content;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 45px;
+font-size: 12px;
+
+}
+/*  */
+/*  */
+/*  */
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
 }
