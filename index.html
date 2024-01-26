@@ -43,7 +43,31 @@
       </picture>
     </div>
 
-    <div class="y24-sp-menu-btn"></div>
+
+    <!-- 768px以上で表示 -->
+    <div class="y24-navmenu-sp768">
+      <!-- 問い合わせボタン -->
+      <a class="y24-sp-contact-btn">
+        <picture class="y24-sp-contact-btn_pic">
+          <source srcset="" media="(max-width: 767px)" type="image/svg+xml" width="38" height="39">
+          <img class="y24-sp-contact-btn_img" src="images/sp-contact-btn.svg" alt="問い合わせ" width="38" height="39">
+        </picture>
+        <p class="y24-sp-contact-btn_p">問い合わせ</p>
+      </a>
+      <!-- お申し込みボタン -->
+      <a class="y24-sp-application-btn">
+        <picture class="y24-sp-application-btn_pic">
+          <source srcset="" media="(max-width: 767px)" type="image/svg+xml" width="38" height="39">
+          <img class="y24-sp-application-btn_img" src="images/sp-application-btn.svg" alt="お申し込み" width="38"
+            height="39">
+        </picture>
+        <p class="y24-sp-application-btn_p">お申し込み</p>
+      </a>
+    </div>
+
+    <div id="y24-sp-menu-btn" class="y24-sp-menu-btn">
+      <span class="y24-sp-menu-btn_span"></span>
+    </div>
   </header>
 
   <main>
@@ -51,7 +75,7 @@
     <!-- section-01 ファーストビュー -->
     <section id="y24-firstview" class="y24-section y24-bck-color-green">
       <h1 class="y24-title_h1">
-        <picture>
+        <picture class="y24-title_h1_pic">
           <source srcset="images/sp-s01-title.svg" media="(max-width: 767px)" type="image/svg+xml" width="346"
             height="172">
           <img src="images/sp-s01-title.svg" alt="ミツカル合宿免許ならスグ見つかる!" width="346" height="172">
@@ -1075,6 +1099,8 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="js/accordion.js"></script>
+  <script src="js/sp-navmenu.js"></script>
+
 </body>
 
 </html>
