@@ -443,6 +443,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
     -2px 0 0 var(--textcolor-black), 0 2px 0 var(--textcolor-black),
     0 -2px 0 var(--textcolor-black);
 }
+
 .y24-text-pink {
   color: var(--textcolor-pink);
 }
@@ -724,6 +725,50 @@ input:checked + .y24-sp-menu-radio-rev_label {
   width: 100%;
   height: auto;
 }
+.y24-special{
+padding-top: 35px;
+
+}
+.y24-special .y24-section-title_h2{
+  margin-bottom: 24px;
+  height: 105px;
+font-size: 1.8rem;
+background-image: url('../images/sp-special-bckimg.svg');
+background-size: auto 105px;
+background-repeat: no-repeat;
+background-position: center center;
+
+}
+.y24-special .y24-font-jost{
+font-size: 4.2rem;
+}
+.y24-special-banners {
+  display: flex;
+  width: 350px;
+  height: auto;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-special-banner_a{
+display: block;
+width: 100%;
+height: auto;
+padding-bottom: 14px;
+
+
+}
+.y24-special-banner_pic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-special-banner_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* section-05 search    */
 #y24-search {
   background-image: url('../images/sp-s05-bckimg.svg');
@@ -732,6 +777,36 @@ input:checked + .y24-sp-menu-radio-rev_label {
   /* background-size: 161px 149px; */
   background-size: clamp(1px, 41.282vw, 644px) clamp(1px, 38.205vw, 596px);
 }
+
+.y24-search-linkbtn-area{
+  display: flex;
+  width: 338px;
+  height: auto;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 48px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+.y24-search-linkbtn_a{
+display: block;
+width: 160px;
+height: auto;
+margin-bottom: 18px;
+position: relative;
+}
+.y24-search-linkbtn_pic,
+.y24-search-linkbtn_img
+{
+display: block;
+width: 100%;
+height: auto;
+}
+
+
+
+
 
 /* section-06 popular    */
 #y24-popular {
@@ -2260,6 +2335,8 @@ input:checked + .y24-sp-menu-radio-rev_label {
     background-repeat: no-repeat;
     /* background-size: 144px 155px; */
     background-size: clamp(1px, 36.923vw, 576px) clamp(1px, 39.744vw, 620px);
+    /* 1440 */
+    padding-bottom:130px;
   }
   .y24-seasonal-cards {
     width: 100%;
@@ -2309,6 +2386,70 @@ input:checked + .y24-sp-menu-radio-rev_label {
     width: 100%;
     height: auto;
   }
+
+  .y24-special{
+    padding-top: 35px;
+    
+    }
+    .y24-special .y24-section-title_h2{
+      margin-bottom: 24px;
+      height: 105px;
+    font-size: 1.8rem;
+    background-image: url('../images/sp-special-bckimg.svg');
+    background-size: auto 105px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* 1440 */
+    margin-bottom: 72px;
+    height: 267px;
+    font-size: 36px;
+    background-size: auto 267px;
+
+    }
+    .y24-special .y24-font-jost{
+    font-size: 4.2rem;
+    /* 1440 */
+    font-size: 98px;
+    }
+    .y24-special-banners {
+      display: flex;
+      width: 350px;
+      height: auto;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      /* 1440 */
+      width: 953px;
+      justify-content: space-between;
+    }
+    .y24-special-banner_a{
+      display: block;
+      width: 100%;
+      height: auto;
+      padding-bottom: 14px;
+      /* 1440 */
+      width: 464px;
+      height: auto;
+      
+      
+      padding-bottom: 24px;
+      }
+    .y24-special-banner_pic {
+      display: block;
+      width: 100%;
+      height: auto;
+      /* 1440 */
+      width: 464px;
+      height: auto;
+    }
+    .y24-special-banner_img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+
+
   /* section-05 search    */
   #y24-search {
     background-image: url('../images/sp-s05-bckimg.svg');
@@ -2431,7 +2572,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
     /* 1440 */
     padding-bottom: 130px;
     background-size: 414px 330px;
-    background-position: left 0  bottom -42px;
+    background-position: left 0 bottom -42px;
   }
   #y24-reason .y24-section_p {
     margin-bottom: unset;
@@ -2469,13 +2610,11 @@ input:checked + .y24-sp-menu-radio-rev_label {
     margin-bottom: unset;
     padding-bottom: 29px;
     border-radius: 9px;
-
   }
   .y24-reason-card:last-of-type {
     margin-bottom: unset;
     /* 1440 */
     padding-bottom: 29px;
-
   }
   .y24-reason_pic {
     display: block;
@@ -2521,7 +2660,6 @@ input:checked + .y24-sp-menu-radio-rev_label {
     font-size: 24px;
 
     color: var(--textcolor-pink);
-    
   }
 
   /* section-09 point    */
