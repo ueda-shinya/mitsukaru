@@ -35,6 +35,16 @@
   <!-- リリース時PHPの部分削除 -->
   <!-- <link rel="stylesheet" href="./css/style.css?timestamp=<?php echo time(); ?>"> -->
   <link rel="stylesheet" href="./css/style.css">
+
+
+  <!-- Splideの基本スタイル -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3/dist/css/splide.min.css">
+  <!-- Splide本体のスクリプト -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3/dist/js/splide.min.js"></script>
+  <!-- URLハッシュエクステンションのスクリプト -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-url-hash@0.3.0/dist/js/splide-extension-url-hash.min.js"></script>
+
 </head>
 
 <body>
@@ -244,7 +254,7 @@
           </details>
 
           <details class="y24-details">
-            <summary class="y24-summary">合宿免許のお話し</summary>
+            <summary class="y24-summary">合宿免許のお話</summary>
             <div class="y24-answer">
 
               <div class="y24-answer_link"><a class="" href="">合宿免許のお話</a></div>
@@ -316,24 +326,71 @@
             </a>
           </div>
         </div>
-        <div class="y24-sercharea"></div>
+
+        <!-- かんたん検索 -->
+        <div class="y24-searcharea">
+          <div class="y24-search-title">
+            <p class="y24-search-title_p">安い順にかんたん検索</p>
+          </div>
+          <form id="y24-searchForm">
+            <div class="y24-search-item">
+              <label for="carType">車種</label>
+              <select id="y24-carType" name="carType">
+                <option value="">選択してください</option>
+                <option value="AT">AT車(オートマ)</option>
+                <option value="MT">MT車(マニュアル)</option>
+                <option value="large">大型車</option>
+                <option value="bike">バイク</option>
+              </select>
+            </div>
+            <div class="y24-search-item">
+              <label for="region">地域</label>
+              <select id="y24-region" name="region">
+                <option value="">選択してください</option>
+                <option value="hokkaido-tohoku">北海道・東北</option>
+                <option value="kanto">関東</option>
+                <option value="kansai">関西</option>
+                <option value="shikoku">四国</option>
+              </select>
+            </div>
+            <div class="y24-search-item">
+              <label for="roomType">部屋タイプ</label>
+              <select id="y24-roomType" name="roomType">
+                <option value="">選択してください</option>
+                <option value="single">シングル</option>
+                <option value="semiDouble">セミダブル</option>
+                <option value="double">ダブル</option>
+                <option value="twin">ツイン</option>
+              </select>
+            </div>
+            <div class="y24-search-item">
+              <label for="entryDate">入校日</label>
+              <input type="date" id="y24-entryDate" name="entryDate" value="">
+            </div>
+            <div class="y24-search-result">
+              <p class="y24-search-result_p">該当件数</p>
+              <p class="y24-search-result_num2">0</p>
+              <p class="y24-search-result_num1">0</p>
+              <p class="y24-search-result_p">件</p>
+            </div>
+            <div>
+              <button type="submit" id="y24-submitButton">検索する</button>
+            </div>
+          </form>
+
+          <script src="js/sercharea.js"></script>
+
+
+        </div>
       </div>
     </section>
 
     <!-- section-02 NEWS お知らせ  -->
     <section id="y24-news" class="y24-section y24-bck-color-blue">
       <div class="y24-section-inner">
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">NEWS</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s02-title-news.svg" media="(max-width: 767px)" type="image/svg+xml" width="163"
-              height="40">
-            <img class="y24-section-title_img" src="images/sp-s02-title-news.svg" alt="NEWS" width="163" height="40"
-              decoding="async" loading="lazy">
-          </picture> -->
+        <h2 class="y24-section-title_h2 y24-font-jost">NEWS</h2>
+        <p class="y24-section-title_p">お知らせ</p>
 
-          お知らせ
-        </h2>
         <div class="y24-news-area">
           <div class="y24-news-card">
             <time class="y24-news-card-date" datetime="2024-01-02">2024.01.02</time>
@@ -344,7 +401,7 @@
           <div class="y24-news-card">
             <time class="y24-news-card-date" datetime="2023-12-11">2023.12.11</time>
             <div class="y24-news-card-text">
-              年末年始休業日のお知らせ年末年始休業日のお知らせ年末年始休業日のお知らせ年末年始休業日のお知らせ年末年始休業日のお知らせ年末年始休業日のお知らせ年末年始休業日のお知らせ
+              年末年始休業日のお知らせ年末年始休業日のお知らせ年末年始休業日のお知らせ年末年始休業日のお知らせ
             </div>
           </div>
         </div>
@@ -354,21 +411,80 @@
     <!-- section-03 PICK UP 最安値おすすめプラン  -->
     <section id="y24-pickup" class="y24-section y24-bck-color-white">
       <div class="y24-section-inner">
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">PICK UP</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s03-title-pickup.svg" media="(max-width: 767px)" type="image/svg+xml" width="221"
-              height="40">
-            <img class="y24-section-title_img" src="images/sp-s03-title-pickup.svg" alt="PICK UP" width="221"
-              height="40" decoding="async" loading="lazy">
-          </picture> -->
-          最安値おすすめプラン
-        </h2>
+        <h2 class="y24-section-title_h2 y24-font-jost">PICK UP</h2>
+        <p class="y24-section-title_p">最安値おすすめプラン</p>
+
         <p class="y24-section_p">
-          「夏休みに短期集中」「新生活スタートまで<br class="y24-pc-none">に」「来月中ならいつでも」など、<br>通いたい日が決まったらまずは安い順で検索！<br>格安の合宿自動車学校を見つけましょう。
+          「夏休みに短期集中」「新生活スタートまで<br
+            class="y24-768-none y24-pc-none">に」「来月中ならいつでも」など、<br><br>通いたい日が決まったらまずは安い順で検索！<br>格安の合宿自動車学校を見つけましょう。
         </p>
-        <div class="y24-slider">
-          スライダー
+
+          <div class="y24-pickup-splide splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!-- Slide 1 -->
+                <li class="splide__slide y24-splide_slide">
+
+                  <div class="y24-splide_card">
+                    <div class="y24-splide-imgframe">
+                    <img class="y24-splide_slide_img" src="images/slide01-img.webp" alt="" width="280" height="173">
+                    </div>
+                    <p class="y24-splide_slide-text">春休み <br>
+                      1月上旬から中旬までのご入校<br>
+                      11,000円割引キャンペーン！</p>
+                      <p class="y24-splide_slide-start">入校日 2024年12月4日〜2024年1月16日</p>
+                    </div>
+                    <img class="y24-splide_slide-fukidashi" src="images/fukidashi-pink.svg" alt="">
+
+                </li>
+
+                <!-- Slide 2 -->
+                <li class="splide__slide">
+
+                  <div class="y24-splide_card">
+                    <div class="y24-splide-imgframe">
+
+                    <img class="y24-splide_slide_img" src="images/slide01-img.webp" alt="" width="280" height="173">
+                    </div>
+                    <p class="y24-splide_slide-text">春休み <br>
+                      1月上旬から中旬までのご入校<br>
+                      11,000円割引キャンペーン！</p>
+                      <p class="y24-splide_slide-start">入校日 2024年12月4日〜2024年1月16日</p>
+                  </div>
+
+
+
+                </li>
+                <!-- Slide 3 -->
+                <li class="splide__slide">
+
+                  <div class="y24-splide_card">
+                    <div class="y24-splide-imgframe">
+
+                    <img class="y24-splide_slide_img" src="images/slide01-img.webp" alt="" width="280" height="173">
+                    </div>
+                    <p class="y24-splide_slide-text">春休み <br>
+                      1月上旬から中旬までのご入校<br>
+                      11,000円割引キャンペーン！</p>
+                      <p class="y24-splide_slide-start">入校日 2024年12月4日〜2024年1月16日</p>
+                  </div>
+
+
+
+
+                </li>
+                <!-- Slide 4 -->
+                <li class="splide__slide">Slide 4</li>
+                <!-- Slide 5 -->
+                <li class="splide__slide">Slide 5</li>
+                <!-- Slide 6 -->
+                <li class="splide__slide">Slide 6</li>
+                <!-- Slide 7 -->
+                <li class="splide__slide">Slide 7</li>
+                <!-- その他のスライド -->
+              </ul>
+          </div>
+
         </div>
         <!-- 車が動くボタン -->
         <a href="#" class="y24-btn-movecar_a">
@@ -408,18 +524,12 @@
     <!-- section-04 SEASONAL 季節のお得プラン  -->
     <section id="y24-seasonal" class="y24-section y24-bck-color-green">
       <div class="y24-section-inner">
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">SEASONAL</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s04-title-seasonal.svg" media="(max-width: 767px)" type="image/svg+xml"
-              width="301" height="40">
-            <img class="y24-section-title_img" src="images/sp-s04-title-seasonal.svg" alt="SEASONAL" width="301"
-              height="40" decoding="async" loading="lazy">
-          </picture> -->
-          季節のお得プラン
-        </h2>
-        <p class="y24-section_p">友達や家族と通える夏休み＆冬休みプラン、<br class="y24-pc-none">月別のお得プラン、今だけのセール情報も！<br>料金の安いプランで<br
-            class="y24-pc-none">お得に免許を取得しましょう。</p>
+        <h2 class="y24-section-title_h2 y24-font-jost">SEASONAL</h2>
+        <p class="y24-section-title_p">季節のお得プラン</p>
+
+        <p class="y24-section_p">友達や家族と通える夏休み＆冬休みプラン、<br
+            class="y24-768-none y24-pc-none">月別のお得プラン、今だけのセール情報も！<br>料金の安いプランで<br
+            class="y24-768-none  y24-pc-none">お得に免許を取得しましょう。</p>
         <div class="y24-seasonal-cards">
           <!-- <div class="y24-seasonal-3cards"> -->
 
@@ -643,16 +753,9 @@
         </div>
 
         <div class="y24-special">
-          <h2 class="y24-section-title_h2">
-            <span class="y24-font-jost">SPECIAL</span><br>
-            <!-- <picture class="y24-section-title_pic">
-              <source srcset="images/sp-s04-title-seasonal.svg" media="(max-width: 767px)" type="image/svg+xml"
-                width="301" height="40">
-              <img class="y24-section-title_img" src="images/sp-s04-title-seasonal.svg" alt="SEASONAL" width="301"
-                height="40" decoding="async" loading="lazy">
-            </picture> -->
-            格安シングル特集
-          </h2>
+          <h2 class="y24-section-title_h2 y24-font-jost">SPECIAL</h2>
+          <p class="y24-section-title_p">格安シングル特集</p>
+
           <div class="y24-special-banners">
 
             <!-- banner-1 -->
@@ -721,17 +824,11 @@
     <!-- section-05 SEARCH 特車から探す  -->
     <section id="y24-search" class="y24-section y24-bck-color-blue">
       <div class="y24-section-inner">
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">SEARCH</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s05-title-serch.svg" media="(max-width: 767px)" type="image/svg+xml" width="217"
-              height="40">
-            <img src="images/sp-s05-title-serch.svg" alt="SEARCH" width="217" height="40" decoding="async"
-              loading="lazy">
-          </picture> -->
-          特車から探す
-        </h2>
-        <p class="y24-section_p">就活や転職活動などでも役立つ大型免許や特殊<br class="y24-pc-none">免許を取得したい方は、<br>希望のアイコンをタップしてみてください。</p>
+        <h2 class="y24-section-title_h2 y24-font-jost">SEARCH</h2>
+        <p class="y24-section-title_p">特車から探す</p>
+
+        <p class="y24-section_p">就活や転職活動などでも役立つ大型免許や特殊<br
+            class="y24-768-none y24-pc-none">免許を取得したい方は、<br>希望のアイコンをタップしてみてください。</p>
 
         <div class="y24-search-linkbtn-area">
 
@@ -819,20 +916,14 @@
     <!-- section-06 POPULAR 人気のプラン  -->
     <section id="y24-popular" class="y24-section y24-bck-color-white">
       <div class="y24-section-inner">
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">POPULAR</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s06-title-popular.svg" media="(max-width: 767px)" type="image/svg+xml" width="269"
-              height="40">
-            <img class="y24-section-title_img" src="images/sp-s06-title-popular.svg" alt="POPULAR" width="269"
-              height="40" decoding="async" loading="lazy">
-          </picture> -->
-          人気のプラン
-        </h2>
-        <p class="y24-section_p">2人で通えるカップルプランや<br class="y24-pc-none">食事付きの安心プラン、最短取得プランなど、<br
+        <h2 class="y24-section-title_h2 y24-font-jost">POPULAR</h2>
+        <p class="y24-section-title_p">人気のプラン</p>
+
+        <p class="y24-section_p">2人で通えるカップルプランや<br class="y24-768-none y24-pc-none">食事付きの安心プラン、最短取得プランなど、<br
             class="y24-pc-none">とくに人気の高いプランをご紹介します。</p>
-        <p class="y24-section_p">予算を少しでも抑えたい方向けに<br class="y24-pc-none">食事なしプランや、自炊ができるプランも。<br>「こんなプランもあるんだ！」と<br
-            class="y24-pc-none">驚かれること間違いなし♪</p>
+        <p class="y24-section_p">予算を少しでも抑えたい方向けに<br
+            class="y24-768-none y24-pc-none">食事なしプランや、自炊ができるプランも。<br>「こんなプランもあるんだ！」と<br
+            class="y24-768-none y24-pc-none">驚かれること間違いなし♪</p>
         <div class="y24-popular-cards">
           <!-- 01 -->
           <div class="y24-popular-card">
@@ -1004,38 +1095,35 @@
     <!-- section-07 AREA 全国教習所一覧  -->
     <section id="y24-area" class="y24-section y24-bck-color-green">
       <div class="y24-section-inner">
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">AREA</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s07-title-area.svg" media="(max-width: 767px)" type="image/svg+xml" width="154"
-              height="38">
-            <img class="y24-section-title_img" src="images/sp-s07-title-area.svg" alt="AREA" width="154" height="38"
-              decoding="async" loading="lazy">
-          </picture> -->
-          全国教習所一覧
-        </h2>
-        <p class="y24-section_p">北海道から九州・沖縄まで、<br class="y24-pc-none">全国各地の合宿自動車学校を<br class="y24-pc-none">エリア別に一覧表示。
+        <h2 class="y24-section-title_h2 y24-font-jost">AREA</h2>
+        <p class="y24-section-title_p">全国教習所一覧</p>
+
+        <p class="y24-section_p">北海道から九州・沖縄まで、<br class="y24-768-none y24-pc-none">全国各地の合宿自動車学校を<br
+            class="y24-pc-none">エリア別に一覧表示。
         </p>
-        <p class="y24-section_p">自宅に近いエリアや旅行気分を<br class="y24-pc-none">味わえる観光地エリアなど、<br>ご希望に合わせて検索できます。</p>
-        <div class="y24-maparea">エリアマップ</div>
+        <p class="y24-section_p">自宅に近いエリアや旅行気分を<br class="y24-768-none y24-pc-none">味わえる観光地エリアなど、<br>ご希望に合わせて検索できます。</p>
+        <div class="y24-maparea">
+          <img src="images/sp-map.svg" alt="日本地図" width="315" height="316">
+          <div id="map-hakkaido" class="y24-map-btn">北海道</div>
+          <div id="map-touhoku"  class="y24-map-btn">東北</div>
+          <div id="map-kantoh"  class="y24-map-btn">関東</div>
+          <div id="map-hokuriku"  class="y24-map-btn">北陸<br>信越</div>
+          <div id="map-toukai"  class="y24-map-btn">東海</div>
+          <div id="map-chugoku"  class="y24-map-btn">中国</div>
+          <div id="map-shikoku"  class="y24-map-btn">四国</div>
+          <div id="map-kyusyu"  class="y24-map-btn">九州<br>沖縄</div>
+        </div>
       </div>
     </section>
 
     <!-- section-08 REASON 合宿免許がおすすめの理由  -->
     <section id="y24-reason" class="y24-section y24-bck-color-blue">
       <div class="y24-section-inner">
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">REASON</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s08-title-reason.svg" media="(max-width: 767px)" type="image/svg+xml" width="231"
-              height="40">
-            <img class="y24-section-title_img" src="images/sp-s08-title-reason.svg" alt="REASON" width="231" height="40"
-              decoding="async" loading="lazy">
-          </picture> -->
-          合宿免許がおすすめの理由
-        </h2>
-        <p class="y24-section_p">夏休みや冬休みを利用して<br class="y24-pc-none">効率的に免許を取得できます。<br>合宿免許での楽しいひとときが<br
-            class="y24-pc-none">きっと思い出の1ページに刻まれるはずです。</p>
+        <h2 class="y24-section-title_h2 y24-font-jost">REASON</h2>
+        <p class="y24-section-title_p">合宿免許がおすすめの理由</p>
+
+        <p class="y24-section_p">夏休みや冬休みを利用して<br class="y24-768-none y24-pc-none">効率的に免許を取得できます。<br>合宿免許での楽しいひとときが<br
+            class="y24-768-none y24-pc-none">きっと思い出の1ページに刻まれるはずです。</p>
         <div class="y24-reason-crads">
           <div class="y24-reason-card">
             <picture class="y24-reason_pic">
@@ -1071,23 +1159,16 @@
     <!-- section-09 POINT ミツカル合宿免許の特徴  -->
     <section id="y24-point" class="y24-section y24-bck-color-green">
       <div class="y24-section-inner">
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">POINT</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s09-title-point.svg" media="(max-width: 767px)" type="image/svg+xml" width="175"
-              height="40">
-            <img class="y24-section-title_img" src="images/sp-s09-title-point.svg" alt="POINT" width="175" height="40"
-              decoding="async" loading="lazy">
-          </picture> -->
-          ミツカル合宿免許の特徴
-        </h2>
+        <h2 class="y24-section-title_h2 y24-font-jost">POINT</h2>
+        <p class="y24-section-title_p">ミツカル合宿免許の特徴</p>
+
         <p class="y24-section_p">
-          安い費用＆短期間で免許を取得できるのが<br class="y24-pc-none">「合宿免許」の強みです。<br>最近は夏休みや冬休みなどの長期休暇を<br
-            class="y24-pc-none">利用して、合宿で免許を取得する<br class="y24-pc-none">学生さんも増えています。</p>
-        <p class="y24-section_p">全国各地にある合宿自動車学校の中から自分に<br class="y24-pc-none">合った場所を選びたい！という方は、<br>「ミツカル合宿免許」で一発検索。</p>
+          安い費用＆短期間で免許を取得できるのが<br class="y24-768-none y24-pc-none">「合宿免許」の強みです。<br>最近は夏休みや冬休みなどの長期休暇を<br
+            class="y24-768-none y24-pc-none">利用して、合宿で免許を取得する<br class="y24-pc-none">学生さんも増えています。</p>
+        <p class="y24-section_p">全国各地にある合宿自動車学校の中から自分に<br class="y24-pc-none">合った場所を選びたい！という方は、<br>「<span class="y24-bold">ミツカル合宿免許</span>」で一発検索。</p><br>
         <p class="y24-section_p">
-          安さや立地、取得したい免許の種類<br class="y24-pc-none">（大型、特殊、準中型、二輪など）、<br>お得な期間限定プランなど、<br
-            class="y24-pc-none">希望条件に合う合宿自動車学校を<br class="y24-pc-none">スムーズに検索できます。</p>
+          安さや立地、取得したい免許の種類<br class="y24-768-none y24-pc-none">（大型、特殊、準中型、二輪など）、<br>お得な期間限定プランなど、<br
+            class="y24-768-none y24-pc-none">希望条件に合う合宿自動車学校を<br class="y24-pc-none">スムーズに検索できます。</p>
         <div class="y24-point-cards">
 
           <div class="y24-point-card">
@@ -1177,16 +1258,9 @@
     <!-- section-10 DEFFERENCE 他社との違い  -->
     <section id="y24-defference" class="y24-section y24-bck-color-blue">
       <div class="y24-section-inner">
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">DIFFERENCE</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s10-title-defference.svg" media="(max-width: 767px)" type="image/svg+xml"
-              width="340" height="40">
-            <img class="y24-section-title_img" src="images/sp-s10-title-defference.svg" alt="DIFFERENCE" width="340"
-              height="40" decoding="async" loading="lazy">
-          </picture> -->
-          他社との違い
-        </h2>
+        <h2 class="y24-section-title_h2 y24-font-jost">DIFFERENCE</h2>
+        <p class="y24-section-title_p">他社との違い</p>
+
         <div class="y24-deff-cards">
           <div class="y24-deff-card">
             <div class="y24-deff-card-thum">
@@ -1253,16 +1327,9 @@
     <!-- section-11 PAYMENT お支払い方法  -->
     <section id="y24-payment" class="y24-section y24-bck-color-green">
       <div class="y24-section-inner">
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">PAYMENT</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s11-title-payment.svg" media="(max-width: 767px)" type="image/svg+xml" width="265"
-              height="39">
-            <img class="y24-section-title_img" src="images/sp-s11-title-payment.svg" alt="PAYMENT" width="265"
-              height="39" decoding="async" loading="lazy">
-          </picture> -->
-          お支払い方法
-        </h2>
+        <h2 class="y24-section-title_h2 y24-font-jost">PAYMENT</h2>
+        <p class="y24-section-title_p">お支払い方法</p>
+
         <div class="y24-payment-cards">
           <div class="y24-payment-card">
             <div class="y24-payment-card-text">
@@ -1342,16 +1409,8 @@
     <!-- section-12 SUPPORT 合宿期間中の万が一にも安心サポート  -->
     <section id="y24-support" class="y24-section y24-bck-color-blue">
       <div class="y24-section-inner">
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">SUPPORT</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s12-title-support.svg" media="(max-width: 767px)" type="image/svg+xml" width="263"
-              height="40">
-            <img class="y24-section-title_img" src="images/sp-s12-title-support.svg" alt="SUPPORT" width="263"
-              height="40" decoding="async" loading="lazy">
-          </picture> -->
-          合宿期間中の万が一にも<br class="y24-pc-none">安心サポート
-        </h2>
+        <h2 class="y24-section-title_h2 y24-font-jost">SUPPORT</h2>
+        <p class="y24-section-title_p">合宿期間中の万が一にも<br class="y24-pc-none">安心サポート</p>
         <div class="y24-support-cards">
           <div class="y24-support-card">
             <div class="y24-support-card-text">
@@ -1386,16 +1445,8 @@
     <section id="y24-application" class="y24-section y24-bck-color-white">
       <div class="y24-section-inner">
 
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">APPLICATION</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s13-title-application.svg" media="(max-width: 767px)" type="image/svg+xml"
-              width="351" height="37">
-            <img class="y24-section-title_img" src="images/sp-s13-title-application.svg" alt="APPLICATION " width="351"
-              height="37" decoding="async" loading="lazy">
-          </picture> -->
-          お申し込み後の流れ
-        </h2>
+        <h2 class="y24-section-title_h2 y24-font-jost">APPLICATION</h2>
+        <p class="y24-section-title_p">お申し込み後の流れ</p>
 
         <!-- sp -->
         <picture class="y24-application_pic y24-sp-pic">
@@ -1429,16 +1480,8 @@
     <section id="y24-faq" class="y24-section y24-bck-color-blue">
       <div class="y24-section-inner">
 
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">FAQ</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s14-title-faq.svg" media="(max-width: 767px)" type="image/svg+xml" width="112"
-              height="43">
-            <img class="y24-section-title_img" src="images/sp-s14-title-faq.svg" alt="FAQ" width="112" height="43"
-              decoding="async" loading="lazy">
-          </picture> -->
-          よくある質問
-        </h2>
+        <h2 class="y24-section-title_h2 y24-font-jost">FAQ</h2>
+        <p class="y24-section-title_p">よくある質問</p>
 
         <div class="y24-container">
           <!-- Q1 -->
@@ -1520,20 +1563,73 @@
     <section id="y24-blog" class="y24-section y24-bck-color-white">
       <div class="y24-section-inner">
 
-        <h2 class="y24-section-title_h2">
-          <span class="y24-font-jost">BLOG</span><br>
-          <!-- <picture class="y24-section-title_pic">
-            <source srcset="images/sp-s15-title-blog.svg" media="(max-width: 767px)" type="image/svg+xml" width="142"
-              height="37">
-            <img class="y24-section-title_img" src="images/sp-s15-title-blog.svg" alt="BLOG" width="142" height="37"
-              decoding="async" loading="lazy">
-          </picture> -->
-          ミツカル合宿免許ブログ
-        </h2>
+        <h2 class="y24-section-title_h2 y24-font-jost">BLOG</h2>
+        <p class="y24-section-title_p">ミツカル合宿免許ブログ</p>
 
-        <div class="y24-blog-slider">
+        <div class="y24-blog-splide splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <!-- Slide 1 -->
+              <li class="splide__slide y24-splide_slide">
 
+                <div class="y24-splide_card">
+                  <div class="y24-splide-imgframe">
+                    <img class="y24-splide_slide_img" src="images/slide01-img.webp" alt="" width="280" height="173">
+                  </div>
+                  <p class="y24-splide_slide-text">春休み <br>
+                    1月上旬から中旬までのご入校<br>
+                    11,000円割引キャンペーン！</p>
+                    <p class="y24-splide_slide-start">入校日 2024年12月4日〜2024年1月16日</p>
+                  </div>
+                  <img class="y24-splide_slide-fukidashi" src="images/fukidashi-pink.svg" alt="">
+
+              </li>
+
+              <!-- Slide 2 -->
+              <li class="splide__slide">
+
+                <div class="y24-splide_card">
+                  <div class="y24-splide-imgframe">
+                  <img class="y24-splide_slide_img" src="images/slide01-img.webp" alt="" width="280" height="173">
+                  </div>
+                  <p class="y24-splide_slide-text">春休み <br>
+                    1月上旬から中旬までのご入校<br>
+                    11,000円割引キャンペーン！</p>
+                    <p class="y24-splide_slide-start">入校日 2024年12月4日〜2024年1月16日</p>
+                </div>
+
+
+
+              </li>
+              <!-- Slide 3 -->
+              <li class="splide__slide">
+
+                <div class="y24-splide_card">
+                  <div class="y24-splide-imgframe">
+                    <img class="y24-splide_slide_img" src="images/slide01-img.webp" alt="" width="280" height="173">
+                  </div>
+                  <p class="y24-splide_slide-text">春休み <br>
+                    1月上旬から中旬までのご入校<br>
+                    11,000円割引キャンペーン！</p>
+                    <p class="y24-splide_slide-start">入校日 2024年12月4日〜2024年1月16日</p>
+                </div>
+
+
+
+
+              </li>
+              <!-- Slide 4 -->
+              <li class="splide__slide">Slide 4</li>
+              <!-- Slide 5 -->
+              <li class="splide__slide">Slide 5</li>
+              <!-- Slide 6 -->
+              <li class="splide__slide">Slide 6</li>
+              <!-- Slide 7 -->
+              <li class="splide__slide">Slide 7</li>
+              <!-- その他のスライド -->
+            </ul>
         </div>
+
 
         <!-- 車が動くボタン -->
         <a href="#" class="y24-btn-movecar_a">
@@ -1578,8 +1674,8 @@
         </picture>
 
         <div class="y24-footer-linkbtn-area">
-          <a class="y24-footer-linkbtn_a" href="">問い合わせ</a>
-          <a class="y24-footer-linkbtn_a" href="">お申し込み</a>
+          <a class="y24-footer-contact-linkbtn_a" href="">問い合わせ</a>
+          <a class="y24-footer-application-linkbtn_a" href="">お申し込み</a>
         </div>
       </div>
 
@@ -1660,6 +1756,8 @@
     crossorigin="anonymous"></script>
   <script src="js/accordion.js"></script>
   <script src="js/sp-navmenu.js"></script>
+  <script src="js/splide.js"></script>
+  <!-- <script src="path-to-the-script/splide-extension-url-hash.min.js"></script> -->
 
 </body>
 
