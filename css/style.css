@@ -45,7 +45,7 @@ html {
   scroll-behavior: smooth;
   /* コンテンツ幅でのフォントサイズ */
   min-width: var(--min-content-width);
-  max-width: var(--content-width);
+  /* max-width: var(--content-width); */
   color: var(--textcolor-black);
   font-family: 'Zen Kaku Gothic New';
   font-weight: 500;
@@ -1200,49 +1200,35 @@ F .y24-slider {
 }
 #map-hakkaido {
   top: -10px;
-  top: -3.226%;
   right: -26px;
-  right: -8.387%;
 }
 #map-touhoku {
   top: 94px;
-  top: 30.322%;
   right: -10px;
-  right: -3.223%;
 }
 #map-kantoh {
   bottom: 56px;
-  bottom: 18.065%;
   right: -16px;
-  right: -5.161%;
 }
 #map-hokuriku {
   top: 92px;
-  top: 29.678%;
   left: 146px;
-  left: 47.097%;
 }
 #map-toukai {
   bottom: 10px;
-  bottom: 3.226%;
   right: 76px;
-  right: 24.516%;
 }
 #map-chugoku {
   top: 146px;
-  top: 47.097%;
   left: 31px;
-  left: 10%;
 }
 #map-shikoku {
   bottom: 0px;
   left: 64px;
-  left: 20.645%;
 }
 #map-kyusyu {
   bottom: 0px;
   left: -28px;
-  left: -9.032%;
 }
 
 /* section-08 reason    */
@@ -1613,7 +1599,6 @@ F .y24-slider {
   /* border-radius: clamp(1px, 2.564vw, 40px); */
 }
 
-
 .y24-summary {
   display: block;
   position: relative;
@@ -1726,17 +1711,21 @@ summary::-webkit-details-marker {
   padding-bottom: 25px;
 }
 .y24-footer-linkbtn-area {
-  display: flex;
+  /* display: flex; */
+  display: grid;
   width: 354px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  grid-template-columns: repeat(2, 160px);
+  gap: 17px;
   padding-bottom: 35px;
 }
 .y24-footer-contact-linkbtn_a {
   display: grid;
   width: 160px;
   height: 47px;
+
   background-color: white;
   border-radius: 50px;
   border: solid #f05778 2px;
@@ -1750,9 +1739,9 @@ summary::-webkit-details-marker {
   text-align: center;
   align-items: center;
 }
-.y24-footer-contact-linkbtn_a:hover{
+.y24-footer-contact-linkbtn_a:hover {
   border: solid #f05778 2px;
-  background-color:#f05778;
+  background-color: #f05778;
   color: white !important;
 }
 .y24-footer-application-linkbtn_a {
@@ -1761,7 +1750,7 @@ summary::-webkit-details-marker {
   height: 47px;
   border-radius: 50px;
   border: solid #f05778 2px;
-  background-color:#f05778;
+  background-color: #f05778;
 
   text-decoration: none;
   /* font-size: 1.6rem; */
@@ -1772,7 +1761,7 @@ summary::-webkit-details-marker {
   text-align: center;
   align-items: center;
 }
-.y24-footer-application-linkbtn_a:hover{
+.y24-footer-application-linkbtn_a:hover {
   background-color: white;
   border: solid #f05778 2px;
   color: #f05778 !important;
@@ -1792,8 +1781,7 @@ summary::-webkit-details-marker {
   padding-right: 37px;
   /* border-radius: clamp(1px, 2.564vw, 40px); */
 
-
-font-size: 14px;
+  font-size: 14px;
 
   background-color: unset;
   border-radius: unset;
@@ -1831,13 +1819,14 @@ font-size: 14px;
   content: '';
   background-image: none;
   border-bottom: dotted 1px #000000;
-top:15px;}
+  top: 15px;
+}
 .y24-footer-navmenu .y24-details:last-of-type .y24-summary::before {
-content: none;
+  content: none;
 }
 .y24-footer-navmenu .y24-details[open]:last-of-type .y24-summary::before {
   content: '';
-  }
+}
 .y24-footer-navmenu .y24-answer {
   /* width: 260px; */
   word-wrap: clamp(1px, 66.667vw, 1080px);
@@ -1915,6 +1904,8 @@ content: none;
     display: flex;
     height: 66px;
     background-color: white;
+    /*  */
+    background-color: unset;
   }
   .y24-header-logo {
     width: 287px;
@@ -1963,7 +1954,12 @@ content: none;
     top: 50%;
     transform: translateY(-50%);
   }
-
+  .y24-sp-contact-btn:hover {
+    background-color: #f05778;
+  }
+  .y24-sp-contact-btn:hover .y24-sp-contact-btn_p {
+    color: white;
+  }
   .y24-sp-contact-btn_pic {
     /*  */
     display: block;
@@ -2000,14 +1996,19 @@ content: none;
     position: relative;
 
     background-color: #f05778;
-    border: solid 2px white;
+    border: solid 2px #f05778;
     border-radius: 10px;
     text-decoration: none;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
   }
-
+  .y24-sp-application-btn:hover{
+    background-color: white;
+  }
+  .y24-sp-application-btn:hover   .y24-sp-application-btn_p {
+    color: #f05778;
+  }
   .y24-sp-application-btn_pic {
     /*  */
     display: block;
@@ -2114,7 +2115,6 @@ content: none;
     /* display: flex; */
     /* display: grid; */
     grid-template-columns: repeat(3, 160px);
-  
   }
   .y24-special-banners {
     grid-template-columns: 464px;
@@ -2130,6 +2130,114 @@ content: none;
     grid-template-columns: repeat(2, auto);
     text-align: center;
     gap: 20px;
+  }
+  .y24-point-card_h3,
+  .y24-deff-card_h3,
+  .y24-payment-card_h3,
+  .y24-support-card_h3 {
+    font-size: 24px;
+  }
+  .y24-point-card,
+  .y24-deff-card,
+  .y24-payment-card,
+  .y24-support-card {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom?: 24px; */
+    padding-top: 24px;
+    background-color: white;
+    border-radius: 10px;
+    /*  */
+    width: 560px;
+    margin-bottom: 48px;
+  }
+  .y24-point-card-text,
+  .y24-deff-card-text,
+  .y24-payment-card-text,
+  .y24-support-card-text {
+    width: 480px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .y24-point-card_p,
+  .y24-deff-card_p,
+  .y24-payment-card_p,
+  .y24-support-card_p {
+    font-size: 16px;
+  }
+  .y24-payment-card-thum3 {
+    /* display: flex; */
+    display: grid;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    width: 420px;
+    grid-template-columns: repeat(3, 120px);
+    gap: 30px;
+  }
+  .y24-payment-card-thum3 .y24-payment-card_pic {
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /*  */
+    width: 136px;
+  }
+  .y24-payment-card-box_p {
+    font-size: 12px;
+  }
+  #y24-faq .y24-container {
+    width: 350px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-right: 16px; */
+    width: 560px;
+  }
+  #y24-faq .y24-details {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+    padding-top: 18px;
+    padding-left: 32px;
+    padding-right: 37px;
+    background-color: white;
+    border-radius: 10px;
+    /* border-radius: clamp(1px, 2.564vw, 40px); */
+  }
+  .y24-summary {
+    font-size: 16px;
+  }
+  .y24-answer_p {
+    font-size: 16px;
+  }
+  .y24-summary::before {
+    width: 20px;
+    height: 30px;
+    top: 4px;
+    left: -25px;
+  }
+  .y24-answer_p::before {
+    width: 20px;
+    height: 30px;
+    top: 4px;
+    left: -25px;
+  }
+  .y24-footer-linkbtn-area {
+    width: 520px;
+    grid-template-columns: repeat(2, 240px);
+    gap: 40px;
+  }
+
+  .y24-footer-contact-linkbtn_a,
+  .y24-footer-application-linkbtn_a {
+    width: 240px;
+    height: 60px;
+    font-size: 18px;
   }
 
   /*  */
@@ -2251,6 +2359,8 @@ content: none;
     width: 177px;
     height: 84px;
     margin-right: 11px;
+    top:50%;
+    transform: translateY(-50%);
   }
 
   .y24-sp-contact-btn {
@@ -2308,7 +2418,7 @@ content: none;
     position: relative;
 
     background-color: #f05778;
-    border: solid 2px white;
+    /* border: solid 2px white; */
     border-radius: 10px;
     text-decoration: none;
     text-align: center;
@@ -2343,6 +2453,46 @@ content: none;
     /*  */
     font-size: 12px;
   }
+
+
+
+  #y24-firstview {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    background-image: url('../images/pc-mv-backgraund.svg'),
+      url('../images/pc-main-image@3x.webp');
+    background-size: 102% auto, 100% auto;
+    background-repeat: no-repeat, no-repeat;
+    /* background-position: center 285px, center 0; */
+    /* background-position: center clamp(285px, 73.077vw, 1140px), center 0; */
+    background-position: center 656px, center 0;
+    background-position: center clamp(1px, 45.556vw, 656px), center 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 49px;
+    overflow-x: hidden;
+  }
+  .y24-title_h1 {
+    display: block;
+    /* width: 346px; */
+    width: clamp(346px, 88.718vw, 1384px);
+    /* height: 172px; */
+    height: auto;
+    margin-top: 198px;
+    margin-top: clamp(198px, 50.769vw, 792px);
+    margin-right: 0;
+    margin-left: auto;
+    /*  */
+    width: 730px;
+    margin-top: 110px;
+  }
+
+
+
+
+
+
 
   .y24-seasonal-cards {
     display: grid;
@@ -2564,7 +2714,8 @@ content: none;
     position: relative;
 
     background-color: #f05778;
-    border: solid 2px white;
+    /* border: solid 2px white; */
+    border: solid 2px #f05778;
     border-radius: 10px;
     text-decoration: none;
     text-align: center;
