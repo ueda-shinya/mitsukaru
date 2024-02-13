@@ -1,0 +1,87 @@
+/* section-07 area    */
+#y24-area {
+  background-image: url("../images/sp-s07-bckimg.svg");
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+  background-size: 136px 136px;
+  background-position: bottom 0 right 19px;
+}
+#y24-area .y24-maparea {
+  display: block;
+  width: 310px;
+  height: 310px;
+  position: relative;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#y24-area .y24-maparea img {
+  width: 100%;
+}
+.y24-map-btn {
+  display: grid;
+  width: fit-content;
+  height: auto;
+  padding: 10px 12px;
+  position: absolute;
+  border-radius: 5px;
+  border: solid 2px white;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: var(--sp-btn-color);
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.y24-map-btn:hover {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+#map-hakkaido {
+  top: -10px;
+  right: -26px;
+}
+#map-touhoku {
+  top: 94px;
+  right: -10px;
+}
+#map-kantoh {
+  bottom: 56px;
+  right: -16px;
+}
+#map-hokuriku {
+  top: 92px;
+  left: 146px;
+}
+#map-toukai {
+  bottom: 10px;
+  right: 76px;
+}
+#map-chugoku {
+  top: 146px;
+  left: 31px;
+}
+#map-shikoku {
+  bottom: 0px;
+  left: 64px;
+}
+#map-kyusyu {
+  bottom: 0px;
+  left: -28px;
+}
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  #y24-area {
+    /*  */
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

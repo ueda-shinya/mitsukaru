@@ -1,0 +1,126 @@
+
+.y24-searcharea {
+    width: 360px;
+    height: 427px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+  }
+  .y24-search-title {
+    background-color: var(--textcolor-pink);
+    height: 50px;
+    /* position: relative; */
+  }
+  .y24-search-title_p {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 32px;
+    background-image: url("../images/sp-search.svg");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+  #y24-searchForm {
+    display: block;
+    width: 330px;
+    height: auto;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .y24-search-item {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    border: solid 1px #c5c5c5;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 0 rgba(51, 51, 51, 0.25);
+  }
+  .y24-search-item label {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 26px;
+    padding-right: 26px;
+    font-weight: bold;
+  }
+  .y24-search-item select,
+  .y24-search-item input {
+    width: 221px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-appearance: none; /* Chrome, Safari, Opera など */
+    -moz-appearance: none; /* Firefox */
+    appearance: none;
+    background: url("../images/sp-faq-close-pic.svg") no-repeat right center;
+    border: none; /* 枠を消す場合 */
+  }
+  .y24-search-item:nth-of-type(3) select {
+    width: 184px;
+  }
+  .y24-search-item:nth-of-type(4) input {
+    width: 207px;
+  }
+  .y24-search-result {
+    display: flex;
+    width: fit-content;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .y24-search-result p {
+    display: block;
+    height: 21px;
+  }
+  .y24-search-result p:first-of-type {
+    padding-left: 36px;
+    background-image: url("../images/sp-school.svg");
+    background-repeat: no-repeat;
+    background-size: 29px 21px;
+    background-position: center left;
+  }
+  .y24-search-result_num2,
+  .y24-search-result_num1 {
+    border: 1px solid;
+    padding: 0 4px;
+    font-size: 16px;
+    line-height: 1.1;
+    position: relative;
+    top: 50%;
+    /* transform: translateY(-%); */
+    border-radius: 2px;
+  }
+  .y24-search-result_num1 {
+    margin: 0 8px 0 1px;
+  }
+  .y24-search-result_num2 {
+    margin: 0 1px 0 8px;
+  }
+  
+
+
+  @media screen and (min-width: 768px) {
+    /* スクリーンサイズが768px以上の場合に適用 */
+  }
+  
+  @media (min-width: 992px) {
+    /* スクリーンサイズが992px以上の場合に適用 */
+  }
+  @media screen and (min-width: 1440px) {
+    /* スクリーンサイズが1440px以上の場合に適用 */
+  }

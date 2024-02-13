@@ -1,0 +1,75 @@
+/* section-02 news  */
+#y24-news {
+  padding-top: 56px;
+  padding-bottom: 72px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.y24-news-area {
+  /* width: 350px; */
+  width: 100%;
+  height: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  background-color: white;
+}
+.y24-news-card {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 16px 38px 16px 12px;
+}
+.y24-news-card:not(:last-child) {
+  border-bottom: dashed var(--textcolor-black) 1px;
+}
+.y24-news-card::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  right: 0;
+  background-image: url("../images/sp-faq-close-pic.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(-90deg);
+}
+.y24-news-card-date {
+  display: block;
+  width: fit-content;
+  height: auto;
+  padding: 0 4px;
+  background-color: var(--maincolor-blue);
+  /* font-size: 1.4rem; */
+  font-size: 14px;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: 500;
+  color: white;
+}
+
+.y24-news-card-text {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  text-align: justify;
+  /* font-size: 1.6rem; */
+  font-size: 16px;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  #y24-news {
+    /*  */
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

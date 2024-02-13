@@ -1,0 +1,104 @@
+/* section-06 popular    */
+#y24-popular {
+  background-image: url("../images/sp-s06-bckimg.svg");
+  background-position: left 0 bottom 0;
+  background-repeat: no-repeat;
+  background-size: 163px 163px;
+}
+.y24-section_p:nth-of-type(2) {
+  margin-top: 24px;
+  padding-bottom: 24px;
+}
+/* POPULAR バナー */
+.y24-popular-cards {
+  /* display: flex; */
+  /* width: 100%; */
+  display: grid;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* grid-template-columns: repeat(1, auto); */
+  grid-template-columns: 350px;
+  text-align: center;
+  gap: 20px;
+}
+.y24-popular-card {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 18px; */
+}
+.y24-popular-card_a {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.y24-popular-card_a:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+.y24-popular-card_pic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.y24-popular-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-popular-card_p {
+  margin-top: 4px;
+  text-align: center;
+  /* font-size: 1.4rem; */
+  font-size: 14px;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  #y24-popular
+  {
+    /*  */
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+  .y24-popular-cards {
+    display: flex;
+    width: 100%;
+    /* display: grid; */
+    height: auto;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* grid-template-columns: repeat(2, 420px); */
+    /* text-align: center; */
+    gap: 20px;
+    /*  */
+    flex-wrap: wrap;
+  }
+  .y24-popular-card {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 18px; */
+    /*  */
+    width: 420px;
+    margin-left: unset;
+    margin-right: unset;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

@@ -1,0 +1,60 @@
+.y24-application_btn {
+  border-color: #f05778;
+  color: white;
+  background-color: #f05778;
+}
+.y24-application_btn:hover {
+  color: #f05778;
+  background-color: white;
+}
+
+/* section-13 application    */
+#y24-application {
+  background-image: url("../images/sp-s13-bckimg.svg");
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+  padding-bottom: 184px;
+  background-size: 178px 102px;
+  padding-right: 3.846%;
+  padding-left: 3.846%;
+}
+.y24-application_pic.y24-sp-pic {
+  display: block;
+}
+.y24-application_pic.y24-pc-pic {
+  display: none;
+}
+
+.y24-application_pic {
+  /* display: block; */
+  /* width: 361px; */
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-application_img {
+  display: block;
+  width: 100%;
+  /* height: auto; */
+  /* width: 320px; */
+  /* height: 686px; */
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+    /* スクリーンサイズが768px以上の場合に適用 */
+  }
+  
+  @media (min-width: 992px) {
+    /* スクリーンサイズが992px以上の場合に適用 */
+    #y24-application{
+        /*  */
+        padding-left: var(--x-padding-base);
+        padding-right: var(--x-padding-base);
+      }
+    
+  
+}
+  @media screen and (min-width: 1440px) {
+    /* スクリーンサイズが1440px以上の場合に適用 */
+  }

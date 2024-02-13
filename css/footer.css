@@ -1,0 +1,206 @@
+.y24-footer-application-linkbtn_a {
+  display: grid;
+  width: 160px;
+  height: 47px;
+  border-radius: 50px;
+  border: solid #f05778 2px;
+  background-color: #f05778;
+
+  text-decoration: none;
+  /* font-size: 1.6rem; */
+  font-size: 16px;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: bold;
+  color: white !important;
+  text-align: center;
+  align-items: center;
+}
+.y24-footer-application-linkbtn_a:hover {
+  background-color: white;
+  border: solid #f05778 2px;
+  color: #f05778 !important;
+}
+.y24-sp-menu-footer_pic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-sp-menu-footer_pic img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* footer */
+.y24-footer {
+  background-color: #cfe01a;
+}
+.y24-footer-top {
+  width: 100%;
+  height: 76px;
+  background-image: url("../images/sp-s15-bckimg.svg");
+  background-position: right 0 bottom -3px;
+
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 194px 76px;
+}
+
+.y24-footer_pic {
+  display: block;
+  width: 174px;
+  height: auto;
+  margin-top: 59px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 25px;
+}
+.y24-footer-linkbtn-area {
+  /* display: flex; */
+  display: grid;
+  width: 354px;
+  margin-left: auto;
+  margin-right: auto;
+  /* justify-content: space-around; */
+  grid-template-columns: repeat(2, 160px);
+  gap: 17px;
+  padding-bottom: 35px;
+}
+.y24-footer-contact-linkbtn_a {
+  display: grid;
+  width: 160px;
+  height: 47px;
+
+  background-color: white;
+  border-radius: 50px;
+  border: solid #f05778 2px;
+
+  text-decoration: none;
+  /* font-size: 1.6rem; */
+  font-size: 16px;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: bold;
+  color: #f05778 !important;
+  text-align: center;
+  align-items: center;
+}
+.y24-footer-contact-linkbtn_a:hover {
+  border: solid #f05778 2px;
+  background-color: #f05778;
+  color: white !important;
+}
+
+.y24-footer-navmenu {
+  width: 360px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 35px;
+}
+.y24-footer-navmenu .y24-details {
+  display: block;
+  width: 100%;
+  margin-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 37px;
+  /* border-radius: clamp(1px, 2.564vw, 40px); */
+
+  font-size: 14px;
+
+  background-color: unset;
+  border-radius: unset;
+  padding-top: 16px;
+}
+.y24-footer-navmenu .y24-details::before {
+  content: "";
+  content: unset;
+  position: absolute;
+  width: 360px;
+  width: 380px;
+  height: 40px;
+  margin-left: -70px;
+  border-bottom: dotted var(--textcolor-black) 2px;
+}
+.y24-footer-navmenu .y24-details[open]:last-of-type::before {
+  content: "";
+  content: none;
+}
+
+.y24-footer-navmenu .y24-details:last-of-type::before {
+  content: none;
+}
+.y24-footer-navmenu .y24-summary {
+  width: 100%;
+  margin-bottom: 0;
+  color: var(--textcolor-black);
+  /* padding-left: 14px; */
+  padding-bottom: 14px;
+  /* border-bottom: dashed 1px #000000; */
+}
+
+.y24-footer-navmenu .y24-summary::before {
+  width: 360px;
+  content: "";
+  background-image: none;
+  border-bottom: dotted 1px #000000;
+  top: 15px;
+}
+.y24-footer-navmenu .y24-details:last-of-type .y24-summary::before {
+  content: none;
+}
+.y24-footer-navmenu .y24-details[open]:last-of-type .y24-summary::before {
+  content: "";
+}
+.y24-footer-navmenu .y24-answer {
+  /* width: 260px; */
+  word-wrap: clamp(1px, 66.667vw, 1080px);
+  height: auto;
+  /* position: relative; */
+  /* right:0; */
+  margin-left: auto;
+  margin-right: 0;
+}
+.y24-footer-sns-area {
+  display: flex;
+  width: 87px;
+  height: auto;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 12px;
+  justify-content: space-between;
+}
+.y24-footer-cr {
+  display: block;
+  width: fit-content;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 45px;
+  font-size: 12px;
+}
+.y24-footer-sitemap {
+  display: none;
+}
+/*  */
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-footer-linkbtn-area {
+    width: 520px;
+    grid-template-columns: repeat(2, 240px);
+    gap: 40px;
+  }
+
+  .y24-footer-contact-linkbtn_a,
+  .y24-footer-application-linkbtn_a {
+    width: 240px;
+    height: 60px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

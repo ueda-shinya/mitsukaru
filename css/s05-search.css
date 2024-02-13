@@ -1,0 +1,71 @@
+/* section-05 search    */
+#y24-search {
+  background-image: url("../images/sp-s05-bckimg.svg");
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+  background-size: 161px 149px;
+}
+
+.y24-search-linkbtn-area {
+  /* display: flex; */
+  display: grid;
+
+  grid-template-columns: 160px 160px;
+  gap: 18px;
+
+  /* width: 338px; */
+  width: fit-content;
+  height: auto;
+  /* flex-wrap: wrap; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 48px;
+  padding-bottom: 30px;
+  /* justify-content: space-between; */
+}
+.y24-search-linkbtn_a {
+  display: block;
+  /* width: 160px; */
+  width: 100%;
+  height: auto;
+  margin-bottom: 18px;
+  position: relative;
+}
+.y24-search-linkbtn_pic,
+.y24-search-linkbtn_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-search-linkbtn_img {
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
+}
+.y24-search-linkbtn_img:hover {
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.6));
+}
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-search-linkbtn-area {
+    /* display: flex; */
+    /* display: grid; */
+    grid-template-columns: repeat(3, 160px);
+  }
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  .y24-search-linkbtn-area {
+    /* display: flex; */
+    /* display: grid; */
+    grid-template-columns: 240px 240px 240px;
+    gap: 24px;
+  }
+  #y24-search {
+    /*  */
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

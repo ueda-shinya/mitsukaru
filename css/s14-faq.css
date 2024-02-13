@@ -1,0 +1,61 @@
+/* section-14 faq    */
+#y24-faq {
+  background-image: url("../images/sp-s14-bckimg.svg");
+  background-position: left 0 bottom 0;
+  background-repeat: no-repeat;
+  background-size: 154px 154px;
+}
+
+#y24-faq .y24-container {
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-right: 16px; */
+}
+#y24-faq .y24-details {
+  display: block;
+  width: 100%;
+  margin-bottom: 4px;
+  padding-top: 18px;
+  padding-left: 32px;
+  padding-right: 37px;
+  background-color: white;
+  border-radius: 10px;
+  /* border-radius: clamp(1px, 2.564vw, 40px); */
+}
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+
+  #y24-faq .y24-container {
+    width: 350px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-right: 16px; */
+    width: 560px;
+  }
+  #y24-faq .y24-details {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+    padding-top: 18px;
+    padding-left: 32px;
+    padding-right: 37px;
+    background-color: white;
+    border-radius: 10px;
+    /* border-radius: clamp(1px, 2.564vw, 40px); */
+  }
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  #y24-faq {
+    /*  */
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

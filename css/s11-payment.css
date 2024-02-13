@@ -1,0 +1,178 @@
+.y24-payment-card {
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.y24-payment-card {
+  padding-bottom: 24px;
+}
+
+.y24-payment-card-thum4 {
+  /* display: flex; */
+  display: grid;
+  width: 225px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(2, 97px);
+  gap: 20px;
+}
+.y24-payment-card-thum3 {
+  /* display: flex; */
+  display: grid;
+  width: 280px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  grid-template-columns: repeat(3, 90px);
+}
+
+.y24-payment-card-thum4 .y24-payment-card_pic {
+  display: block;
+  width: 97px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-payment-card-thum3 .y24-payment-card_pic {
+  display: block;
+  width: 72px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.y24-payment-card_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-payment-card-text {
+  width: 280px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.y24-payment-card_h3 {
+  padding-top: 14px;
+  padding-bottom: 22px;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: bold;
+  /* font-size: 2rem; */
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.y24-payment-card_p {
+  padding-bottom: 12px;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: 500;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.643;
+}
+.y24-payment-card_p.y24-fs14 {
+  font-size: 14px;
+}
+
+.y24-payment-card-box_p {
+  font-family: "Zen Kaku Gothic New";
+  font-weight: 500;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* section-11 payment    */
+#y24-payment {
+  background-image: url("../images/sp-s11-bckimg.svg");
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+  padding-bottom: 136px;
+  background-size: 169px 150px;
+}
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+
+  .y24-payment-card_h3 {
+    font-size: 24px;
+  }
+  .y24-payment-card {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom?: 24px; */
+    padding-top: 24px;
+    background-color: white;
+    border-radius: 10px;
+    /*  */
+    width: 560px;
+    margin-bottom: 48px;
+  }
+  .y24-payment-card-text {
+    width: 480px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .y24-payment-card_p {
+    font-size: 16px;
+  }
+  .y24-payment-card-thum3 {
+    /* display: flex; */
+    display: grid;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    width: 420px;
+    grid-template-columns: repeat(3, 120px);
+    gap: 30px;
+  }
+  .y24-payment-card-thum3 .y24-payment-card_pic {
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /*  */
+    width: 136px;
+  }
+  .y24-payment-card-box_p {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    /* スクリーンサイズが768px以上の場合に適用 */
+  }
+
+  @media (min-width: 992px) {
+    /* スクリーンサイズが992px以上の場合に適用 */
+    #y24-payment {
+      /*  */
+      padding-left: var(--x-padding-base);
+      padding-right: var(--x-padding-base);
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    /* スクリーンサイズが1440px以上の場合に適用 */
+  }
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}
