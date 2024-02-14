@@ -91,4 +91,81 @@
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-support {
+    background-image: url("../images/pc-s12-bckimg.svg");
+    background-size: 472px 472px;
+    padding-top: 71px;
+    padding-bottom: 152px;
+  }
+  #y24-support .y24-section-title_p {
+    margin-bottom: 0;
+    padding-bottom: 49px;
+  }
+  .y24-support-cards {
+    /*  */
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 480px);
+    gap: 0;
+  }
+  .y24-support-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .y24-support-cards .y24-support-card:first-of-type {
+    border-radius: 10px 0 0 10px;
+    padding: 51px 25px;
+  }
+
+  .y24-support-cards .y24-support-card:nth-of-type(2) {
+    display: block;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    padding: 0;
+  }
+  .y24-support-card_pic {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .y24-support-card_img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .y24-support-card-text {
+    width: 310px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /*  */
+    width: 100%;
+  }
+  .y24-support-card_h3 {
+    padding-top: 14px;
+    padding-bottom: 22px;
+    font-family: "Zen Kaku Gothic New";
+    font-weight: bold;
+    /* font-size: 2rem; */
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    /* / */
+    margin: 0;
+    padding: 0 0 36px 0;
+    font-size: 32px;
+  }
+  .y24-support-card-fs18 {
+    font-size: 24px;
+  }
+  .y24-support-card_p {
+    /* / */
+    margin-bottom: 0;
+    padding-bottom: 18px;
+  }
 }

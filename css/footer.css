@@ -34,6 +34,9 @@
 .y24-footer {
   background-color: #cfe01a;
 }
+.y24-footer-pcmenu {
+  display: none;
+}
 .y24-footer-top {
   width: 100%;
   height: 76px;
@@ -152,7 +155,7 @@
 }
 .y24-footer-navmenu .y24-answer {
   /* width: 260px; */
-  word-wrap: clamp(1px, 66.667vw, 1080px);
+  /* word-wrap: clamp(1px, 66.667vw, 1080px); */
   height: auto;
   /* position: relative; */
   /* right:0; */
@@ -203,4 +206,146 @@
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
+  .y24-footer-navmenu {
+    display: none;
+  }
+  .y24-footer-pcmenu {
+    display: grid;
+  }
+
+  .y24-footer-top {
+    width: 100%;
+    height: 244px;
+    background-image: url("../images/pc-s15-bckimg.svg");
+    background-position: right calc((100vw - 960px) / 2) bottom -3px;
+
+    /* background-repeat: no-rep?eat; */
+    /* background-color: white; */
+    /* width: 960px;? */
+    background-size: 463px 244px;
+  }
+  .y24-footer-cta-area {
+    display: flex;
+    width: 960px;
+    height: 47px;
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  .y24-footer_pic {
+    display: grid;
+    width: 211px;
+    height: auto;
+    margin: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
+  .y24-footer_img {
+    width: 100%;
+    height: auto;
+  }
+
+  .y24-footer-linkbtn-area {
+    width: fit-content;
+    grid-template-columns: repeat(2, 160px);
+    gap: 14px;
+    margin: 0;
+  }
+
+  .y24-footer-application-linkbtn_a {
+    display: grid;
+    width: 160px;
+    height: 47px;
+    border-radius: 50px;
+    border: solid #f05778 2px;
+    background-color: #f05778;
+
+    text-decoration: none;
+    /* font-size: 1.6rem; */
+    font-size: 16px;
+    font-family: "Zen Kaku Gothic New";
+    font-weight: bold;
+    color: white !important;
+    text-align: center;
+    align-items: center;
+  }
+
+  .y24-footer-contact-linkbtn_a {
+    display: grid;
+    width: 160px;
+    height: 47px;
+
+    background-color: white;
+    border-radius: 50px;
+    border: solid #f05778 2px;
+
+    text-decoration: none;
+    /* font-size: 1.6rem; */
+    font-size: 16px;
+    font-family: "Zen Kaku Gothic New";
+    font-weight: bold;
+    color: #f05778 !important;
+    text-align: center;
+    align-items: center;
+  }
+  .y24-footer-pcmenu {
+    display: grid;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(4, 210px);
+    gap: 40px;
+    margin-top: 59px;
+  }
+  .y24-footer-pcmenu-list {
+    width: 100%;
+  }
+  .y24-footer-pcmenu-list p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .y24-footer-pcmenu-list ul {
+    padding-left: 0;
+  }
+  .y24-footer-pcmenu-list ul li {
+    list-style: none;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .y24-footer-bottom {
+    display: flex;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 34px;
+    padding-top: 12px;
+    padding-bottom: 60px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    border-top: solid 1px #333333;
+  }
+
+  .y24-footer-cr {
+    display: grid;
+    width: fit-content;
+    height: auto;
+    margin: 0;
+    padding-bottom: 0;
+    font-size: 14px;
+    align-items: end;
+  }
+  .y24-footer-sns-area {
+    display: grid;
+    width: fit-content;
+    height: auto;
+    margin: 0;
+    padding-bottom: 0;
+    justify-content: unset;
+    grid-template-columns: repeat(2, 32px);
+    gap: 24px;
+  }
 }

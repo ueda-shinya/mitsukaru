@@ -95,10 +95,18 @@
     /* margin-bottom: 18px; */
     /*  */
     width: 420px;
-    margin-left: unset;
-    margin-right: unset;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-popular {
+    background-image: url("../images/pc-s06-bckimg.svg");
+    background-size: 426px 480px;
+    padding-bottom: 72px;
+  }
+  .y24-popular-cards{
+    padding-bottom: 72px;
+  }
 }

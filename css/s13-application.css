@@ -42,19 +42,40 @@
   height: auto;
 }
 @media screen and (min-width: 768px) {
-    /* スクリーンサイズが768px以上の場合に適用 */
-  }
-  
-  @media (min-width: 992px) {
-    /* スクリーンサイズが992px以上の場合に適用 */
-    #y24-application{
-        /*  */
-        padding-left: var(--x-padding-base);
-        padding-right: var(--x-padding-base);
-      }
-    
-  
+  /* スクリーンサイズが768px以上の場合に適用 */
 }
-  @media screen and (min-width: 1440px) {
-    /* スクリーンサイズが1440px以上の場合に適用 */
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  #y24-application {
+    /*  */
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
   }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+
+  #y24-application {
+    background-image: url("../images/pc-s13-bckimg.svg");
+
+    background-size: 357px 261px;
+
+    /*  */
+    padding-bottom: 130px;
+  }
+  .y24-application_pic.y24-sp-pic {
+    display: none;
+  }
+  .y24-application_pic.y24-pc-pic {
+    display: block;
+  }
+
+  #y24-application .y24-section-title_p {
+    margin-bottom: 0;
+    padding-bottom: 48px;
+  }
+  .y24-application_pic {
+    width: 960px;
+  }
+}

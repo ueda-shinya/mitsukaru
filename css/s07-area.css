@@ -6,6 +6,10 @@
   background-size: 136px 136px;
   background-position: bottom 0 right 19px;
 }
+.y24-map-sp-none,
+.y24-map-small {
+  display: none;
+}
 #y24-area .y24-maparea {
   display: block;
   width: 310px;
@@ -16,7 +20,9 @@
   margin-right: auto;
 }
 #y24-area .y24-maparea img {
+  display: block;
   width: 100%;
+  height: auto;
 }
 .y24-map-btn {
   display: grid;
@@ -38,36 +44,43 @@
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
-#map-hakkaido {
+.y24-map-btn p {
+  margin-bottom: 0;
+}
+#y24-map-hakkaido {
   top: -10px;
   right: -26px;
 }
-#map-touhoku {
+#y24-map-touhoku {
   top: 94px;
   right: -10px;
 }
-#map-kantoh {
+#y24-map-kantoh {
   bottom: 56px;
   right: -16px;
 }
-#map-hokuriku {
+#y24-map-kinki {
+  bottom:146px;
+  left: 80px;
+}
+#y24-map-hokuriku {
   top: 92px;
   left: 146px;
 }
-#map-toukai {
+#y24-map-toukai {
   bottom: 10px;
   right: 76px;
 }
-#map-chugoku {
+#y24-map-chugoku {
   top: 146px;
-  left: 31px;
+  left: 0px;
 }
-#map-shikoku {
+#y24-map-shikoku {
   bottom: 0px;
-  left: 64px;
+  left: 62px;
 }
-#map-kyusyu {
-  bottom: 0px;
+#y24-map-kyusyu {
+  bottom: 4px;
   left: -28px;
 }
 @media screen and (min-width: 768px) {
@@ -80,8 +93,93 @@
     /*  */
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
+    padding-bottom: 250px;
+  }
+  #y24-area .y24-maparea {
+    display: block;
+    width: 648px;
+    height: 630px;
+    position: relative;
+    /* margin-top: 70px; */
+    margin-top: 105px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .y24-map-pc-none {
+    display: none;
+  }
+  .y24-map-sp-none {
+    display: inline;
+  }
+  .y24-map-btn {
+    width: 177px;
+    font-size: 22px;
+    padding: 10px;
+  }
+  .y24-map-small {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    border-top: solid 1px white;
+    padding-top: 8px;
+  }
+
+  #y24-map-hakkaido {
+    width: 90px;
+    height: 56px;
+    top: 0px;
+    right: 170px;
+  }
+  #y24-map-touhoku {
+    /* width: 177px; */
+    height: 126px;
+    top: 175px;
+    right: -123px;
+  }
+
+  #y24-map-kantoh {
+    /* width: 177px; */
+    height: 157px;
+    bottom: 100px;
+    right: -123px;
+  }
+  #y24-map-kinki {
+    /* width: 177px; */
+    height: 126px;
+    bottom: -20px;
+    left: 370px;
+  }
+  #y24-map-hokuriku {
+    /* width: 177px; */
+    height: 126px;
+    top: 110px;
+    left: 260px;
+  }
+  #y24-map-toukai {
+    /* width: 177px; */
+    height: 126px;
+    bottom: -39px;
+    right: -123px;
+  }
+  #y24-map-chugoku {
+    height: 126px;
+    top: 218px;
+    left: 56px;
+  }
+  #y24-map-shikoku {
+    height: 126px;
+    bottom: -80px;
+    left: 124px;
+  }
+  #y24-map-kyusyu {
+    height: 157px;
+    bottom: 211px;
+    left: -150px;
   }
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-area{
+  background-image: none;
+  }
 }

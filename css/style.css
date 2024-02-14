@@ -30,6 +30,10 @@
     --x-padding-left: calc(env(safe-area-inset-left) + var(--x-padding));
   }
 }
+
+
+
+
 @media all and (min-width: 64em) {
   :root {
     --x-padding-base: calc((100vw - 960px) / 2);
@@ -51,30 +55,30 @@ html {
   font-size: 10px;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Jost";
   src: url("../fonts/Jost-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
   font-family: "Zen Maru Gothic";
   src: url("../fonts/ZenMaruGothic-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
   font-family: "Zen Kaku Gothic New";
   src: url("../fonts/ZenKakuGothicNew-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
   font-family: "Zen Kaku Gothic New";
   src: url("../fonts/ZenKakuGothicNew-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-}
+} */
 
 /************************************************
     レスポンシブ */
@@ -811,6 +815,9 @@ summary::-webkit-details-marker {
   .y24-768-none {
     display: none;
   }
+  .y24-map-none {
+    display: initial;
+  }
   .y24-header {
     /*  */
     display: flex;
@@ -1279,7 +1286,14 @@ summary::-webkit-details-marker {
     width: 730px;
     margin-top: 110px;
   }
-
+  .y24-section-title_h2 {
+    font-size: 130px;
+    width: fit-content;
+    padding-bottom: 0;
+  }
+  .y24-section-title_p {
+    font-size: 36px;
+  }
   /*  */
   /* 1440px */
   /*  */
@@ -1524,5 +1538,14 @@ summary::-webkit-details-marker {
     /*  */
     margin-top: 38px;
     font-size: 16px;
+  }
+  .y24-btn-movecar {
+    width: 492px;
+    height: 82px;
+  }
+  .y24-btn-movecar-car_pic.y24-movetrack {
+    width: 87px;
+    bottom: -13px;
+    transform: translateX(-53%);
   }
 }

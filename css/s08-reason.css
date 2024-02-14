@@ -7,7 +7,7 @@
   background-size: 159px 159px;
 }
 #y24-reason .y24-section_p {
-  margin-bottom: unset;
+  margin-bottom: 0;
   padding-bottom: 48px;
 }
 .y24-reason-crads {
@@ -27,7 +27,7 @@
   margin-right: auto;
 }
 .y24-reason-card:last-of-type {
-  margin-bottom: unset;
+  margin-bottom: 0;
 }
 .y24-reason_pic {
   display: block;
@@ -69,7 +69,11 @@
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
-
+  #y24-reason {
+    background-image: url("../images/pc-s08-bckimg.svg");
+    padding-bottom: 130px;
+    background-size: 414px 330px;
+  }
   .y24-reason-crads {
     margin-left: auto;
     margin-right: auto;
@@ -90,14 +94,16 @@
     overflow: hidden;
     position: relative;
     background-color: white;
-    margin-bottom: 12px;
     margin-left: auto;
     margin-right: auto;
     /*  */
-    display: flexbox;
+    display: flex;
     width: 100%;
     height: auto;
+    border-radius: 8px;
     flex-direction: column-reverse;
+    margin-bottom: 0;
+    padding-bottom: 29px;
   }
   .y24-reason_pic {
     display: block;
@@ -108,11 +114,15 @@
     left: 28px;
     transform: translateY(-50%);
     /*  */
-    width: 100%;
+    width: 150px;
     height: auto;
-    top: unset;
-    left: unset;
-    transform: none;
+    position: unset;
+    top: 0;
+    left: 0;
+    transform: unset;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .y24-reason-card_p {
     display: block;
@@ -126,10 +136,15 @@
     left: 44px;
     transform: translateY(-50%);
     /*  */
-    width: 100%;
     height: auto;
-    top: unset;
-    left: unset;
+    top: 0;
+    left: 0;
     transform: none;
+    /*  */
+    font-size: 24px;
+    top: 31px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--textcolor-pink);
   }
 }

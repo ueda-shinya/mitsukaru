@@ -5,7 +5,9 @@
   background-repeat: no-repeat;
   background-size: 154px 154px;
 }
-
+#y24-faq .y24-sp-none {
+  display: none;
+}
 #y24-faq .y24-container {
   width: 350px;
   height: auto;
@@ -16,7 +18,7 @@
 #y24-faq .y24-details {
   display: block;
   width: 100%;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   padding-top: 18px;
   padding-left: 32px;
   padding-right: 37px;
@@ -58,4 +60,33 @@
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
+
+  #y24-faq {
+    background-image: url("../images/pc-s14-bckimg.svg");
+    background-size: 354px 351px;
+
+    padding-bottom: 160px;
+  }
+  #y24-faq .y24-sp-none {
+    display: initial;
+  }
+
+  #y24-faq .y24-section-title_p {
+    margin-bottom: 0;
+    padding-bottom: 48px;
+  }
+
+  #y24-faq .y24-container {
+    width: 960px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-right: 16px; */
+  }
+  #y24-faq .y24-details {
+    margin-bottom: 12px;
+  }
+  #y24-faq .y24-summary {
+    font-size: 18px;
+  }
 }
