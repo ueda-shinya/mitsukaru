@@ -68,4 +68,9 @@
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-search {
+    background-image: url("../images/pc-s05-bckimg.svg");
+    background-size: 403px 347px;
+    padding-bottom: 154px;
+  }
 }

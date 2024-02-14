@@ -67,7 +67,7 @@
   background-position: center center;
 }
 .y24-special .y24-font-jost {
-  font-size: 4.2rem;
+  font-size: 42px;
 }
 .y24-special-banners {
   /* display: flex; */
@@ -159,6 +159,15 @@
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-seasonal {
+    padding-bottom: clamp(1px, 36.923vw, 560px);
+    background-image: url("../images/pc-s04-bckimg.svg");
+    background-position: left 0 bottom 0;
+    background-repeat: no-repeat;
+    background-size: 417px 381px;
+    /*  */
+    padding-bottom: 130px;
+  }
   .y24-seasonal-cards {
     display: grid;
     /* width: 100%; */
@@ -172,5 +181,30 @@
   .y24-special-banners {
     grid-template-columns: 464px 464px;
     gap: 24px;
+  }
+  /* SPECIAL */
+  .y24-special {
+    padding-top: 35px;
+  }
+  .y24-special .y24-section-title_h2 {
+    margin-bottom: 24px;
+    height: 267px;
+    /* font-size: 1.8rem; */
+    font-size: 18px;
+    background-image: url("../images/sp-special-bckimg.svg");
+    background-size: 267px 267px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*  */
+    margin-bottom: 0;
+    padding-top: 64px;
+  }
+  .y24-special .y24-font-jost {
+    font-size: 98px;
+  }
+  .y24-special .y24-section-title_p {
+    margin-top: -104px;
+    margin-bottom: 0;
+    padding-bottom: 90px;
   }
 }
