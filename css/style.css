@@ -1202,6 +1202,32 @@ summary::-webkit-details-marker {
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
+  
+  #y24-firstview {
+    width: 100%;
+    /* max-width: 1440px; */
+    height: auto;
+    background-image: url("../images/pc-mv-backgraund.svg"),
+      url("../images/pc-main-image@3x.webp");
+    background-size: 102% auto, 100% auto;
+    background-repeat: no-repeat, no-repeat;
+    /* background-position: center 285px, center 0; */
+    /* background-position: center clamp(285px, 73.077vw, 1140px), center 0; */
+    background-position: center 656px, center 0;
+    background-position: center clamp(1px, 45.556vw, 656px), center 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 49px;
+    overflow-x: hidden;
+
+
+    /*  */
+
+padding-bottom: 116px;
+
+  }
+
+
 
   .y24-pc-nav-btn-area {
     display: flex;

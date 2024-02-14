@@ -68,6 +68,9 @@
 }
 .y24-pc-cta-area {
   width: 100%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 .y24-pc-cta_p {
   margin-top: 96px;
@@ -77,19 +80,37 @@
   font-weight: bold;
   text-align: center;
 }
-.y24-pc-cta_p::before{
-  content: '';
+.y24-pc-cta_p::before {
+  content: "";
   position: absolute;
-  width: 80px;
-  height: 2px;
+  width: 60px;
+  height: 3px;
   background-color: var(--textcolor-black);
+  top: 50%;
+  left: 4%;
+  transform: rotate(64deg) translateY(-50%);
 }
-.y24-pc-cta_p::after{
-  content: '';
+.y24-pc-cta_p::after {
+  content: "";
   position: absolute;
-  width: 80px;
-  height: 2px;
+  width: 60px;
+  height: 3px;
   background-color: var(--textcolor-black);
+  top: 50%;
+  right: 4%;
+  transform: rotate(-64deg) translateY(-50%);
+}
+.y24-pc-cta_pic {
+  display: block;
+  width: 360px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-pc-cta_img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -106,4 +127,48 @@
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
+  .y24-pc-cta_pic {
+    display: block;
+    width: 760px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .y24-pc-cta_p {
+    margin-top: 96px;
+    margin-bottom: 24px;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    /*  */
+    font-size: 36px;
+    margin-top: 144px;
+    margin-bottom: 52px;
+  }
+  .y24-pc-cta_p::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: var(--textcolor-black);
+    top: 44%;
+    left: 4%;
+    transform: rotate(64deg) translateY(-50%);
+    /*  */
+    width: 120px;
+  }
+  .y24-pc-cta_p::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: var(--textcolor-black);
+    top: 44%;
+    right: 4%;
+    transform: rotate(-64deg) translateY(-50%);
+    /*  */
+    width: 120px;
+  }
 }
