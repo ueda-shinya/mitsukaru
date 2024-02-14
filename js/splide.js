@@ -19,10 +19,11 @@ var splide = new Splide(splideRootHeroClassName ,{
 //padding: { left: 'var(--splidejs-x-padding-right)', right: 'var(--splidejs-x-padding-left)' },
 //type: 'loop',
 type:"slide",
-perPage: 3,
+perPage: 1,
 perMove: 1,
     trimSpace: false,
-
+gap: 34,
+with:280,
 focus: 'center',
 //autoplay: true,
 //speed: 400,

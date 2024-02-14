@@ -565,7 +565,19 @@ input:checked + .y24-sp-menu-radio-rev_label {
   transform: translateY(-50%);
 }
 /*  */
-
+.y24-btn-movecar-car_pic.y24-movetrack {
+  display: block;
+  width: 91px;
+  height: 45px;
+  bottom: 12px;
+  left: -8px;
+  transform: translateX(-53%);
+}
+.y24-btn-movecar-car_pic.y24-movetrack .y24-btn-movecar-car_img {
+  display: block;
+  width: 132px;
+  height: 66px;
+}
 /* section-01 */
 .y24-submenu {
   display: grid;
@@ -1202,7 +1214,7 @@ summary::-webkit-details-marker {
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
-  
+
   #y24-firstview {
     width: 100%;
     /* max-width: 1440px; */
@@ -1220,14 +1232,10 @@ summary::-webkit-details-marker {
     padding-bottom: 49px;
     overflow-x: hidden;
 
-
     /*  */
 
-padding-bottom: 116px;
-
+    padding-bottom: 116px;
   }
-
-
 
   .y24-pc-nav-btn-area {
     display: flex;
@@ -1423,9 +1431,18 @@ padding-bottom: 116px;
     width: 492px;
     height: 82px;
   }
+
   .y24-btn-movecar-car_pic.y24-movetrack {
-    width: 87px;
-    bottom: -13px;
+    display: block;
+    width: 91px;
+    height: 45px;
+    bottom: 12px;
+    left: -8px;
     transform: translateX(-53%);
+  }
+  .y24-btn-movecar-car_pic.y24-movetrack .y24-btn-movecar-car_img {
+    display: block;
+    width: 132px;
+    height: 66px;
   }
 }
