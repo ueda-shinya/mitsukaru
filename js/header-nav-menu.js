@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const isPopupVisible = popup.style.display === 'block';
 
       // 全てのポップアップを非表示にし、全てのボタンの背景色をリセット
-      document.querySelectorAll('.popup').forEach(function(p) {
+      document.querySelectorAll('.y24-popup').forEach(function(p) {
         p.style.display = 'none';
       });
       document.querySelectorAll('[id^="y24-h-btn-"]').forEach(function(otherBtn) {
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ポップアップ外のクリックで全てのポップアップを閉じ、スクロールを有効にする
   document.addEventListener('click', function() {
-    document.querySelectorAll('.popup').forEach(function(popup) {
+    document.querySelectorAll('.y24-popup').forEach(function(popup) {
       popup.style.display = 'none';
     });
     document.querySelectorAll('[id^="y24-h-btn-"]').forEach(function(btn) {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // ポップアップ内のクリックイベントが伝播しないようにする
-  document.querySelectorAll('.popup').forEach(function(popup) {
+  document.querySelectorAll('.y24-popup').forEach(function(popup) {
     popup.addEventListener('click', function(event) {
       event.stopPropagation();
     });

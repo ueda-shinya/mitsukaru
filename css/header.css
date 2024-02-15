@@ -31,6 +31,22 @@
 .y24-pc-nav-btn {
   display: none;
 }
+/* ポップアップ */
+#y24-h-popup-01,
+#y24-h-popup-02,
+#y24-h-popup-03,
+#y24-h-popup-04,
+#y24-h-popup-05,
+#y24-h-popup-06 {
+  display: none;
+  height: auto;
+  padding: 36px 48px;
+  top: 152px;
+  left:298px;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
@@ -168,35 +184,8 @@
     line-height: 1.2;
     text-align: center;
   }
+
   /* ポップアップ */
-  #y24-h-popup-01,
-  #y24-h-popup-02,
-#y24-h-popup-03,
-#y24-h-popup-04,
-#y24-h-popup-05,
-#y24-h-popup-06{
-  display: none;
-  position: fixed;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-
-
-
-#y24-h-popup-01,
-#y24-h-popup-02,
-#y24-h-popup-03,
-#y24-h-popup-04,
-#y24-h-popup-05,
-#y24-h-popup-06 {
-    width: 300px;
-    height: 300px;
-    top: 300px; /* Adjust as needed */
-    right: 300px; /* Adjust as needed */
-    padding: 20px;
-  }
 
   .popup-open {
     overflow: hidden;
@@ -206,6 +195,206 @@
 
   .y24-pc-nav-btn.active {
     background-color: rgba(255, 255, 255, 0.4);
+  }
+  /* ポップアップ2 都道府県から探す */
+  #y24-h-popup-02 {
+    width: 771px;
+  }
+  #y24-h-popup-02 .y24-popup-grid {
+    display: grid;
+    width: fit-content;
+    height: auto;
+    grid-template-columns: 192px 449px;
+    gap: 34px;
+  }
+
+  #y24-h-popup-02 p {
+    display: block;
+    width: 100%;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  #y24-h-popup-02 .y24-sp-menu-todoufuken-btn-area {
+    width: 100%;
+  }
+  #y24-h-popup-02 a {
+    height: 50px;
+    font-size: 18px;
+    margin: 0 8px 8px 0;
+  }
+  #y24-h-popup-02 .y24-sp-menu-todoufuken_btn {
+    margin: 0;
+    text-align: center;
+  }
+  #y24-h-popup-02 a:nth-of-type(1) {
+    width: 136px;
+  }
+  #y24-h-popup-02 a:nth-of-type(2) {
+    width: 64px;
+  }
+
+  #y24-h-popup-02 a:nth-of-type(3) {
+    width: 82px;
+  }
+  #y24-h-popup-02 a:nth-of-type(4) {
+    width: 118px;
+  }
+  #y24-h-popup-02 a:nth-of-type(5) {
+    width: 64px;
+  }
+  #y24-h-popup-02 a:nth-of-type(6) {
+    width: 64px;
+  }
+  #y24-h-popup-02 a:nth-of-type(7) {
+    width: 64px;
+  }
+  #y24-h-popup-02 a:nth-of-type(8) {
+    width: 118px;
+  }
+
+  /* ポップアップ3 車種別免許 */
+  #y24-h-popup-03 {
+    width: 747px;
+  }
+  #y24-h-popup-03 .y24-popup-grid {
+    display: grid;
+    width: fit-content;
+    height: auto;
+    grid-template-columns: 192px 449px;
+    gap: 34px;
+  }
+  #y24-h-popup-03 p {
+    display: block;
+    width: 100%;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  #y24-h-popup-03 a {
+    height: 50px;
+    font-size: 18px;
+    margin: 0 8px 0 0;
+  }
+  #y24-h-popup-03 .y24-sp-menu-syashu_btn {
+    margin: 0;
+    text-align: center;
+  }
+  #y24-h-popup-03 a:nth-of-type(1) {
+    width: 82px;
+  }
+  #y24-h-popup-03 a:nth-of-type(2) {
+    width: 200px;
+  }
+
+  #y24-h-popup-03 a:nth-of-type(3) {
+    width: 82px;
+  }
+
+  #y24-h-popup-03 p {
+    display: block;
+    width: 100%;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  #y24-h-popup-03 .y24-sp-menu-syashu-btn-area {
+    width: 100%;
+  }
+  /* ポップアップ4 人気プラン */
+  #y24-h-popup-04 {
+    width: 788px;
+  }
+  #y24-h-popup-04 p {
+    display: block;
+    width: 100%;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  #y24-h-popup-04 .y24-popup-menu {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 54px;
+  }
+  #y24-h-popup-04 .y24-popup-grid {
+    display: grid;
+    grid-template-columns: 226px 240px;
+    gap: 18px 52px;
+  }
+  #y24-h-popup-04 .y24-popup-grid a {
+    display: block;
+    font-size: 18px;
+    font-family: "Zen Kaku Gothic New";
+    position: relative;
+    padding-left: 24px;
+  }
+  #y24-h-popup-04 .y24-popup-grid a:hover {
+    color: #f05778;
+  }
+  #y24-h-popup-04 .y24-popup-grid a:hover:before {
+    background-image: url('../images/popup-arrow-red.svg');
+  }
+  #y24-h-popup-04 .y24-popup-grid a::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 6px;
+    left: 0;
+    background-image: url('../images/popup-arrow-black.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  /* ポップアップ5 お申し込みについて */
+  #y24-h-popup-05 {
+    width: 845px;
+  }
+  #y24-h-popup-05 p {
+    display: block;
+    width: 100%;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  #y24-h-popup-05 .y24-popup-menu {
+    display: grid;
+    grid-template-columns: 216px 1fr;
+    gap: 54px;
+  }
+  #y24-h-popup-05 .y24-popup-grid {
+    display: grid;
+    grid-template-columns: 244px 204px;
+    gap: 18px 52px;
+  }
+  #y24-h-popup-05 .y24-popup-grid a {
+    display: block;
+    font-size: 18px;
+    font-family: "Zen Kaku Gothic New";
+    position: relative;
+    padding-left: 24px;
+  }
+  #y24-h-popup-05 .y24-popup-grid a:hover {
+    color: #f05778;
+  }
+  #y24-h-popup-05 .y24-popup-grid a:hover:before {
+    background-image: url('../images/popup-arrow-red.svg');
+  }
+  #y24-h-popup-05 .y24-popup-grid a::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 6px;
+    left: 0;
+    background-image: url('../images/popup-arrow-black.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 @media screen and (min-width: 1440px) {
