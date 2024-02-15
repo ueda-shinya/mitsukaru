@@ -95,9 +95,6 @@ a:active {
   color: unset;
   text-decoration: none;
 }
-.y24-pc-nav-btn {
-  display: none;
-}
 .y24-navmenu-sp768 {
   display: none;
 }
@@ -632,28 +629,6 @@ input:checked + .y24-sp-menu-radio-rev_label {
   height: 100%;
   opacity: 0;
 }
-#y24-submitButton {
-  width: 100%;
-  height: 47px;
-  margin-top: 12px;
-  border-radius: 60px;
-  background-color: var(--sp-btn-color); /* 初期状態の背景色 */
-  color: black;
-  border: 1px solid white;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: not-allowed; /* 初期状態では押せないように見せる */
-}
-
-/* 全ての項目が選択された状態のボタンスタイル */
-#y24-submitButton.enabled {
-  background-color: white;
-  color: var(--textcolor-pink);
-  border: 2px solid var(--sp-btn-color);
-  cursor: pointer;
-}
-
 #y24-sp-menu .y24-container {
   width: 350px;
   height: auto;
@@ -822,9 +797,14 @@ summary::-webkit-details-marker {
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
+    background-image: url("../images/sp-contact-btn-red.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center top 30%;
   }
   .y24-sp-contact-btn:hover {
     background-color: #f05778;
+    background-image: url("../images/sp-contact-btn-white.svg");
   }
   .y24-sp-contact-btn:hover .y24-sp-contact-btn_p {
     color: white;
@@ -851,7 +831,7 @@ summary::-webkit-details-marker {
   .y24-sp-contact-btn_p {
     /*  */
     display: block;
-    margin-top: 13px;
+    margin-top: 31px;
     font-size: 10px;
     font-weight: bold;
     color: #f05778;
@@ -871,9 +851,14 @@ summary::-webkit-details-marker {
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
+    background-image: url("../images/sp-application-btn-white.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center top 30%;
   }
   .y24-sp-application-btn:hover {
     background-color: white;
+    background-image: url("../images/sp-application-btn-red.svg");
   }
   .y24-sp-application-btn:hover .y24-sp-application-btn_p {
     color: #f05778;
@@ -892,7 +877,7 @@ summary::-webkit-details-marker {
   .y24-sp-application-btn_p {
     /*  */
     display: block;
-    margin-top: 13px;
+    margin-top: 31px;
 
     font-size: 10px;
     font-weight: bold;
@@ -1011,55 +996,8 @@ summary::-webkit-details-marker {
   .y24-sp-menu {
     display: none;
   }
-  .y24-pc-nav-btn {
-    display: block;
-  }
 
-  .y24-pc-nav-btn-area {
-    display: flex;
-    width: 513px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 202px;
-    transform: translateY(-50%);
-    justify-content: space-between;
-  }
 
-  .y24-pc-nav-btn {
-    width: 79px;
-    height: 58px;
-    position: relative;
-  }
-  .y24-pc-nav-btn_pic {
-    display: block;
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .y24-pc-nav-btn_img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .y24-pc-nav-btn_p {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: unset;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--textcolor-black);
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
-  }
 
   .y24-navmenu-sp768 {
     display: flex;
@@ -1079,93 +1017,24 @@ summary::-webkit-details-marker {
   }
 
   .y24-sp-contact-btn {
-    display: block;
-    width: 65px;
-    height: 54px;
-    position: relative;
-    background-color: white;
-    border: solid 2px #f05778;
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    /*  */
     width: 76px;
     height: 76px;
-  }
-
-  .y24-sp-contact-btn_pic {
-    display: block;
-    position: relative;
-    width: 18px;
-    height: auto;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    /*  */
-    width: 27px;
-    height: 27px;
-  }
-
-  .y24-sp-contact-btn_img,
-  .y24-sp-application-btn_img {
-    display: block;
-    width: 100%;
-    height: auto;
-    /*  */
+    background-size: 27px 27px;
   }
 
   .y24-sp-contact-btn_p {
-    /*  */
-    display: block;
-    margin-top: 13px;
-    font-weight: bold;
-    color: #f05778;
-    /*  */
+    margin-top: 45px;
     font-size: 12px;
   }
 
   .y24-sp-application-btn {
-    display: block;
-    width: 65px;
-    height: 54px;
-    position: relative;
-
-    background-color: #f05778;
-    /* border: solid 2px white; */
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-
-    /*  */
     width: 76px;
     height: 76px;
-  }
-
-  .y24-sp-application-btn_pic {
-    display: block;
-    width: 18px;
-    height: auto;
-    position: relative;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    /*  */
-    width: 27px;
-    height: 27px;
+    background-size: 27px 27px;
   }
 
   .y24-sp-application-btn_p {
-    display: block;
-    margin-top: 13px;
-
-    font-size: 10px;
-    font-weight: bold;
-    color: white;
-    /*  */
+    margin-top: 45px;
     font-size: 12px;
   }
 
@@ -1236,64 +1105,6 @@ summary::-webkit-details-marker {
 
     padding-bottom: 116px;
   }
-
-  .y24-pc-nav-btn-area {
-    display: flex;
-    width: 513px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 202px;
-    transform: translateY(-50%);
-    justify-content: space-between;
-    /*  */
-    width: 744px;
-    left: 293px;
-  }
-
-  .y24-pc-nav-btn {
-    width: 79px;
-    height: 58px;
-    position: relative;
-    /*  */
-    width: 114px;
-    height: 84px;
-  }
-  .y24-pc-nav-btn_pic {
-    display: block;
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    /*  */
-  }
-  .y24-pc-nav-btn_img {
-    display: block;
-    width: 100%;
-    height: auto;
-    /*  */
-  }
-  .y24-pc-nav-btn_p {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: unset;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--textcolor-black);
-    /* font-size: 1.2rem; */
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
-    /*  */
-    font-size: 16px;
-  }
-
   .y24-navmenu-sp768 {
     display: flex;
     position: relative;
@@ -1313,120 +1124,19 @@ summary::-webkit-details-marker {
     /* margin-left: 71px; */
   }
 
-  .y24-sp-contact-btn {
-    display: block;
-    position: relative;
-    background-color: white;
-    border: solid 2px #f05778;
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    /*  */
-    width: 76px;
-    height: 76px;
-    /*  */
-    width: 110px;
-    height: 110px;
-  }
-
-  .y24-sp-contact-btn_pic {
-    display: block;
-    position: relative;
-    width: 18px;
-    height: auto;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    /*  */
-    width: 27px;
-    height: 27px;
-    top: 15px;
-    /*  */
-    width: 38px;
-    height: 38px;
-    top: 28px;
-  }
-
-  .y24-sp-contact-btn_img,
-  .y24-sp-application-btn_img {
-    display: block;
-    width: 100%;
-    height: auto;
-    /*  */
-    /*  */
-  }
-
-  .y24-sp-contact-btn_p {
-    /*  */
-    display: block;
-    margin-top: 13px;
-    /* font-size: 10px; */
-    font-weight: bold;
-    color: #f05778;
-    /*  */
-    margin-top: 30px;
-    font-size: 1.2rem;
-    /*  */
-    margin-top: 38px;
-    font-size: 16px;
-  }
-
+  .y24-sp-contact-btn,
   .y24-sp-application-btn {
-    display: block;
-    width: 65px;
-    height: 54px;
-    position: relative;
-
-    background-color: #f05778;
-    /* border: solid 2px white; */
-    border: solid 2px #f05778;
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-
-    /*  */
-    width: 76px;
-    height: 76px;
-    /*  */
     width: 110px;
     height: 110px;
+    background-size: 38px 38px;
   }
 
-  .y24-sp-application-btn_pic {
-    display: block;
-    width: 18px;
-    height: auto;
-    position: relative;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    /*  */
-    width: 27px;
-    height: 27px;
-    top: 15px;
-    /*  */
-    width: 38px;
-    height: 38px;
-    top: 28px;
-  }
-
+  .y24-sp-contact-btn_p,
   .y24-sp-application-btn_p {
-    display: block;
-    margin-top: 13px;
-
-    font-weight: bold;
-    color: white;
-    /*  */
-    margin-top: 30px;
-    font-size: 1.2rem;
-    /*  */
-    margin-top: 38px;
+    margin-top: 66px;
     font-size: 16px;
   }
+
   .y24-btn-movecar {
     width: 492px;
     height: 82px;
