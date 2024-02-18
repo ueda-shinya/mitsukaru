@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   z-index: 100;
-  /* 固定 */
+  /* ヘッダーメニュー固定しない */
   /* position: absolute; */
 }
 
@@ -270,6 +270,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
 .y24-sp-menu .y24-answer_link::before {
   border-bottom: unset;
 }
+
 .y24-sp-menu-btn {
   position: absolute;
   width: 54px;
@@ -279,12 +280,16 @@ input:checked + .y24-sp-menu-radio-rev_label {
   top: 12px;
   right: 10px;
   z-index: 300;
+  /* ヘッダーメニュー固定しない */
+  /* position: fixed; */
 }
 
 .y24-contact_btn {
   border-color: #f05778;
   color: #f05778;
   background-color: white;
+  /* ヘッダーメニュー固定しない */
+  /* position: fixed; */
 }
 .y24-contact_btn:hover {
   color: white;
@@ -379,16 +384,18 @@ input:checked + .y24-sp-menu-radio-rev_label {
     transform: translate(-50%, -50%) rotate(-45deg);
     transition: 0.5s all;
   }
- 
+
   .y24-navmenu-sp768 {
     display: flex;
     position: relative;
     width: 147px;
     height: 66px;
-
     justify-content: space-between;
     margin-left: auto;
     margin-right: 100px;
+    /* ヘッダーメニュー固定しない */
+    /* position: fixed; */
+    /* right: 0px; */
   }
   .y24-sp-contact-btn {
     display: block;
@@ -483,13 +490,6 @@ input:checked + .y24-sp-menu-radio-rev_label {
     color: white;
   }
 
-
-
-
-
-
-
-
   .y24-summary {
     font-size: 16px;
   }
@@ -508,8 +508,6 @@ input:checked + .y24-sp-menu-radio-rev_label {
     top: 4px;
     left: -25px;
   }
-
-
 }
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
@@ -541,6 +539,9 @@ input:checked + .y24-sp-menu-radio-rev_label {
     margin-right: 11px;
     top: 50%;
     transform: translateY(-50%);
+    /* ヘッダーメニュー固定しない */
+    /* top:8px; */
+    /* transform: unset; */
   }
 
   .y24-sp-contact-btn {
@@ -564,7 +565,6 @@ input:checked + .y24-sp-menu-radio-rev_label {
     margin-top: 45px;
     font-size: 12px;
   }
-
 
   /* ヘッダーメニュー */
   .y24-pc-nav-btn {
@@ -892,5 +892,4 @@ input:checked + .y24-sp-menu-radio-rev_label {
     margin-top: 66px;
     font-size: 16px;
   }
-
 }
