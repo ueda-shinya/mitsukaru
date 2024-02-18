@@ -7,25 +7,18 @@
 }
 
 .y24-search-linkbtn-area {
-  /* display: flex; */
   display: grid;
-
   grid-template-columns: 160px 160px;
   gap: 18px;
-
-  /* width: 338px; */
   width: fit-content;
   height: auto;
-  /* flex-wrap: wrap; */
   margin-left: auto;
   margin-right: auto;
   padding-top: 48px;
   padding-bottom: 30px;
-  /* justify-content: space-between; */
 }
 .y24-search-linkbtn_a {
   display: block;
-  /* width: 160px; */
   width: 100%;
   height: auto;
   margin-bottom: 18px;
@@ -46,8 +39,6 @@
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
   .y24-search-linkbtn-area {
-    /* display: flex; */
-    /* display: grid; */
     grid-template-columns: repeat(3, 160px);
   }
 }
@@ -55,13 +46,10 @@
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   .y24-search-linkbtn-area {
-    /* display: flex; */
-    /* display: grid; */
     grid-template-columns: 240px 240px 240px;
     gap: 24px;
   }
   #y24-search {
-    /*  */
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
   }

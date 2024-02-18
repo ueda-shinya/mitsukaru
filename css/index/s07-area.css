@@ -60,7 +60,7 @@
   right: -16px;
 }
 #y24-map-kinki {
-  bottom:146px;
+  bottom: 146px;
   left: 80px;
 }
 #y24-map-hokuriku {
@@ -90,17 +90,14 @@
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-area {
-    /*  */
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
     padding-bottom: 250px;
   }
   #y24-area .y24-maparea {
-    display: block;
     width: 648px;
     height: 630px;
     position: relative;
-    /* margin-top: 70px; */
     margin-top: 105px;
     margin-left: auto;
     margin-right: auto;
@@ -131,32 +128,27 @@
     right: 170px;
   }
   #y24-map-touhoku {
-    /* width: 177px; */
     height: 126px;
     top: 175px;
     right: -123px;
   }
 
   #y24-map-kantoh {
-    /* width: 177px; */
     height: 157px;
     bottom: 100px;
     right: -123px;
   }
   #y24-map-kinki {
-    /* width: 177px; */
     height: 126px;
     bottom: -20px;
     left: 370px;
   }
   #y24-map-hokuriku {
-    /* width: 177px; */
     height: 126px;
     top: 110px;
     left: 260px;
   }
   #y24-map-toukai {
-    /* width: 177px; */
     height: 126px;
     bottom: -39px;
     right: -123px;
@@ -179,7 +171,7 @@
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
-  #y24-area{
-  background-image: none;
+  #y24-area {
+    background-image: none;
   }
 }

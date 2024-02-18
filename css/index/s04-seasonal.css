@@ -8,16 +8,10 @@
 }
 .y24-seasonal-cards {
   display: grid;
-  /* width: 100%; */
   width: fit-content;
   height: auto;
-
-  /* grid-template-columns: 110px 110px 110px; */
-  /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-columns: repeat(3, 110px);
-
   gap: 10px;
-
   margin-left: auto;
   margin-right: auto;
   padding-top: 24px;
@@ -31,11 +25,8 @@
 }
 .y24-seasonal-card_a {
   display: block;
-  /* width: 110px; */
   width: 100%;
-  /* height: 110px; */
   height: auto;
-  /* margin-bottom: clamp(1px, 3.59vw, 56px); */
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
@@ -59,7 +50,6 @@
 .y24-special .y24-section-title_h2 {
   margin-bottom: 24px;
   height: 105px;
-  /* font-size: 1.8rem; */
   font-size: 18px;
   background-image: url("../../images/sp-special-bckimg.svg");
   background-size: auto 105px;
@@ -70,14 +60,11 @@
   font-size: 42px;
 }
 .y24-special-banners {
-  /* display: flex; */
   display: grid;
   width: fit-content;
   height: auto;
-  /* flex-wrap: wrap; */
   margin-left: auto;
   margin-right: auto;
-
   grid-template-columns: 350px;
   gap: 16px;
 }
@@ -93,7 +80,6 @@
   display: block;
   width: 100%;
   height: auto;
-  /* padding-bottom: 14px; */
 }
 .y24-special-banner_pic {
   display: block;
@@ -109,12 +95,7 @@
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
   .y24-seasonal-cards {
-    display: grid;
-    /* width: 100%; */
-    width: fit-content;
-    height: auto;
     grid-template-columns: 110px 110px 110px 110px;
-    /* grid-template-columns: 1fr 1fr 1fr; */
     gap: 20px;
   }
   .y24-special-banners {
@@ -122,12 +103,9 @@
     gap: 24px;
   }
   .y24-popular-cards {
-    /* display: flex; */
-    /* width: 100%; */
     display: grid;
     height: auto;
     justify-content: center;
-    /* flex-wrap: wrap; */
     grid-template-columns: repeat(2, 350px);
     text-align: center;
     gap: 20px;
@@ -138,17 +116,9 @@
   /* スクリーンサイズが992px以上の場合に適用 */
 
   .y24-seasonal-cards {
-    display: grid;
-    /* width: 100%; */
-    width: fit-content;
-    /* width: 960px; */
-    height: auto;
     grid-template-columns: 200px 200px 200px 200px;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    gap: 20px;
   }
   #y24-seasonal {
-    /*  */
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
   }
@@ -160,22 +130,11 @@
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
   #y24-seasonal {
-    padding-bottom: clamp(1px, 36.923vw, 560px);
-    background-image: url("../../images/pc-s04-bckimg.svg");
-    background-position: left 0 bottom 0;
-    background-repeat: no-repeat;
-    background-size: 417px 381px;
-    /*  */
     padding-bottom: 130px;
   }
   .y24-seasonal-cards {
-    display: grid;
-    /* width: 100%; */
-    /* width: fit-content; */
     width: 960px;
-    height: auto;
     grid-template-columns: 220px 220px 220px 220px;
-    /* grid-template-columns: 1fr 1fr 1fr; */
     gap: 24px;
   }
   .y24-special-banners {
@@ -187,15 +146,6 @@
     padding-top: 35px;
   }
   .y24-special .y24-section-title_h2 {
-    margin-bottom: 24px;
-    height: 267px;
-    /* font-size: 1.8rem; */
-    font-size: 18px;
-    background-image: url("../../images/sp-special-bckimg.svg");
-    background-size: 267px 267px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    /*  */
     margin-bottom: 0;
     padding-top: 64px;
   }

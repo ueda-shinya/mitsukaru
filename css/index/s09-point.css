@@ -66,7 +66,6 @@
   padding-bottom: 22px;
   font-family: "Zen Kaku Gothic New";
   font-weight: bold;
-  /* font-size: 2rem; */
   font-size: 20px;
   text-align: center;
   line-height: 1.5;
@@ -85,22 +84,11 @@
     font-size: 24px;
   }
   .y24-point-card {
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-bottom?: 24px; */
-    padding-top: 24px;
-    background-color: white;
-    border-radius: 10px;
-    /*  */
     width: 560px;
     margin-bottom: 48px;
   }
   .y24-point-card-text {
     width: 480px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
   }
   .y24-point-card_p {
     font-size: 16px;
@@ -110,7 +98,6 @@
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-point {
-    /*  */
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
   }
@@ -123,21 +110,13 @@
     padding-bottom: 105px;
   }
   .y24-point-card {
-    display: flex;
-    width: 960px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 32px;
-    padding-top: 34px;
-    background-color: white;
-    border-radius: 9px;
-    /*  */
     display: grid;
-    position: relative;
+    width: 960px;
+    margin-bottom: 32px;
     padding-top: 0;
     padding-left: 8px;
     padding-bottom: 0;
+    position: relative;
     grid-template-columns: 264px 1fr;
   }
   .y24-point-card:nth-of-type(2) {
@@ -148,71 +127,28 @@
   }
 
   .y24-point-card-thum {
-    display: block;
-    width: 220px;
-    /* position: relative; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    /*  */
     width: 180px;
-    /* width: 264px; */
     height: fit-content;
-    /* height: 100%; */
-    /* height: inherit; */
     top: 50%;
     transform: translateY(-50%);
   }
   .y24-point-card_pic {
-    display: block;
-    width: 220px;
-    height: auto;
-    /*  */
     width: 180px;
   }
 
-  .y24-point-card-num_pic {
-    display: block;
-    width: 65px;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    /*  */
-  }
   .y24-point-card-text {
-    /* width: 310px; */
-    height: auto;
-    /* margin-left: auto; */
-    margin-right: auto;
-    /*  */
     width: 636px;
     margin-left: 0;
     padding-top: 34px;
     padding-bottom: 34px;
   }
   .y24-point-card_h3 {
-    /* padding-top: 14px; */
-    /* padding-bottom: 22px; */
-    font-family: "Zen Kaku Gothic New";
-    font-weight: bold;
-    /* font-size: 2rem; */
-    /* font-size: 20px; */
-    /* text-align: center; */
-    line-height: 1.5;
-    /*  */
     padding-top: 0;
     padding-bottom: 24px;
     font-size: 24px;
     text-align: justify;
   }
   .y24-point-card_p {
-    padding-bottom: 12px;
-    font-family: "Zen Kaku Gothic New";
-    font-weight: 500;
-    font-size: 14px;
-    text-align: justify;
-    line-height: 1.643;
-    /*  */
     padding-bottom: 0;
   }
 }
