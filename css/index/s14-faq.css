@@ -1,6 +1,6 @@
 /* section-14 faq    */
 #y24-faq {
-  background-image: url("../images/sp-s14-bckimg.svg");
+  background-image: url("../../images/sp-s14-bckimg.svg");
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
   background-size: 154px 154px;
@@ -62,7 +62,7 @@
   /* スクリーンサイズが1440px以上の場合に適用 */
 
   #y24-faq {
-    background-image: url("../images/pc-s14-bckimg.svg");
+    background-image: url("../../images/pc-s14-bckimg.svg");
     background-size: 354px 351px;
 
     padding-bottom: 160px;

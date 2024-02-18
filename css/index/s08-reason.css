@@ -1,6 +1,6 @@
 /* section-08 reason    */
 #y24-reason {
-  background-image: url("../images/sp-s08-bckimg.svg");
+  background-image: url("../../images/sp-s08-bckimg.svg");
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
   padding-bottom: 160px;
@@ -70,7 +70,7 @@
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
   #y24-reason {
-    background-image: url("../images/pc-s08-bckimg.svg");
+    background-image: url("../../images/pc-s08-bckimg.svg");
     padding-bottom: 130px;
     background-size: 414px 330px;
   }

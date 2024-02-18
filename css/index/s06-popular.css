@@ -1,6 +1,6 @@
 /* section-06 popular    */
 #y24-popular {
-  background-image: url("../images/sp-s06-bckimg.svg");
+  background-image: url("../../images/sp-s06-bckimg.svg");
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
   background-size: 163px 163px;
@@ -15,6 +15,7 @@
   /* width: 100%; */
   display: grid;
   height: auto;
+  margin-top: 54px;
   justify-content: center;
   align-items: center;
   /* flex-wrap: wrap; */
@@ -102,7 +103,7 @@
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
   #y24-popular {
-    background-image: url("../images/pc-s06-bckimg.svg");
+    background-image: url("../../images/pc-s06-bckimg.svg");
     background-size: 426px 480px;
     padding-bottom: 72px;
   }

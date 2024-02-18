@@ -1,6 +1,6 @@
 /* section-10 defference    */
 #y24-defference {
-  background-image: url("../images/sp-s10-bckimg.svg");
+  background-image: url("../../images/sp-s10-bckimg.svg");
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
   padding-bottom: 184px;
@@ -104,7 +104,7 @@
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
   #y24-defference {
-    background-image: url("../images/pc-s10-bckimg.svg");
+    background-image: url("../../images/pc-s10-bckimg.svg");
     padding-bottom: 130px;
     background-size: 407px 407px;
   }

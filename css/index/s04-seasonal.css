@@ -1,7 +1,7 @@
 /* section-04 seasonal    */
 #y24-seasonal {
   padding-bottom: clamp(1px, 36.923vw, 560px);
-  background-image: url("../images/sp-s04-bckimg.svg");
+  background-image: url("../../images/sp-s04-bckimg.svg");
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
   background-size: 144px 155px;
@@ -61,7 +61,7 @@
   height: 105px;
   /* font-size: 1.8rem; */
   font-size: 18px;
-  background-image: url("../images/sp-special-bckimg.svg");
+  background-image: url("../../images/sp-special-bckimg.svg");
   background-size: auto 105px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -161,7 +161,7 @@
   /* スクリーンサイズが1440px以上の場合に適用 */
   #y24-seasonal {
     padding-bottom: clamp(1px, 36.923vw, 560px);
-    background-image: url("../images/pc-s04-bckimg.svg");
+    background-image: url("../../images/pc-s04-bckimg.svg");
     background-position: left 0 bottom 0;
     background-repeat: no-repeat;
     background-size: 417px 381px;
@@ -191,7 +191,7 @@
     height: 267px;
     /* font-size: 1.8rem; */
     font-size: 18px;
-    background-image: url("../images/sp-special-bckimg.svg");
+    background-image: url("../../images/sp-special-bckimg.svg");
     background-size: 267px 267px;
     background-repeat: no-repeat;
     background-position: center center;

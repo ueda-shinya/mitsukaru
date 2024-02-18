@@ -1,6 +1,6 @@
 /* section-05 search    */
 #y24-search {
-  background-image: url("../images/sp-s05-bckimg.svg");
+  background-image: url("../../images/sp-s05-bckimg.svg");
   background-position: right 0 bottom 0;
   background-repeat: no-repeat;
   background-size: 161px 149px;
@@ -69,7 +69,7 @@
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
   #y24-search {
-    background-image: url("../images/pc-s05-bckimg.svg");
+    background-image: url("../../images/pc-s05-bckimg.svg");
     background-size: 403px 347px;
     padding-bottom: 154px;
   }

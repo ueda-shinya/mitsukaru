@@ -1,7 +1,7 @@
 /* section-03 pick up  */
 #y24-pickup {
   padding-top: 54px;
-  background-image: url("../images/sp-s03-bckimg.svg");
+  background-image: url("../../images/sp-s03-bckimg.svg");
   background-position: right 0 bottom 0;
   background-repeat: no-repeat;
   background-size: 128px 133px;
@@ -103,9 +103,9 @@
 }
 .y24-pickup-splide .y24-splide_slide-fukidashi {
   display: block;
-  width: 154px;
+  width: 165px;
   height: auto;
-  background-image: url("../images/fukidashi-pink.svg");
+  background-image: url("../../images/fukidashi-pink.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: absolute;
@@ -287,7 +287,7 @@
     display: block;
     width: 154px;
     height: auto;
-    background-image: url("../images/fukidashi-pink.svg");
+    background-image: url("../../images/fukidashi-pink.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: absolute;

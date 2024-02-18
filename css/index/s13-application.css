@@ -10,7 +10,7 @@
 
 /* section-13 application    */
 #y24-application {
-  background-image: url("../images/sp-s13-bckimg.svg");
+  background-image: url("../../images/sp-s13-bckimg.svg");
   background-position: right 0 bottom 0;
   background-repeat: no-repeat;
   padding-bottom: 184px;
@@ -57,7 +57,7 @@
   /* スクリーンサイズが1440px以上の場合に適用 */
 
   #y24-application {
-    background-image: url("../images/pc-s13-bckimg.svg");
+    background-image: url("../../images/pc-s13-bckimg.svg");
 
     background-size: 357px 261px;
 

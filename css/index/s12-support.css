@@ -47,7 +47,7 @@
 
 /* section-12 support    */
 #y24-support {
-  background-image: url("../images/sp-s12-bckimg.svg");
+  background-image: url("../../images/sp-s12-bckimg.svg");
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
   padding-bottom: 160px;
@@ -92,7 +92,7 @@
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
   #y24-support {
-    background-image: url("../images/pc-s12-bckimg.svg");
+    background-image: url("../../images/pc-s12-bckimg.svg");
     background-size: 472px 472px;
     padding-top: 71px;
     padding-bottom: 152px;

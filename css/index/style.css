@@ -24,13 +24,21 @@
   --x-padding-left: var(--x-padding);
 }
 
-@supports (padding-top: constant(safe-area-inset-top)) {
+/* 新しい構文でのセーフエリアの利用 */
+@supports (padding-top: env(safe-area-inset-top)) {
   :root {
     --x-padding-right: calc(env(safe-area-inset-right) + var(--x-padding));
     --x-padding-left: calc(env(safe-area-inset-left) + var(--x-padding));
   }
 }
 
+/* 古いiOSバージョン用のフォールバック */
+@supports (padding-top: constant(safe-area-inset-top)) {
+  :root {
+    --x-padding-right: calc(constant(safe-area-inset-right) + var(--x-padding));
+    --x-padding-left: calc(constant(safe-area-inset-left) + var(--x-padding));
+  }
+}
 @media all and (min-width: 64em) {
   :root {
     --x-padding-base: calc((100vw - 960px) / 2);
@@ -51,31 +59,6 @@ html {
   /* font-size: clamp(1px, 2.564vw, 40px); */
   font-size: 10px;
 }
-
-/* @font-face {
-  font-family: "Jost";
-  src: url("../fonts/Jost-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-} */
-/* @font-face {
-  font-family: "Zen Maru Gothic";
-  src: url("../fonts/ZenMaruGothic-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-} */
-/* @font-face {
-  font-family: "Zen Kaku Gothic New";
-  src: url("../fonts/ZenKakuGothicNew-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-} */
-/* @font-face {
-  font-family: "Zen Kaku Gothic New";
-  src: url("../fonts/ZenKakuGothicNew-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-} */
 
 /************************************************
     レスポンシブ */
@@ -367,20 +350,17 @@ input:checked + .y24-sp-menu-radio-rev_label {
 #y24-firstview {
   width: 100%;
   height: auto;
-  background-image: url("../images/sp-mv-backgraund.svg"),
-    url("../images/sp-main-image@3x.webp");
+  background-image: url("../../images/sp-mv-backgraund.svg"),
+    url("../../images/sp-main-image@3x.webp");
   background-size: 102% auto, 100% auto;
   background-repeat: no-repeat, no-repeat;
-  /* background-position: center 285px, center 0; */
   background-position: center clamp(285px, 73.077vw, 1140px), center 0;
   padding-bottom: 49px;
   overflow-x: hidden;
 }
 .y24-title_h1 {
   display: block;
-  /* width: 346px; */
   width: clamp(346px, 88.718vw, 1384px);
-  /* height: 172px; */
   height: auto;
   margin-top: 198px;
   margin-top: clamp(198px, 50.769vw, 792px);
@@ -405,10 +385,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
   padding-top: 72px;
   padding-bottom: 184px;
 }
-.y24-section-inner {
-  /* padding-left: 4.167%; */
-  /* padding-right: 4.167%; */
-}
+
 .y24-font-zenmaru {
   font-family: "Zen Maru Gothic";
   font-weight: bold;
@@ -636,8 +613,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
   margin-right: auto;
   padding-right: 16px;
 }
-.y24-list {
-}
+
 /* ここまで調整用スタイル */
 
 .y24-details {
@@ -678,7 +654,7 @@ summary::-webkit-details-marker {
   position: absolute;
   top: 5px;
   left: -20px;
-  background-image: url("../images/sp-faq-q-pic.svg");
+  background-image: url("../../images/sp-faq-q-pic.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -692,8 +668,7 @@ summary::-webkit-details-marker {
   position: absolute;
   top: 5px;
   right: -16px;
-  /* right: clamp(-64px, -4.103vw, -1px); */
-  background-image: url("../images/sp-faq-close-pic.svg");
+  background-image: url("../../images/sp-faq-close-pic.svg");
   background-repeat: no-repeat;
   background-size: contain;
   transition: 0.2s all;
@@ -701,21 +676,15 @@ summary::-webkit-details-marker {
 
 .y24-answer {
   width: 100%;
-  /* overflow: hidden; */
 }
 .y24-answer_p {
-  /* display: block; */
-  /* width: 281px; */
   width: 100%;
   height: auto;
   position: relative;
   font-family: "Zen Kaku Gothic New";
   font-weight: 500;
-  /* font-size: 1.4rem; */
   font-size: 14px;
   line-height: 1.643;
-  /* padding-left: 41px; */
-  /* padding-right: 28px; */
   padding-bottom: 18px;
 }
 .y24-answer_p::before {
@@ -725,7 +694,7 @@ summary::-webkit-details-marker {
   position: absolute;
   top: 5px;
   left: -20px;
-  background-image: url("../images/sp-faq-a-pic.svg");
+  background-image: url("../../images/sp-faq-a-pic.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -735,7 +704,6 @@ summary::-webkit-details-marker {
   display: grid;
   width: 100%;
   height: 48px;
-  /* font-size: 1.4rem; */
   font-size: 14px;
   color: var(--textcolor-black);
   text-align: left;
@@ -774,7 +742,6 @@ summary::-webkit-details-marker {
   }
 
   .y24-navmenu-sp768 {
-    /*  */
     display: flex;
     position: relative;
     width: 147px;
@@ -785,7 +752,6 @@ summary::-webkit-details-marker {
     margin-right: 100px;
   }
   .y24-sp-contact-btn {
-    /*  */
     display: block;
     width: 65px;
     height: 54px;
@@ -797,20 +763,19 @@ summary::-webkit-details-marker {
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url("../images/sp-contact-btn-red.svg");
+    background-image: url("../../images/sp-contact-btn-red.svg");
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: center top 30%;
   }
   .y24-sp-contact-btn:hover {
     background-color: #f05778;
-    background-image: url("../images/sp-contact-btn-white.svg");
+    background-image: url("../../images/sp-contact-btn-white.svg");
   }
   .y24-sp-contact-btn:hover .y24-sp-contact-btn_p {
     color: white;
   }
   .y24-sp-contact-btn_pic {
-    /*  */
     display: block;
     position: relative;
     width: 18px;
@@ -822,14 +787,12 @@ summary::-webkit-details-marker {
 
   .y24-sp-contact-btn_img,
   .y24-sp-application-btn_img {
-    /*  */
     display: block;
     width: 100%;
     height: auto;
   }
 
   .y24-sp-contact-btn_p {
-    /*  */
     display: block;
     margin-top: 31px;
     font-size: 10px;
@@ -838,7 +801,6 @@ summary::-webkit-details-marker {
   }
 
   .y24-sp-application-btn {
-    /*  */
     display: block;
     width: 65px;
     height: 54px;
@@ -851,20 +813,19 @@ summary::-webkit-details-marker {
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url("../images/sp-application-btn-white.svg");
+    background-image: url("../../images/sp-application-btn-white.svg");
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: center top 30%;
   }
   .y24-sp-application-btn:hover {
     background-color: white;
-    background-image: url("../images/sp-application-btn-red.svg");
+    background-image: url("../../images/sp-application-btn-red.svg");
   }
   .y24-sp-application-btn:hover .y24-sp-application-btn_p {
     color: #f05778;
   }
   .y24-sp-application-btn_pic {
-    /*  */
     display: block;
     width: 18px;
     height: auto;
@@ -875,7 +836,6 @@ summary::-webkit-details-marker {
   }
 
   .y24-sp-application-btn_p {
-    /*  */
     display: block;
     margin-top: 31px;
 
@@ -885,9 +845,6 @@ summary::-webkit-details-marker {
   }
 
   .y24-sp-menu-btn {
-    position: absolute;
-    background-color: var(--sp-btn-color);
-    /*  */
     width: 54px;
     height: 54px;
     right: 20px;
@@ -913,7 +870,6 @@ summary::-webkit-details-marker {
     height: 3px;
     background-color: white;
     top: -8px;
-    /* left: 0; */
     transform: translateY(-50%) rotate(0);
     transition: 0.5s all;
   }
@@ -980,9 +936,7 @@ summary::-webkit-details-marker {
 }
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
-  /* w:1440px で、font-size:10px */
   html {
-    /* font-size: clamp(1px, 0.694vw, 10px); */
     font-size: 10px;
   }
   .y24-pc-none,
@@ -1000,15 +954,6 @@ summary::-webkit-details-marker {
 
 
   .y24-navmenu-sp768 {
-    display: flex;
-    position: relative;
-    width: 147px;
-    height: 66px;
-
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: 100px;
-    /*  */
     width: 177px;
     height: 84px;
     margin-right: 11px;
@@ -1040,14 +985,11 @@ summary::-webkit-details-marker {
 
   #y24-firstview {
     width: 100%;
-    /* max-width: 1440px; */
     height: auto;
-    background-image: url("../images/pc-mv-backgraund.svg"),
-      url("../images/pc-main-image@3x.webp");
+    background-image: url("../../images/pc-mv-backgraund.svg"),
+      url("../../images/pc-main-image@3x.webp");
     background-size: 102% auto, 100% auto;
     background-repeat: no-repeat, no-repeat;
-    /* background-position: center 285px, center 0; */
-    /* background-position: center clamp(285px, 73.077vw, 1140px), center 0; */
     background-position: center 656px, center 0;
     background-position: center clamp(1px, 45.556vw, 656px), center 0;
     margin-left: auto;
@@ -1057,11 +999,8 @@ summary::-webkit-details-marker {
   }
   .y24-title_h1 {
     display: block;
-    /* width: 346px; */
     width: clamp(346px, 88.718vw, 1384px);
-    /* height: 172px; */
     height: auto;
-    margin-top: 198px;
     margin-top: clamp(198px, 50.769vw, 792px);
     margin-right: 0;
     margin-left: auto;
@@ -1086,14 +1025,11 @@ summary::-webkit-details-marker {
 
   #y24-firstview {
     width: 100%;
-    /* max-width: 1440px; */
     height: auto;
-    background-image: url("../images/pc-mv-backgraund.svg"),
-      url("../images/pc-main-image@3x.webp");
+    background-image: url("../../images/pc-mv-backgraund.svg"),
+      url("../../images/pc-main-image@3x.webp");
     background-size: 102% auto, 100% auto;
     background-repeat: no-repeat, no-repeat;
-    /* background-position: center 285px, center 0; */
-    /* background-position: center clamp(285px, 73.077vw, 1140px), center 0; */
     background-position: center 656px, center 0;
     background-position: center clamp(1px, 45.556vw, 656px), center 0;
     margin-left: auto;
@@ -1106,22 +1042,8 @@ summary::-webkit-details-marker {
     padding-bottom: 116px;
   }
   .y24-navmenu-sp768 {
-    display: flex;
-    position: relative;
-    width: 147px;
-    height: 66px;
-
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: 100px;
-    /*  */
-    width: 177px;
-    height: 84px;
-    margin-right: 11px;
-    /*  */
     width: 256px;
     height: 110px;
-    /* margin-left: 71px; */
   }
 
   .y24-sp-contact-btn,

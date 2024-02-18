@@ -95,7 +95,7 @@
 
 /* section-11 payment    */
 #y24-payment {
-  background-image: url("../images/sp-s11-bckimg.svg");
+  background-image: url("../../images/sp-s11-bckimg.svg");
   background-position: right 0 bottom 0;
   background-repeat: no-repeat;
   padding-bottom: 136px;
@@ -165,7 +165,7 @@
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
   #y24-payment {
-    background-image: url("../images/pc-s11-bckimg.svg");
+    background-image: url("../../images/pc-s11-bckimg.svg");
     background-position: right 0 bottom -26px;
     background-repeat: no-repeat;
     padding-bottom: 130px;
