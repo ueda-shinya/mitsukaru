@@ -5,6 +5,8 @@
   position: fixed;
   top: 0;
   z-index: 100;
+  /* 固定 */
+  /* position: absolute; */
 }
 
 .y24-header-logo {
@@ -27,6 +29,267 @@
   width: 100%;
   height: auto;
 }
+/* sp-menu-btn */
+#y24-sp-menu .y24-container {
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 16px;
+}
+
+.y24-sp-menu-btn_span {
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s all;
+  animation: sp-btn-close 0.5s linear;
+}
+.y24-sp-menu-btn_span::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  top: -8px;
+  left: 0;
+  transform: translateY(-50%) rotate(0);
+  transition: 0.2s all;
+}
+.y24-sp-menu-btn_span::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 3px;
+  background-color: white;
+  bottom: -8px;
+  transform: translateY(-50%) rotate(0);
+  transition: 0.2s all;
+}
+@keyframes sp-btn-close {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes sp-btn-open {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.y24-sp-menu-btn_span.y24-sp-menu-open {
+  background-color: var(--sp-btn-color);
+  animation: sp-btn-open 0.5s linear;
+}
+.y24-sp-menu-open.y24-sp-menu-btn_span::before {
+  width: 28px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: 0.2s all;
+}
+.y24-sp-menu-open.y24-sp-menu-btn_span::after {
+  width: 28px;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 0.2s all;
+}
+/* sp MENU */
+.y24-sp-menu {
+  display: block;
+  width: 390px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  transform: translateY(-100%);
+  transition: 0.5s all;
+  z-index: 200;
+}
+.y24-sp-menu-inner {
+  padding-left: 32px;
+  padding-right: 18px;
+}
+.y24-sp-menu-open.y24-sp-menu {
+  transform: translateY(0%);
+  transition: 0.5s all;
+}
+.y24-sp-menu_a {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: var(--textcolor-black);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: dashed 1px #b3b3b3;
+}
+.y24-sp-menu_p {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: var(--textcolor-black);
+  font-size: 1.6rem;
+  font-size: 16px;
+  font-weight: bold;
+}
+.y24-sp-menu-todoufuken-area,
+.y24-sp-menu-syashu-area {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: dashed 1px #b3b3b3;
+}
+.y24-sp-menu_p {
+  display: block;
+  padding-bottom: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--sp-menu-textcolor-black);
+}
+.y24-sp-menu-todoufuken-btn-area {
+  display: flex;
+  width: 300px;
+  height: auto;
+
+  flex-wrap: wrap;
+}
+.y24-sp-menu-todoufuken_btn {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 12px 14px;
+  border-radius: 2px;
+  border: solid #6fbada 2px;
+  font-size: 16px;
+  color: #6fbada;
+  background-color: white;
+}
+.y24-sp-menu-todoufuken_btn:hover {
+  color: white;
+  background-color: #6fbada;
+}
+input:checked + .y24-sp-menu-radio_label {
+  background-color: #6fbada;
+  color: white;
+}
+
+input.y24-sp-menu-radio_btn,
+input.y24-sp-menu-radio-rev_btn {
+  display: none;
+}
+.y24-sp-menu-syashu-btn-area {
+  display: flex;
+  width: 320px;
+  height: auto;
+
+  flex-wrap: wrap;
+}
+
+.y24-sp-menu-radio-rev_label,
+.y24-sp-menu-syashu_btn {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 12px 14px;
+  border: solid #6fbada 2px;
+  border-radius: 2px;
+  border-radius: 2px;
+  font-size: 16px;
+  color: white;
+  background-color: #6fbada;
+}
+.y24-sp-menu-syashu_btn:hover {
+  color: #6fbada;
+  background-color: white;
+}
+input:checked + .y24-sp-menu-radio-rev_label {
+  background-color: white;
+  color: #6fbada;
+}
+
+.y24-sp-menu-link_btn-area {
+  display: flex;
+  width: 280px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+}
+.y24-sp-menu-link_btn_a {
+  display: grid;
+  width: 128px;
+  height: 48px;
+  border: solid 2px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+.y24-sp-menu .y24-summary {
+  color: var(--sp-menu-textcolor-black);
+}
+.y24-sp-menu .y24-summary::before {
+  content: none;
+}
+.y24-sp-menu .y24-answer_link {
+  padding-left: 16px;
+}
+.y24-sp-menu .y24-answer_link::before {
+  border-bottom: unset;
+}
+.y24-sp-menu-btn {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  background-color: var(--sp-btn-color);
+  border-radius: 20px;
+  top: 12px;
+  right: 10px;
+  z-index: 300;
+}
+
+.y24-contact_btn {
+  border-color: #f05778;
+  color: #f05778;
+  background-color: white;
+}
+.y24-contact_btn:hover {
+  color: white;
+  background-color: #f05778;
+}
 /* headermenu */
 .y24-pc-nav-btn {
   display: none;
@@ -42,7 +305,7 @@
   height: auto;
   padding: 36px 48px;
   top: 152px;
-  left:298px;
+  left: 298px;
   position: fixed;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -51,75 +314,257 @@
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
   .y24-header {
-    /*  */
     display: flex;
-    height: 66px;
-    background-color: white;
-    /*  */
     background-color: unset;
   }
-  .y24-header-logo {
-    width: 287px;
-    height: 54px;
-    border-radius: 0 0 39px 0;
-  }
   .y24-header-logo_pic {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* sp-menu-btn */
+  .y24-sp-menu-btn {
+    width: 54px;
+    height: 54px;
+    right: 20px;
+    border-radius: 20px;
+    top: 6px;
+  }
+  .y24-sp-menu-btn_span {
     display: block;
-    position: relative;
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background-color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*  */
-    width: 174px;
-    height: 23px;
+    transition: 0.5s all;
   }
-  .y24-header-logo_img {
+  .y24-sp-menu-btn_span::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    top: -8px;
+    transform: translateY(-50%) rotate(0);
+    transition: 0.5s all;
+  }
+  .y24-sp-menu-btn_span::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 14px;
+    height: 3px;
+    background-color: white;
+    bottom: -8px;
+    transform: translateY(-50%) rotate(0);
+    transition: 0.5s all;
+  }
+  .y24-sp-menu-btn_span.y24-sp-menu-open {
+    background-color: var(--sp-btn-color);
+  }
+  .y24-sp-menu-open.y24-sp-menu-btn_span::before {
+    width: 28px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: 0.5s all;
+  }
+  .y24-sp-menu-open.y24-sp-menu-btn_span::after {
+    width: 28px;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transition: 0.5s all;
+  }
+ 
+  .y24-navmenu-sp768 {
+    display: flex;
+    position: relative;
+    width: 147px;
+    height: 66px;
+
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 100px;
+  }
+  .y24-sp-contact-btn {
+    display: block;
+    width: 65px;
+    height: 54px;
+    position: relative;
+    background-color: white;
+    border: solid 2px #f05778;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../../images/sp-contact-btn-red.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center top 30%;
+  }
+  .y24-sp-contact-btn:hover {
+    background-color: #f05778;
+    background-image: url("../../images/sp-contact-btn-white.svg");
+  }
+  .y24-sp-contact-btn:hover .y24-sp-contact-btn_p {
+    color: white;
+  }
+  .y24-sp-contact-btn_pic {
+    display: block;
+    position: relative;
+    width: 18px;
+    height: auto;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .y24-sp-contact-btn_img,
+  .y24-sp-application-btn_img {
     display: block;
     width: 100%;
     height: auto;
-    /*  */
   }
+
+  .y24-sp-contact-btn_p {
+    display: block;
+    margin-top: 31px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #f05778;
+  }
+
+  .y24-sp-application-btn {
+    display: block;
+    width: 65px;
+    height: 54px;
+    position: relative;
+
+    background-color: #f05778;
+    border: solid 2px #f05778;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../../images/sp-application-btn-white.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center top 30%;
+  }
+  .y24-sp-application-btn:hover {
+    background-color: white;
+    background-image: url("../../images/sp-application-btn-red.svg");
+  }
+  .y24-sp-application-btn:hover .y24-sp-application-btn_p {
+    color: #f05778;
+  }
+  .y24-sp-application-btn_pic {
+    display: block;
+    width: 18px;
+    height: auto;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .y24-sp-application-btn_p {
+    display: block;
+    margin-top: 31px;
+
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+  .y24-summary {
+    font-size: 16px;
+  }
+  .y24-answer_p {
+    font-size: 16px;
+  }
+  .y24-summary::before {
+    width: 20px;
+    height: 30px;
+    top: 4px;
+    left: -25px;
+  }
+  .y24-answer_p::before {
+    width: 20px;
+    height: 30px;
+    top: 4px;
+    left: -25px;
+  }
+
+
 }
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   .y24-header {
-    display: block;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    /*  */
     display: flex;
     height: 84px;
   }
 
   .y24-header-logo {
-    background-color: var(--maincolor-green);
-    border-radius: 0 0 clamp(1px, 10vw, 156px) 0;
-    /*  */
     width: 756px;
     height: 84px;
     border-radius: 0 0 42px 0;
   }
 
   .y24-header-logo_pic {
-    display: block;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*  */
     width: 145px;
     height: 17px;
     left: 24px;
     transform: translateY(-50%);
   }
-  .y24-header-logo_img {
-    display: block;
-    width: 100%;
-    height: auto;
-    /*  */
+  /* sp-menu */
+  .y24-sp-menu-btn,
+  .y24-sp-menu {
+    display: none;
   }
+  .y24-navmenu-sp768 {
+    width: 177px;
+    height: 84px;
+    margin-right: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .y24-sp-contact-btn {
+    width: 76px;
+    height: 76px;
+    background-size: 27px 27px;
+  }
+
+  .y24-sp-contact-btn_p {
+    margin-top: 45px;
+    font-size: 12px;
+  }
+
+  .y24-sp-application-btn {
+    width: 76px;
+    height: 76px;
+    background-size: 27px 27px;
+  }
+
+  .y24-sp-application-btn_p {
+    margin-top: 45px;
+    font-size: 12px;
+  }
+
 
   /* ヘッダーメニュー */
   .y24-pc-nav-btn {
@@ -337,7 +782,7 @@
     color: #f05778;
   }
   #y24-h-popup-04 .y24-popup-grid a:hover:before {
-    background-image: url('../images/popup-arrow-red.svg');
+    background-image: url("../images/popup-arrow-red.svg");
   }
   #y24-h-popup-04 .y24-popup-grid a::before {
     content: "";
@@ -346,7 +791,7 @@
     height: 16px;
     top: 6px;
     left: 0;
-    background-image: url('../images/popup-arrow-black.svg');
+    background-image: url("../images/popup-arrow-black.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -383,7 +828,7 @@
     color: #f05778;
   }
   #y24-h-popup-05 .y24-popup-grid a:hover:before {
-    background-image: url('../images/popup-arrow-red.svg');
+    background-image: url("../images/popup-arrow-red.svg");
   }
   #y24-h-popup-05 .y24-popup-grid a::before {
     content: "";
@@ -392,7 +837,7 @@
     height: 16px;
     top: 6px;
     left: 0;
-    background-image: url('../images/popup-arrow-black.svg');
+    background-image: url("../images/popup-arrow-black.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -400,54 +845,22 @@
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
   .y24-header {
-    display: block;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    /*  */
-    display: flex;
-    height: 84px;
-    /*  */
     height: 122px;
     margin-left: auto;
     margin-right: auto;
-    background-color: unset;
   }
   .y24-header-logo {
-    background-color: var(--maincolor-green);
-    border-radius: 0 0 clamp(1px, 10vw, 156px) 0;
-    /*  */
-    width: 756px;
-    height: 84px;
-    border-radius: 0 0 42px 0;
-    /*  */
     width: 1097px;
     height: 122px;
     border-radius: 0 0 60px 0;
   }
 
   .y24-header-logo_pic {
-    display: block;
-    position: relative;
-    top: 50%;
-    /*  */
-    width: 145px;
-    height: 17px;
-    left: 24px;
-    transform: translateY(-50%);
-    /*  */
     width: 210px;
     height: 27px;
     left: 35px;
   }
-  .y24-header-logo_img {
-    display: block;
-    width: 100%;
-    height: auto;
-    /*  */
-    /*  */
-  }
+
   /* ヘッダーメニュー */
 
   .y24-pc-nav-btn-area {
@@ -462,4 +875,22 @@
     font-size: 16px;
     bottom: 16%;
   }
+  .y24-navmenu-sp768 {
+    width: 256px;
+    height: 110px;
+  }
+
+  .y24-sp-contact-btn,
+  .y24-sp-application-btn {
+    width: 110px;
+    height: 110px;
+    background-size: 38px 38px;
+  }
+
+  .y24-sp-contact-btn_p,
+  .y24-sp-application-btn_p {
+    margin-top: 66px;
+    font-size: 16px;
+  }
+
 }

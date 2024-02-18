@@ -1,0 +1,99 @@
+/* 車が動くボタン */
+.y24-btn-movecar {
+  width: 360px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: white;
+  border: solid var(--textcolor-black) 3px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.y24-btn-movecar-car_pic {
+  display: block;
+  position: absolute;
+  width: 91px;
+  height: auto;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-40px);
+  transition: 0.5s all;
+}
+.y24-movetrack {
+  bottom: -10px;
+  left: 20px;
+}
+.y24-btn-movecar:hover .y24-btn-movecar-car_pic {
+  transform: translateX(-30px);
+}
+.y24-btn-movecar-car_img {
+  display: block;
+  width: fit-content;
+  width: 100%;
+  height: auto;
+}
+
+.y24-btn-movecar-text_pic {
+  display: block;
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.y24-btn-movecar-text_img {
+  display: block;
+  width: fit-content;
+  height: auto;
+}
+.y24-btn-movecar-text {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  font-family: "Zen Kaku Gothic New";
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--textcolor-black);
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.y24-btn-movecar-car_pic.y24-movetrack {
+  display: block;
+  width: 91px;
+  height: 45px;
+  bottom: 12px;
+  left: -8px;
+  transform: translateX(-53%);
+}
+.y24-btn-movecar-car_pic.y24-movetrack .y24-btn-movecar-car_img {
+  display: block;
+  width: 132px;
+  height: 66px;
+}
+@media screen and (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media screen and (min-width: 1440px) {
+  .y24-btn-movecar {
+    width: 492px;
+    height: 82px;
+  }
+
+  .y24-btn-movecar-car_pic.y24-movetrack {
+    display: block;
+    width: 91px;
+    height: 45px;
+    bottom: 12px;
+    left: -8px;
+    transform: translateX(-53%);
+  }
+  .y24-btn-movecar-car_pic.y24-movetrack .y24-btn-movecar-car_img {
+    display: block;
+    width: 132px;
+    height: 66px;
+  }
+}

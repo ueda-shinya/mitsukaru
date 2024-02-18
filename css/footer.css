@@ -1,3 +1,20 @@
+/* footer */
+.y24-footer {
+  background-color: #cfe01a;
+}
+.y24-footer-pcmenu {
+  display: none;
+}
+.y24-footer-top {
+  width: 100%;
+  height: 76px;
+  background-image: url("../images/sp-s15-bckimg.svg");
+  background-position: right 0 bottom -3px;
+
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 194px 76px;
+}
 .y24-footer-application-linkbtn_a {
   display: grid;
   width: 160px;
@@ -5,9 +22,7 @@
   border-radius: 50px;
   border: solid #f05778 2px;
   background-color: #f05778;
-
   text-decoration: none;
-  /* font-size: 1.6rem; */
   font-size: 16px;
   font-family: "Zen Kaku Gothic New";
   font-weight: bold;
@@ -30,23 +45,6 @@
   width: 100%;
   height: auto;
 }
-/* footer */
-.y24-footer {
-  background-color: #cfe01a;
-}
-.y24-footer-pcmenu {
-  display: none;
-}
-.y24-footer-top {
-  width: 100%;
-  height: 76px;
-  background-image: url("../images/sp-s15-bckimg.svg");
-  background-position: right 0 bottom -3px;
-
-  background-repeat: no-repeat;
-  background-color: white;
-  background-size: 194px 76px;
-}
 
 .y24-footer_pic {
   display: block;
@@ -58,12 +56,10 @@
   padding-bottom: 25px;
 }
 .y24-footer-linkbtn-area {
-  /* display: flex; */
   display: grid;
   width: 354px;
   margin-left: auto;
   margin-right: auto;
-  /* justify-content: space-around; */
   grid-template-columns: repeat(2, 160px);
   gap: 17px;
   padding-bottom: 35px;
@@ -72,13 +68,10 @@
   display: grid;
   width: 160px;
   height: 47px;
-
   background-color: white;
   border-radius: 50px;
   border: solid #f05778 2px;
-
   text-decoration: none;
-  /* font-size: 1.6rem; */
   font-size: 16px;
   font-family: "Zen Kaku Gothic New";
   font-weight: bold;
@@ -105,10 +98,7 @@
   margin-bottom: 4px;
   padding-left: 16px;
   padding-right: 37px;
-  /* border-radius: clamp(1px, 2.564vw, 40px); */
-
   font-size: 14px;
-
   background-color: unset;
   border-radius: unset;
   padding-top: 16px;
@@ -135,9 +125,7 @@
   width: 100%;
   margin-bottom: 0;
   color: var(--textcolor-black);
-  /* padding-left: 14px; */
   padding-bottom: 14px;
-  /* border-bottom: dashed 1px #000000; */
 }
 
 .y24-footer-navmenu .y24-summary::before {
@@ -154,11 +142,7 @@
   content: "";
 }
 .y24-footer-navmenu .y24-answer {
-  /* width: 260px; */
-  /* word-wrap: clamp(1px, 66.667vw, 1080px); */
   height: auto;
-  /* position: relative; */
-  /* right:0; */
   margin-left: auto;
   margin-right: 0;
 }
@@ -214,14 +198,9 @@
   }
 
   .y24-footer-top {
-    width: 100%;
     height: 244px;
     background-image: url("../images/pc-s15-bckimg.svg");
     background-position: right calc((100vw - 960px) / 2) bottom -3px;
-
-    /* background-repeat: no-rep?eat; */
-    /* background-color: white; */
-    /* width: 960px;? */
     background-size: 463px 244px;
   }
   .y24-footer-cta-area {
@@ -261,9 +240,7 @@
     border-radius: 50px;
     border: solid #f05778 2px;
     background-color: #f05778;
-
     text-decoration: none;
-    /* font-size: 1.6rem; */
     font-size: 16px;
     font-family: "Zen Kaku Gothic New";
     font-weight: bold;
@@ -280,9 +257,7 @@
     background-color: white;
     border-radius: 50px;
     border: solid #f05778 2px;
-
     text-decoration: none;
-    /* font-size: 1.6rem; */
     font-size: 16px;
     font-family: "Zen Kaku Gothic New";
     font-weight: bold;
