@@ -55,6 +55,9 @@
   transform: unset !important;
   position: unset !important;
 }
+.y24-pickup-splide .splide__arrow:last-of-type {
+  border-left: none !important;
+}
 
 .y24-pickup-splide .splide__track {
   padding-top: 30px;

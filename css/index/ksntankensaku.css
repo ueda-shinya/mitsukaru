@@ -125,6 +125,7 @@
   font-size: 16px;
   font-weight: bold;
   cursor: not-allowed; /* 初期状態では押せないように見せる */
+    transition: .3s all ease;
 }
 /* 全ての項目が選択された状態のボタンスタイル */
 #y24-submitButton.enabled {

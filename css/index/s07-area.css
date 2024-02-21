@@ -34,13 +34,15 @@
   border: solid 2px white;
   font-size: 16px;
   font-weight: 500;
-  color: white;
+  color: white !important;
   background-color: var(--sp-btn-color);
   text-align: center;
   align-items: center;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  transition: 0.3s all ease;
 }
 .y24-map-btn:hover {
+  color: white;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }

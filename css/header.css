@@ -413,6 +413,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: center top 30%;
+    transition: .3s all ease;
   }
   .y24-sp-contact-btn:hover {
     background-color: #f05778;
@@ -429,6 +430,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
+    transition: .3s all ease;
   }
 
   .y24-sp-contact-btn_img,
@@ -444,6 +446,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
     font-size: 10px;
     font-weight: bold;
     color: #f05778;
+    transition: .3s all ease;
   }
 
   .y24-sp-application-btn {
@@ -451,7 +454,6 @@ input:checked + .y24-sp-menu-radio-rev_label {
     width: 65px;
     height: 54px;
     position: relative;
-
     background-color: #f05778;
     border: solid 2px #f05778;
     border-radius: 10px;
@@ -463,6 +465,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: center top 30%;
+    transition: .3s all ease;
   }
   .y24-sp-application-btn:hover {
     background-color: white;
@@ -479,15 +482,16 @@ input:checked + .y24-sp-menu-radio-rev_label {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
+    transition: .3s all ease;
   }
 
   .y24-sp-application-btn_p {
     display: block;
     margin-top: 31px;
-
     font-size: 10px;
     font-weight: bold;
     color: white;
+    transition: .3s all ease;
   }
 
   .y24-summary {

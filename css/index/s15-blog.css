@@ -45,6 +45,10 @@
   transform: unset !important;
   position: unset !important;
 }
+.y24-blog-splide .splide__arrow:last-of-type {
+  border-left: none !important;
+}
+
 
 .y24-blog-splide .y24-splide_card {
   width: 260px;
