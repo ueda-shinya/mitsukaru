@@ -15,8 +15,8 @@
   grid-template-columns: 90px 131px 90px;
   gap: 8px;
   width: fit-content;
-  height: 140px;
-  margin-top: 18px;
+  height: 134px;
+  margin-top: 22px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -26,11 +26,12 @@
   position: relative;
 }
 .y24-submenu-item_p {
+  margin: 0;
   display: block;
   width: 100%;
   height: auto;
   position: absolute;
-  top: 4px;
+  top: 3px;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
@@ -51,7 +52,7 @@
   width: 100%;
   height: auto;
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
 .y24-submenu-item_img:hover {
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.6));

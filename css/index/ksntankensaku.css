@@ -1,7 +1,7 @@
 .y24-searcharea {
   width: 360px;
   height: 427px;
-  margin-top: 30px;
+  margin-top: 34px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
@@ -14,6 +14,7 @@
 }
 .y24-search-title_p {
   display: block;
+  margin: 0;
   width: fit-content;
   height: fit-content;
   padding-left: 32px;
@@ -23,7 +24,8 @@
   background-position: center left;
   position: relative;
   top: 50%;
-  left: 50%;
+  left: 50.5%;
+  letter-spacing: 0.14em;
   transform: translate(-50%, -50%);
   font-size: 18px;
   font-weight: bold;
@@ -226,5 +228,114 @@
   }
   .y24-search-result p:first-of-type {
     background-image: url("../../images/pc-school.svg");
+  }
+}
+
+/* カレンダー */
+/* CSS */
+#y24-calendar {
+  display: none; /* JavaScriptで制御するため、ここでは非表示に設定 */
+  width: 333px;
+  height: 294px;
+  position: absolute;
+  margin: 0 auto; /* 中央揃え */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  gap: 0px;
+  left:50%;
+  bottom: -378px;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.6));
+}
+#y24-calendar .calendar-header{
+  font-size: 24px;
+  text-align: center;
+  font-family: "Zen Maru Gothic";
+  font-weight: bold;
+}
+#y24-calendar .calendar-instance {
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 10px;
+}
+#y24-calendar .calendar-instance table{
+  width: 100%;
+}
+td.today::before {
+  content: '';
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the circle */
+  width: 33px; /* Adjust size as needed */
+  height: 33px; /* Adjust size as needed */
+  border: 1px solid #d6e816;
+  border-radius: 50%;
+  z-index: -1;
+}
+#y24-calendar .calendar-instance .selected::before{
+  content: '';
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the circle */
+  width: 33px; /* Adjust size as needed */
+  height: 33px; /* Adjust size as needed */
+  border-radius: 50%;
+  background-color: lightgrey;
+  z-index: -1;
+}
+
+#y24-calendar .calendar-instance thead tr th,
+#y24-calendar .calendar-instance tbody tr td {
+  width: 14.29%;
+  position: relative;
+  text-align: center;
+  line-height: 1.5;
+  z-index: 100;
+}
+#y24-calendar .calendar-instance thead tr th{
+  font-family: "Zen Maru Gothic";
+  font-size: 16px;
+}
+#y24-calendar .calendar-instance tbody tr td {
+  font-family: "Zen Maru Gothic";
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+
+
+#y24-calendar button{
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+      position: absolute;
+  top:10px;
+  border: unset;
+  background-color: unset;
+}
+#y24-calendar button:nth-of-type(1){
+  left:10px;
+}
+
+#y24-calendar button:nth-of-type(2){
+right:10px;
+}
+
+
+@media screen and (min-width: 768px) {
+  #y24-calendar {
+    bottom: -440px;
+  }
+}
+@media (min-width: 992px) {
+  #y24-calendar {
+    width: 622px;
+  grid-template-columns: repeat(2,1fr);
+  bottom: -540px;
   }
 }
