@@ -115,7 +115,6 @@
     background-position: center 656px, center 0;
     margin-left: auto;
     margin-right: auto;
-    /* position: relative; */
   }
 
   .y24-fv-title {
@@ -134,12 +133,11 @@
     padding-bottom: 116px;
     background-position: center 641px, center 0;
     background-position: center 44.514vw, center 0;
-
   }
   .y24-fv-title {
     width: 772px;
     width: 53.611vw;
     top: 204px;
-    top:14.167vw;
+    top: 14.167vw;
   }
 }

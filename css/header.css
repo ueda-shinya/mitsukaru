@@ -303,22 +303,6 @@ input:checked + .y24-sp-menu-radio-rev_label {
   transition: 0.3s all ease;
   cursor: pointer;
 }
-/* ポップアップ */
-#y24-h-popup-01,
-#y24-h-popup-02,
-#y24-h-popup-03,
-#y24-h-popup-04,
-#y24-h-popup-05,
-#y24-h-popup-06 {
-  display: none;
-  height: auto;
-  padding: 36px 48px;
-  top: 152px;
-  left: 298px;
-  position: fixed;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
@@ -329,10 +313,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
   .y24-header-logo_pic {
     width: 174px;
     height: auto;
-    /* left: 50%; */
     left: 40px;
-    /* top:50%; */
-    /* transform: translate(-50%, -50%); */
     transform: translateY(-50%);
   }
   /* sp-menu-btn */
@@ -430,20 +411,6 @@ input:checked + .y24-sp-menu-radio-rev_label {
   }
   .y24-sp-contact-btn:hover .y24-sp-contact-btn_p {
     color: white;
-  }
-  .y24-sp-contact-btn_pic {
-    /* display: block; */
-    /* position: relative; */
-    /* width: 18px; */
-    /* width: 36px; */
-    /* height: 36px; */
-    /* background-size: 36px 36px; */
-
-    /* height: auto; */
-    /* top: 10px; */
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
-    /* transition: 0.3s all ease; */
   }
 
   .y24-sp-contact-btn_img,
@@ -582,7 +549,6 @@ input:checked + .y24-sp-menu-radio-rev_label {
   }
 
   .y24-sp-contact-btn_p {
-    /* margin-top: 45px; */
     margin: 45px 0 0;
     font-size: 12px;
   }
@@ -596,29 +562,22 @@ input:checked + .y24-sp-menu-radio-rev_label {
   }
 
   .y24-sp-application-btn_p {
-    /* margin-top: 45px; */
     margin: 45px 0 0;
     font-size: 12px;
   }
 
   /* ヘッダーメニュー */
   .y24-pc-nav-btn {
-    /* display: block; */
     display: grid;
     width: 100%;
     height: 100%;
-    height: 112px;
-    /* position: relative; */
     grid-template-rows: 50% 50%;
   }
   .y24-pc-nav-btn-area {
     display: grid;
     width: fit-content;
     height: 100%;
-    /* position: absolute; */
     top: 50%;
-    /* left: 202px; */
-    /* transform: translateY(-50%); */
     grid-template-columns: repeat(6, 90px);
     gap: 2px;
   }
@@ -654,10 +613,8 @@ input:checked + .y24-sp-menu-radio-rev_label {
     margin-bottom: unset;
     position: absolute;
     position: relative;
-    /* bottom: 14%; */
     top: 50%;
     left: 50%;
-    /* transform: translateX(-50%); */
     transform: translate(-50%, -50%);
     color: var(--textcolor-black);
     font-size: 13px;
@@ -669,6 +626,22 @@ input:checked + .y24-sp-menu-radio-rev_label {
   }
 
   /* ポップアップ */
+  #y24-h-popup-01,
+  #y24-h-popup-02,
+  #y24-h-popup-03,
+  #y24-h-popup-04,
+  #y24-h-popup-05,
+  #y24-h-popup-06 {
+    display: none;
+    width: 550px;
+    height: auto;
+    padding: 24px;
+    top: 112px;
+    left: 220px;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
   .popup-open {
     overflow: hidden;
@@ -680,13 +653,13 @@ input:checked + .y24-sp-menu-radio-rev_label {
   }
   /* ポップアップ2 都道府県から探す */
   #y24-h-popup-02 {
-    width: 771px;
   }
   #y24-h-popup-02 .y24-popup-grid {
     display: grid;
     width: fit-content;
     height: auto;
     grid-template-columns: 192px 449px;
+
     gap: 34px;
   }
 
@@ -736,60 +709,50 @@ input:checked + .y24-sp-menu-radio-rev_label {
     width: 118px;
   }
 
-  /* ポップアップ3 車種別免許 */
-  #y24-h-popup-03 {
-    width: 747px;
-  }
-  #y24-h-popup-03 .y24-popup-grid {
+  /* ポップアップ4 車種別免許 */
+
+  /* #y24-h-popup-04 .y24-popup-grid {
     display: grid;
     width: fit-content;
     height: auto;
     grid-template-columns: 192px 449px;
     gap: 34px;
+  } */
+  #y24-h-popup-04 .y24-sp-menu-syashu-btn-area{
+    gap:8px;
   }
-  #y24-h-popup-03 p {
+  #y24-h-popup-04 p {
     display: block;
     width: 100%;
     font-family: "Zen Kaku Gothic New";
     font-size: 24px;
     font-weight: bold;
+    padding: 12px 14px;
     margin-bottom: 0;
   }
-  #y24-h-popup-03 a {
+  #y24-h-popup-04 a {
     height: 50px;
+    font-family: "Zen Kaku Gothic New";
     font-size: 18px;
-    margin: 0 8px 0 0;
+    /* margin: 0 8px 0 0; */
+    margin: 0;
+    line-height: 1;
   }
-  #y24-h-popup-03 .y24-sp-menu-syashu_btn {
+  #y24-h-popup-04 .y24-sp-menu-syashu_btn {
     margin: 0;
     text-align: center;
   }
-  #y24-h-popup-03 a:nth-of-type(1) {
+  #y24-h-popup-04 a:nth-of-type(1) {
     width: 82px;
   }
-  #y24-h-popup-03 a:nth-of-type(2) {
+  #y24-h-popup-04 a:nth-of-type(2) {
     width: 200px;
   }
 
-  #y24-h-popup-03 a:nth-of-type(3) {
+  #y24-h-popup-04 a:nth-of-type(3) {
     width: 82px;
   }
 
-  #y24-h-popup-03 p {
-    display: block;
-    width: 100%;
-    font-family: "Zen Kaku Gothic New";
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-  #y24-h-popup-03 .y24-sp-menu-syashu-btn-area {
-    width: 100%;
-  }
-  /* ポップアップ4 人気プラン */
-  #y24-h-popup-04 {
-    width: 788px;
-  }
   #y24-h-popup-04 p {
     display: block;
     width: 100%;
@@ -798,44 +761,58 @@ input:checked + .y24-sp-menu-radio-rev_label {
     font-weight: bold;
     margin-bottom: 0;
   }
-  #y24-h-popup-04 .y24-popup-menu {
+  #y24-h-popup-04 .y24-sp-menu-syashu-btn-area {
+    width: 100%;
+  }
+  /* ポップアップ3 人気プラン */
+
+  #y24-h-popup-03 p {
+    display: block;
+    width: 100%;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  /* #y24-h-popup-03 .y24-popup-menu {
     display: grid;
     grid-template-columns: 120px 1fr;
     gap: 54px;
-  }
-  #y24-h-popup-04 .y24-popup-grid {
+  } */
+  #y24-h-popup-03 .y24-popup-grid {
     display: grid;
-    grid-template-columns: 226px 240px;
-    gap: 18px 52px;
+    width: 100%;
+    /* grid-template-columns: 226px 240px; */
+    grid-template-columns: repeat(2, 239px);
+    gap: 24px 12px;
   }
-  #y24-h-popup-04 .y24-popup-grid a {
+  #y24-h-popup-03 .y24-popup-grid a {
     display: block;
     font-size: 18px;
     font-family: "Zen Kaku Gothic New";
     position: relative;
-    padding-left: 24px;
+    padding-left: 20px;
+    line-height: 1;
   }
-  #y24-h-popup-04 .y24-popup-grid a:hover {
+  #y24-h-popup-03 .y24-popup-grid a:hover {
     color: #f05778;
   }
-  #y24-h-popup-04 .y24-popup-grid a:hover:before {
+  #y24-h-popup-03 .y24-popup-grid a:hover:before {
     background-image: url("../images/popup-arrow-red.svg");
   }
-  #y24-h-popup-04 .y24-popup-grid a::before {
+  #y24-h-popup-03 .y24-popup-grid a::before {
     content: "";
     position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 6px;
+    width: 12px;
+    height: 12px;
+    top: 8px;
     left: 0;
     background-image: url("../images/popup-arrow-black.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
   /* ポップアップ5 お申し込みについて */
-  #y24-h-popup-05 {
-    width: 845px;
-  }
+
   #y24-h-popup-05 p {
     display: block;
     width: 100%;
@@ -844,22 +821,24 @@ input:checked + .y24-sp-menu-radio-rev_label {
     font-weight: bold;
     margin-bottom: 0;
   }
-  #y24-h-popup-05 .y24-popup-menu {
+  /* #y24-h-popup-05 .y24-popup-menu {
     display: grid;
     grid-template-columns: 216px 1fr;
     gap: 54px;
-  }
+  } */
   #y24-h-popup-05 .y24-popup-grid {
     display: grid;
-    grid-template-columns: 244px 204px;
-    gap: 18px 52px;
+    /* grid-template-columns: 244px 204px; */
+    grid-template-columns: repeat(2, 239px);
+    gap: 24px 12px;
   }
   #y24-h-popup-05 .y24-popup-grid a {
     display: block;
     font-size: 18px;
     font-family: "Zen Kaku Gothic New";
     position: relative;
-    padding-left: 24px;
+    padding-left: 20px;
+    line-height: 1;
   }
   #y24-h-popup-05 .y24-popup-grid a:hover {
     color: #f05778;
@@ -870,9 +849,9 @@ input:checked + .y24-sp-menu-radio-rev_label {
   #y24-h-popup-05 .y24-popup-grid a::before {
     content: "";
     position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 6px;
+    width: 12px;
+    height: 12px;
+    top: 8px;
     left: 0;
     background-image: url("../images/popup-arrow-black.svg");
     background-repeat: no-repeat;
@@ -905,7 +884,6 @@ input:checked + .y24-sp-menu-radio-rev_label {
     height: 108px;
     grid-template-columns: repeat(2, 108px);
     gap: 24px;
-    /* position: absolute; */
     top: 16px;
     right: calc(26px + (100vw - 1440px) / 2);
   }
@@ -925,7 +903,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
     bottom: 16%;
     line-height: 1.2;
   }
- 
+
   .y24-sp-contact-btn,
   .y24-sp-application-btn {
     width: 108px;
@@ -940,4 +918,17 @@ input:checked + .y24-sp-menu-radio-rev_label {
     margin-top: 62px;
     font-size: 16px;
   }
+    /* ポップアップ */
+    #y24-h-popup-01,
+    #y24-h-popup-02,
+    #y24-h-popup-03,
+    #y24-h-popup-04,
+    #y24-h-popup-05,
+    #y24-h-popup-06 {
+      display: none;
+      /* width: 752px; */
+      padding: 24px;
+      top: 122px;
+      left: 284px;
+    }
 }
