@@ -155,14 +155,11 @@
 
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
-}
-
-@media screen and (min-width: 1440px) {
-  /* スクリーンサイズが1440px以上の場合に適用 */
-  .y24-searcharea {
+ .y24-searcharea {
     width: 960px;
     height: auto;
-    margin-top: 12.778vw;
+    margin-top: 509px;
+    margin-top: 51.310vw;
     padding-bottom: 24px;
   }
   .y24-search-title_p-sp-none {
@@ -230,6 +227,7 @@
     background-image: url("../../images/pc-school.svg");
   }
 }
+@media screen and (min-width: 1440px) {}
 
 /* カレンダー */
 /* CSS */
