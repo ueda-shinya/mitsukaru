@@ -112,9 +112,10 @@
       url("../../images/pc-main-image@3x.webp");
     background-size: 102% auto, 100% auto;
     background-position: center clamp(1px, 45.556vw, 656px), center 0;
+    background-position: center 656px, center 0;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
+    /* position: relative; */
   }
 
   .y24-fv-title {
@@ -131,8 +132,14 @@
 @media screen and (min-width: 1440px) {
   #y24-firstview {
     padding-bottom: 116px;
+    background-position: center 641px, center 0;
+    background-position: center 44.514vw, center 0;
+
   }
   .y24-fv-title {
-    margin-top: 9.722vw;
+    width: 772px;
+    width: 53.611vw;
+    top: 204px;
+    top:14.167vw;
   }
 }

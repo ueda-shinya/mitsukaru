@@ -330,11 +330,10 @@ input:checked + .y24-sp-menu-radio-rev_label {
     width: 174px;
     height: auto;
     /* left: 50%; */
-    left:40px;
+    left: 40px;
     /* top:50%; */
     /* transform: translate(-50%, -50%); */
     transform: translateY(-50%);
-
   }
   /* sp-menu-btn */
   .y24-sp-menu-btn {
@@ -541,7 +540,6 @@ input:checked + .y24-sp-menu-radio-rev_label {
 
   .y24-header-logo {
     display: grid;
-    /* width: 756px; */
     width: fit-content;
     height: 112px;
     border-radius: 0 0 42px 0;
@@ -553,9 +551,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
     width: 187px;
     height: 24px;
     top: 50%;
-    /* left: 24px; */
     left: 50%;
-    /* transform: translateY(-50%); */
     transform: translate(-50%, -50%);
   }
   /* sp-menu */
@@ -565,21 +561,17 @@ input:checked + .y24-sp-menu-radio-rev_label {
   }
   .y24-navmenu-sp768 {
     display: grid;
+    position: absolute;
     grid-template-columns: repeat(2, 72px);
     gap: 12px;
-    /* width: 177px; */
     width: 156px;
-    /* height: 84px; */
     height: 72px;
-    /* margin-right: 11px; */
     margin: 0;
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
+    top: 40px;
     /* ヘッダーメニュー固定しない */
     /* top:8px; */
     /* transform: unset; */
-    top: 40px;
-    /* right: 10px; */
+    right: 10px;
   }
 
   .y24-sp-contact-btn {
@@ -651,8 +643,8 @@ input:checked + .y24-sp-menu-radio-rev_label {
     position: relative;
     position: absolute;
     transform: translateX(-50%);
-    left:50%;
-    bottom:0;
+    left: 50%;
+    bottom: 0;
   }
   .y24-pc-nav-btn_p {
     display: block;
@@ -890,51 +882,62 @@ input:checked + .y24-sp-menu-radio-rev_label {
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
   .y24-header {
-    height: 122px;
+    height: 123px;
     margin-left: auto;
     margin-right: auto;
   }
   .y24-header-logo {
-    width: 1097px;
+    width: 1066px;
+    width: fit-content;
     height: 122px;
     border-radius: 0 0 60px 0;
+    grid-template-columns: 284px 752px 30px;
+    padding-left: calc((100vw - 1440px) / 2);
   }
 
   .y24-header-logo_pic {
-    width: 210px;
-    height: 27px;
-    left: 35px;
+    width: 218px;
+    height: 28px;
   }
 
+  .y24-navmenu-sp768 {
+    width: 240px;
+    height: 108px;
+    grid-template-columns: repeat(2, 108px);
+    gap: 24px;
+    /* position: absolute; */
+    top: 16px;
+    right: calc(26px + (100vw - 1440px) / 2);
+  }
   /* ヘッダーメニュー */
 
   .y24-pc-nav-btn-area {
     left: 293px;
+    height: 100%;
     grid-template-columns: repeat(6, 114px);
     gap: 12px;
   }
   .y24-pc-nav-btn_img {
-    top: 14%;
+    /* top: 14%; */
   }
   .y24-pc-nav-btn_p {
     font-size: 16px;
     bottom: 16%;
+    line-height: 1.2;
   }
-  .y24-navmenu-sp768 {
-    width: 256px;
-    height: 110px;
-  }
-
+ 
   .y24-sp-contact-btn,
   .y24-sp-application-btn {
-    width: 110px;
-    height: 110px;
+    width: 108px;
+    height: 108px;
+    border-radius: 20px;
     background-size: 38px 38px;
+    background-position: center top 17px;
   }
 
   .y24-sp-contact-btn_p,
   .y24-sp-application-btn_p {
-    margin-top: 66px;
+    margin-top: 62px;
     font-size: 16px;
   }
 }
