@@ -303,7 +303,23 @@ input:checked + .y24-sp-menu-radio-rev_label {
   transition: 0.3s all ease;
   cursor: pointer;
 }
-
+  /* ポップアップ */
+  #y24-h-popup-01,
+  #y24-h-popup-02,
+  #y24-h-popup-03,
+  #y24-h-popup-04,
+  #y24-h-popup-05,
+  #y24-h-popup-06 {
+    display: none;
+    width: 550px;
+    height: auto;
+    padding: 24px;
+    top: 112px;
+    left: 220px;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
   .y24-header {
@@ -625,23 +641,8 @@ input:checked + .y24-sp-menu-radio-rev_label {
     text-align: center;
   }
 
+
   /* ポップアップ */
-  #y24-h-popup-01,
-  #y24-h-popup-02,
-  #y24-h-popup-03,
-  #y24-h-popup-04,
-  #y24-h-popup-05,
-  #y24-h-popup-06 {
-    display: none;
-    width: 550px;
-    height: auto;
-    padding: 24px;
-    top: 112px;
-    left: 220px;
-    position: fixed;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
 
   .popup-open {
     overflow: hidden;
@@ -929,6 +930,6 @@ input:checked + .y24-sp-menu-radio-rev_label {
       /* width: 752px; */
       padding: 24px;
       top: 122px;
-      left: 284px;
+      left: calc( 50vw - 436px);
     }
 }

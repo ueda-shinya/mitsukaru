@@ -3,16 +3,22 @@
   background-image: url("../../images/sp-s11-bckimg.svg");
   background-position: right 0 bottom 0;
   background-repeat: no-repeat;
-  padding-bottom: 136px;
+  padding-top: 48px;
+  padding-bottom: 112px;
   background-size: 169px 150px;
 }
-
+#y24-payment .y24-section-title_h2 {
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+#y24-payment .y24-section-title_p {
+}
 .y24-payment-card {
   width: 350px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 24px;
+  margin-bottom: 49px;
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: white;
@@ -21,17 +27,19 @@
 
 .y24-payment-card-thum4 {
   display: grid;
-  width: 225px;
+  /* width: 225px; */
+  width: fit-content;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   grid-template-columns: repeat(2, 97px);
-  gap: 20px;
+  gap: 15px 15px;
 }
 .y24-payment-card-thum3 {
   display: grid;
   width: 280px;
   height: auto;
+  margin-top: 13px;
   margin-left: auto;
   margin-right: auto;
   grid-template-columns: repeat(3, 90px);
@@ -65,25 +73,37 @@
 }
 
 .y24-payment-card_h3 {
-  padding-top: 14px;
-  padding-bottom: 22px;
+  padding-top: 0px;
+  padding-bottom: 10px;
   font-family: "Zen Kaku Gothic New";
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   line-height: 1.5;
+  margin-bottom: 0;
 }
 
 .y24-payment-card_p {
-  padding-bottom: 12px;
+  padding-bottom: 5px;
   font-family: "Zen Kaku Gothic New";
   font-weight: 500;
   font-size: 16px;
   text-align: justify;
-  line-height: 1.643;
+  line-height: 1.5;
+  margin-bottom: 0;
+  letter-spacing: 0em;
 }
 .y24-payment-card_p.y24-fs14 {
   font-size: 14px;
+  padding-left: 16px;
+  line-height: 1.5;
+  position: relative;
+  padding-bottom: 18px;
+}
+.y24-payment-card_p.y24-fs14::before {
+  content: "※";
+  position: absolute;
+  left: 0px;
 }
 
 .y24-payment-card-box_p {
@@ -91,6 +111,8 @@
   font-weight: 500;
   font-size: 10px;
   text-align: center;
+  margin-bottom: 0;
+  padding-top: 8px;
 }
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */

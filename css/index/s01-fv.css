@@ -64,7 +64,7 @@
   display: block;
   width: clamp(346px, 88.718vw, 1384px);
   height: auto;
-  margin-top: 198px;
+  margin-top: 268px;
   margin-right: 0;
   margin-left: auto;
 }
@@ -111,10 +111,11 @@
     background-image: url("../../images/pc-mv-backgraund.svg"),
       url("../../images/pc-main-image@3x.webp");
     background-size: 102% auto, 100% auto;
-    background-position: center clamp(1px, 45.556vw, 656px), center 0;
-    background-position: center 656px, center 0;
+    background-position: center 440px, center 0;
+
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 35px;
   }
 
   .y24-fv-title {

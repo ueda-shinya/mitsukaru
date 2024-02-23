@@ -5,10 +5,18 @@
   background-repeat: no-repeat;
   padding-bottom: 160px;
   background-size: 159px 159px;
+  padding-top: 60px;
+}
+#y24-reason  .y24-section-title_h2{
+  padding-bottom: 8px;
+}
+#y24-reason .y24-section-title_p{
+  padding-bottom: 0;
 }
 #y24-reason .y24-section_p {
   margin-bottom: 0;
-  padding-bottom: 48px;
+  padding-bottom: 53px;
+  line-height: 1.5;
 }
 .y24-reason-crads {
   margin-left: auto;
@@ -56,25 +64,14 @@
 }
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
-}
-
-@media (min-width: 992px) {
-  /* スクリーンサイズが992px以上の場合に適用 */
   #y24-reason {
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
   }
-}
-@media screen and (min-width: 1440px) {
-  /* スクリーンサイズが1440px以上の場合に適用 */
-  #y24-reason {
-    background-image: url("../../images/pc-s08-bckimg.svg");
-    padding-bottom: 130px;
-    background-size: 414px 330px;
-  }
   .y24-reason-crads {
     display: grid;
-    grid-template-columns: repeat(3, 308px);
+    width: fit-content;
+    grid-template-columns: repeat(3, 208px);
     gap: 18px;
   }
   .y24-reason-card {
@@ -85,6 +82,7 @@
     margin-bottom: 0;
     padding-bottom: 29px;
   }
+  
   .y24-reason_pic {
     width: 150px;
     position: unset;
@@ -104,4 +102,27 @@
     transform: translateX(-50%);
     color: var(--textcolor-pink);
   }
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  .y24-reason-crads {
+    grid-template-columns: repeat(3, 260px);
+  }
+
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-reason {
+    background-image: url("../../images/pc-s08-bckimg.svg");
+    padding-bottom: 130px;
+    background-size: 414px 330px;
+  }
+  .y24-reason-crads {
+    display: grid;
+    grid-template-columns: repeat(3, 308px);
+    gap: 18px;
+  }
+
+  
 }

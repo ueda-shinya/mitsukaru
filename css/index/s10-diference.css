@@ -5,8 +5,16 @@
   background-repeat: no-repeat;
   padding-bottom: 184px;
   background-size: 150px 212px;
+  padding-top: 60px;
 }
-
+#y24-defference .y24-section-title_h2{
+margin-bottom: 0;
+padding-bottom: 4px;
+}
+#y24-defference .y24-section-title_p{
+margin-bottom: 0;
+padding-bottom: 46px;
+}
 .y24-deff-card {
   width: 350px;
   height: auto;
@@ -31,7 +39,7 @@
 }
 .y24-deff-card_pic {
   display: block;
-  width: 220px;
+  width: 230px;
   height: auto;
 }
 .y24-deff-card_img {
@@ -46,8 +54,10 @@
   margin-right: auto;
 }
 .y24-deff-card_h3 {
-  padding-top: 14px;
-  padding-bottom: 22px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding-top: 0px;
+  padding-bottom: 19px;
   font-family: "Zen Kaku Gothic New";
   font-weight: bold;
   font-size: 20px;
@@ -55,12 +65,13 @@
   line-height: 1.5;
 }
 .y24-deff-card_p {
-  padding-bottom: 12px;
+  padding-bottom: 14px;
   font-family: "Zen Kaku Gothic New";
   font-weight: 500;
   font-size: 14px;
   text-align: justify;
-  line-height: 1.643;
+  line-height: 1.8;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -68,50 +79,28 @@
   .y24-deff-card_h3 {
     font-size: 24px;
   }
-  .y24-deff-card {
-    width: 560px;
-    margin-bottom: 48px;
-  }
   .y24-deff-card-text {
     width: 480px;
   }
   .y24-deff-card_p {
     font-size: 16px;
   }
-}
 
-@media (min-width: 992px) {
-  /* スクリーンサイズが992px以上の場合に適用 */
-  #y24-defference {
-    padding-left: var(--x-padding-base);
-    padding-right: var(--x-padding-base);
-  }
-}
-@media screen and (min-width: 1440px) {
-  /* スクリーンサイズが1440px以上の場合に適用 */
-  #y24-defference {
-    background-image: url("../../images/pc-s10-bckimg.svg");
-    padding-bottom: 130px;
-    background-size: 407px 407px;
-  }
-  #y24-defference .y24-section-title_p {
-    margin-bottom: 0;
-    padding-bottom: 82px;
-  }
   .y24-deff-card {
     display: grid;
-    width: 960px;
+    width: 720px;
     margin-bottom: 34px;
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 20px;
     padding-right: 30px;
-    grid-template-columns: 318px 1fr;
+    grid-template-columns: 280px 1fr;
+    margin-bottom: 48px;
   }
   .y24-deff-card:nth-of-type(2) {
-    grid-template-columns: 1fr 318px;
-    padding-right: 40px;
-    padding-left: 40px;
+    grid-template-columns: 1fr 280px;
+    padding-left: 30px;
+    padding-right: 20px;
   }
   .y24-deff-card:nth-of-type(2) .y24-deff-card-text {
     order: 1;
@@ -129,6 +118,79 @@
     width: 100%;
     padding-top: 46px;
     padding-bottom: 46px;
+    text-align: justify;
+  }
+  .y24-deff-card_h3 {
+    padding-top: 0;
+    padding-bottom: 18px;
+    margin-bottom: 0;
+    font-size: 28px;
+    text-align: justify;
+  }
+  .y24-deff-card_p {
+    margin-top: 18px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  #y24-defference {
+
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-defference {
+    background-image: url("../../images/pc-s10-bckimg.svg");
+    padding-bottom: 130px;
+    background-size: 407px 407px;
+  }
+  #y24-defference .y24-section-title_p {
+    margin-bottom: 0;
+    padding-bottom: 82px;
+  }
+  .y24-deff-card {
+    display: grid;
+    width: 960px;
+    margin-bottom: 34px;
+    /* padding-top: 0; */
+    /* padding-bottom: 0; */
+    /* padding-left: 20px; */
+    /* padding-right: 30px; */
+    padding: 24px 34px;
+    grid-template-columns: 250px 604px;
+    gap: 38px;
+  }
+  .y24-deff-card:nth-of-type(2) {
+    grid-template-columns: 616px 1fr;
+    /* padding-right: 40px;? */
+    /* padding-left: 40px; */
+  }
+  .y24-deff-card:nth-of-type(2) .y24-deff-card-text {
+    order: 1;
+  }
+  .y24-deff-card:nth-of-type(2) .y24-deff-card-thum {
+    order: 2;
+  }
+  .y24-deff-card-thum {
+    width: 250px;
+    height: fit-content;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .y24-deff-card_pic{
+    width: 250px;
+    height: auto;
+  }
+  .y24-deff-card-text {
+    width: 100%;
+padding-top: 34px;
+padding-bottom: 34px;
+padding-right: 0;
+padding: 0 0 34px 0;
     text-align: justify;
   }
   .y24-deff-card_h3 {

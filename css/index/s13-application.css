@@ -7,7 +7,17 @@
   background-size: 178px 102px;
   padding-right: 3.846%;
   padding-left: 3.846%;
+  padding-top: 46px;
 }
+#y24-application .y24-section-title_h2{
+margin-bottom: 0;
+padding-bottom: 4px;
+}
+#y24-application .y24-section-title_p{
+  margin-bottom: 0;
+  padding-bottom: 22px;
+}
+
 .y24-application_btn {
   border-color: #f05778;
   color: white;

@@ -5,11 +5,26 @@
   background-repeat: no-repeat;
   background-size: 161px 149px;
 }
-
+#y24-search.y24-section {
+  padding-top: 62px;
+  padding-bottom: 186px;
+}
+#y24-search .y24-section-title_h2{
+  margin-bottom: 0;
+  padding-bottom: 3px;
+}
+#y24-search .y24-section-title_p{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.8;
+}
+#y24-search .y24-section_p:nth-of-type(2){
+  padding-bottom: 0;
+}
 .y24-search-linkbtn-area {
   display: grid;
   grid-template-columns: 160px 160px;
-  gap: 18px;
+  gap: 0px 18px;
   width: fit-content;
   height: auto;
   margin-left: auto;

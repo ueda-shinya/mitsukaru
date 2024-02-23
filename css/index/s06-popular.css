@@ -5,6 +5,19 @@
   background-repeat: no-repeat;
   background-size: 163px 163px;
 }
+#y24-popular.y24-section{
+  padding-top: 60px;
+}
+
+#y24-popular .y24-section-title_h2{
+  padding-bottom: 6px;
+}
+#y24-popular .y24-section-title_p{
+  padding-bottom: 0;
+}
+#y24-popular .y24-section_p{
+  line-height: 1.65;
+}
 .y24-section_p:nth-of-type(2) {
   margin-top: 24px;
   padding-bottom: 24px;
@@ -13,12 +26,13 @@
 .y24-popular-cards {
   display: grid;
   height: auto;
-  margin-top: 54px;
+  margin-top: 48px;
   justify-content: center;
   align-items: center;
   grid-template-columns: 350px;
   text-align: center;
-  gap: 20px;
+  gap: 8px;
+  padding-bottom: 19px;
 }
 .y24-popular-card {
   display: block;
@@ -59,13 +73,11 @@
 }
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
-}
-
-@media (min-width: 992px) {
-  /* スクリーンサイズが992px以上の場合に適用 */
-  #y24-popular {
-    padding-left: var(--x-padding-base);
-    padding-right: var(--x-padding-base);
+  .y24-popular-cards {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: repeat(2, 350px);
   }
   .y24-popular-cards {
     display: flex;
@@ -74,9 +86,21 @@
     flex-wrap: wrap;
   }
   .y24-popular-card {
-    width: 420px;
+    width: 350px;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  #y24-popular {
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+
+  .y24-popular-card {
+    width: 420px;
   }
 }
 @media screen and (min-width: 1440px) {

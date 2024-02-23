@@ -110,7 +110,7 @@
   width: 360px;
   height: 40px;
   border-top: dotted var(--textcolor-black) 1px;
-  border-top: dotted red 1px;
+  /* border-top: dotted red 1px; */
   top: -5px;
   left: -4px;
 }

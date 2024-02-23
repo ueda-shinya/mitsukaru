@@ -8,24 +8,24 @@
 .y24-news-area {
   width: 100%;
   height: auto;
-  background-color: white;
 }
 .y24-news-card {
   width: 100%;
   height: auto;
   position: relative;
+  background-color: white;
   padding: 16px 38px 16px 12px;
 }
-.y24-news-card:not(:last-child) {
+.y24-news-area a:not(:last-child) .y24-news-card {
   border-bottom: dashed var(--textcolor-black) 1px;
 }
 .y24-news-card::after {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   top: 50%;
-  right: 0;
+  right: 4px;
   background-image: url("../../images/sp-faq-close-pic.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -51,6 +51,14 @@
   font-size: 16px;
   font-family: "Zen Kaku Gothic New";
   font-weight: 500;
+  /*  */
+  max-height: 69px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* 表示する行数 */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 768px) {
@@ -60,8 +68,48 @@
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-news {
-    padding-left: var(--x-padding-base);
-    padding-right: var(--x-padding-base);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #y24-news .y24-section-inner {
+    width: 100%;
+  }
+  .y24-news-area {
+    display: grid;
+    width: 960px;
+    margin: 0 auto;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .y24-news-card {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 92px 1fr;
+    border-radius: 10px;
+    gap: 36px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  .y24-news-card:hover {
+    cursor: pointer;
+  }
+  .y24-news-area a:not(:last-child) .y24-news-card {
+    border-bottom: unset;
+  }
+  .y24-news-card-date {
+    display: grid;
+    width: 92px;
+    height: 28px;
+    border-radius: 2px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .y24-news-card::after {
+    right: 16px;
   }
 }
 @media screen and (min-width: 1440px) {

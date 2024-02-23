@@ -1,6 +1,6 @@
 .y24-searcharea {
   width: 360px;
-  height: 427px;
+  height: 424px;
   margin-top: 34px;
   margin-left: auto;
   margin-right: auto;
@@ -50,14 +50,18 @@
   margin-bottom: 12px;
   border-radius: 5px;
   box-shadow: inset 0 1px 0 0 rgba(51, 51, 51, 0.25);
+  position: relative;
 }
 .y24-search-item label {
-  position: relative;
+  /* position: relative; */
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding-left: 26px;
-  padding-right: 26px;
+  /* padding-left: 26px;? */
+  /* padding-right: 26px; */
   font-weight: bold;
+
+  left: 26px;
 }
 .y24-search-item select,
 .y24-search-item input {
@@ -68,14 +72,21 @@
   -webkit-appearance: none; /* Chrome, Safari, Opera など */
   -moz-appearance: none; /* Firefox */
   appearance: none;
-  background: url("../../images/sp-faq-close-pic.svg") no-repeat right center;
+  background: url("../../images/sp-faq-close-pic.svg") no-repeat right 17px
+    center;
   border: none; /* 枠を消す場合 */
+
+  width: 100%;
+  height: 100%;
+  padding-left: 82px;
 }
 .y24-search-item:nth-of-type(3) select {
-  width: 184px;
+  /* width: 184px; */
+  padding-left: 127px;
 }
 .y24-search-item:nth-of-type(4) input {
-  width: 207px;
+  /* width: 207px; */
+  padding-left: 97px;
 }
 .y24-search-result {
   display: flex;
@@ -94,13 +105,16 @@
   padding-left: 36px;
   background-image: url("../../images/sp-school.svg");
   background-repeat: no-repeat;
-  background-size: 29px 21px;
+  background-size: 32px 23px;
   background-position: center left;
 }
 .y24-search-result_num2,
 .y24-search-result_num1 {
-  border: 1px solid;
-  padding: 0 4px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  padding: 0;
+  text-align: center;
   font-size: 16px;
   line-height: 1.1;
   position: relative;
@@ -118,7 +132,7 @@
 #y24-submitButton {
   width: 100%;
   height: 47px;
-  margin-top: 12px;
+  margin-top: 2px;
   border-radius: 60px;
   background-color: rgba(241, 87, 121, 0.5); /* 初期状態の背景色 */
   color: black;
