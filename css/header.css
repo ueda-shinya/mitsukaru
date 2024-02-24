@@ -285,6 +285,29 @@ input:checked + .y24-sp-menu-radio-rev_label {
   /* ヘッダーメニュー固定しない */
   /* position: fixed; */
 }
+.y24-sp-menu-minhight{
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-image: url('../../images/sp-menu-footer-img.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 85px;
+}
+/* .y24-sp-menu-footer_pic {
+  display: block;
+  display: none;
+  width: 100%;
+  height:auto;
+  position: absolute;
+  bottom: 0;
+} */
+/* .y24-sp-menu-footer_pic img {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
 
 .y24-contact_btn {
   border-color: #f05778;

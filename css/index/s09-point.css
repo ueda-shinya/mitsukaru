@@ -100,12 +100,14 @@ padding-bottom: 14px;
 }
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-point-cards{
+    width: auto;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .y24-point-card_h3 {
     font-size: 24px;
-  }
-  .y24-point-card {
-    width: 560px;
-    margin-bottom: 48px;
   }
   .y24-point-card-text {
     width: 480px;
@@ -115,7 +117,8 @@ padding-bottom: 14px;
   }
   .y24-point-card {
     display: grid;
-    width: 720px;
+    /* width: 720px; */
+    width: auto;
     margin-bottom: 32px;
     padding-top: 0;
     padding-left: 8px;
@@ -161,6 +164,8 @@ padding-bottom: 14px;
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-point {
+    padding-top: 72px;
+    padding-bottom: 130px;
     /* padding-left: var(--x-padding-base); */
     /* padding-right: var(--x-padding-base); */
   }

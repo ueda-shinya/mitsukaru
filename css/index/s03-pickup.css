@@ -123,7 +123,16 @@
   padding: 4px 14px;
   z-index: 999;
 }
-.y24-pickup-splide .y24-splide_slide-fukidashi ::before {
+.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-pink{
+  background-color: var(--fukidashi-pink);
+}
+.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-yellow{
+  background-color: var(--fukidashi-yellow);
+}
+.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-blue{
+  background-color: var(--fukidashi-blue);
+}
+.y24-pickup-splide .y24-splide_slide-fukidashi::before {
   content: "";
   /* borderで三角形を作る */
   border-width: 8px;
@@ -135,7 +144,16 @@
   right: 10%;
   transform: translateX(-50%) rotate(-220deg);
 }
+.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-pink::before{
+  border-color:var(--fukidashi-pink) transparent transparent transparent;
+}
+.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-yellow::before
+{border-color:var(--fukidashi-yellow) transparent transparent transparent;
+}
 
+.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-blue::before
+{border-color:var(--fukidashi-blue) transparent transparent transparent;
+}
 .y24-pickup-splide .y24-splide_slide-fukidashi p:first-of-type {
   margin: 0;
   font-family: "Zen Kaku Gothic New";
@@ -203,8 +221,10 @@
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-pickup {
+    padding-top: 72px;
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
+    padding-bottom: 160px;
   }
 }
 @media screen and (min-width: 1440px) {

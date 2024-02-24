@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
     const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-    let calendarHTML = `<div class="calendar-instance"><div class="calendar-header">${year} ${monthNames[month]} </div><table><thead><tr>`;
+    let calendarHTML = `<div class="calendar-instance"><div class="calendar-header">${year}年 ${monthNames[month]} </div><table><thead><tr>`;
     dayNames.forEach((day) => {
       calendarHTML += `<th>${day}</th>`;
     });
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.selectDate = function (event, year, month, day) {
     event.stopPropagation();
     selectedDate = new Date(year, month, day);
-    datePicker.value = `${year}-${month + 1}-${day}`.replace(
+    datePicker.value = `${year}年${month + 1}月${day}日`.replace(
       /-(\d)\b/g,
       "-0$1"
     );

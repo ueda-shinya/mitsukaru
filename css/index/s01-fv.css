@@ -112,10 +112,9 @@
       url("../../images/pc-main-image@3x.webp");
     background-size: 102% auto, 100% auto;
     background-position: center 440px, center 0;
-
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 35px;
+    padding-bottom: 120px;
   }
 
   .y24-fv-title {

@@ -66,8 +66,10 @@
     gap: 24px;
   }
   #y24-search {
+    padding-top: 72px;
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
+    padding-bottom: 130px;
   }
 }
 @media screen and (min-width: 1440px) {

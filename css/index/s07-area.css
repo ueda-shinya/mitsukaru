@@ -105,6 +105,7 @@ line-height: 1.8;
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-area {
+    padding-top: 72px;
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
     padding-bottom: 250px;

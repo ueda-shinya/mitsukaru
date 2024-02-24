@@ -37,7 +37,7 @@
   #y24-faq .y24-details {
     display: block;
     width: 100%;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     padding-top: 18px;
     padding-left: 32px;
     padding-right: 37px;
@@ -49,8 +49,10 @@
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-faq {
+    padding-top: 72px;
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
+    padding-bottom: 160px;
   }
 }
 @media screen and (min-width: 1440px) {

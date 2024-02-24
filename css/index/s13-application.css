@@ -48,14 +48,29 @@ padding-bottom: 4px;
 }
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-application_pic {
+    width: auto;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-application {
+    padding-top: 72px;
+    padding-bottom: 130px;
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
   }
+  .y24-application_pic.y24-sp-pic {
+    display: none;
+  }
+  .y24-application_pic.y24-pc-pic {
+    display: block;
+  }
+
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
@@ -64,12 +79,6 @@ padding-bottom: 4px;
     background-image: url("../../images/pc-s13-bckimg.svg");
     background-size: 357px 261px;
     padding-bottom: 130px;
-  }
-  .y24-application_pic.y24-sp-pic {
-    display: none;
-  }
-  .y24-application_pic.y24-pc-pic {
-    display: block;
   }
 
   #y24-application .y24-section-title_p {

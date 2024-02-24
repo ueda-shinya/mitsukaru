@@ -74,14 +74,10 @@
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
   .y24-popular-cards {
-    display: grid;
-    width: 100%;
-    gap: 20px;
-    grid-template-columns: repeat(2, 350px);
-  }
-  .y24-popular-cards {
     display: flex;
-    width: 100%;
+width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     gap: 20px;
     flex-wrap: wrap;
   }
@@ -95,8 +91,10 @@
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-popular {
+    padding-top: 72px;
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
+  padding-bottom: 72px;
   }
 
   .y24-popular-card {

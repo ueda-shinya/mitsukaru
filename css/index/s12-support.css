@@ -96,6 +96,8 @@ padding-bottom: 23px;
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-support {
+    padding-top:72px;
+    padding-bottom: 130px;
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
   }

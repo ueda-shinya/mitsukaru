@@ -151,8 +151,10 @@
     grid-template-columns: 200px 200px 200px 200px;
   }
   #y24-seasonal {
+    padding-top: 72px;
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
+    padding-bottom: 130px;
   }
   .y24-special-banners {
     grid-template-columns: 420px 420px;

@@ -20,6 +20,7 @@
   border-bottom: dashed var(--textcolor-black) 1px;
 }
 .y24-news-card::after {
+  display: block;
   content: "";
   position: absolute;
   width: 12px;
@@ -29,7 +30,7 @@
   background-image: url("../../images/sp-faq-close-pic.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translateX(50%);
 }
 .y24-news-card-date {
   display: block;
@@ -63,13 +64,20 @@
 
 @media screen and (min-width: 768px) {
   /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-news-area {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-news {
+    padding-top: 72px;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 88px;
   }
   #y24-news .y24-section-inner {
     width: 100%;
@@ -109,9 +117,13 @@
     transform: translate(-50%, -50%);
   }
   .y24-news-card::after {
-    right: 16px;
+    right: 10px;
+  }
+  .y24-news-card-text {
+    margin-top: 0;
   }
 }
+
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
 }
