@@ -185,6 +185,9 @@
     margin-top: 51.31vw;
     padding-bottom: 12px;
   }
+  .y24-search-title {
+    height: 53px;
+  }
   .y24-search-title_p-sp-none {
     display: initial;
   }
@@ -192,6 +195,7 @@
     left: 20px;
     transform: translateY(-50%);
     font-size: 24px;
+    letter-spacing: 0.02em;
   }
 
 
@@ -207,7 +211,7 @@
     gap: 4px;
     margin-left: 20px;
     position: relative;
-    margin-top: 28px;
+    margin-top: 24px;
   }
   .y24-search-item {
     display: flex;
@@ -402,6 +406,11 @@ td.today::before {
     width: 622px;
     grid-template-columns: repeat(2, 1fr);
     /* bottom: -540px; */
-    top: 630px;
+    /* top: 630px; */
+    top : calc( 51.31vw + 129px );
   }
 }
+.close-button-container {
+  text-align: right;
+}
+

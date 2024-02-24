@@ -123,13 +123,13 @@
   padding: 4px 14px;
   z-index: 999;
 }
-.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-pink{
+.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-pink {
   background-color: var(--fukidashi-pink);
 }
-.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-yellow{
+.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-yellow {
   background-color: var(--fukidashi-yellow);
 }
-.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-blue{
+.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-blue {
   background-color: var(--fukidashi-blue);
 }
 .y24-pickup-splide .y24-splide_slide-fukidashi::before {
@@ -137,22 +137,22 @@
   /* borderで三角形を作る */
   border-width: 8px;
   border-style: solid;
-  border-color:var(--fukidashi-pink) transparent transparent transparent;
+  border-color: var(--fukidashi-pink) transparent transparent transparent;
   /* 配置する */
   position: absolute;
-  bottom:-6px;
+  bottom: -6px;
   right: 10%;
   transform: translateX(-50%) rotate(-220deg);
 }
-.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-pink::before{
-  border-color:var(--fukidashi-pink) transparent transparent transparent;
+.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-pink::before {
+  border-color: var(--fukidashi-pink) transparent transparent transparent;
 }
-.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-yellow::before
-{border-color:var(--fukidashi-yellow) transparent transparent transparent;
+.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-yellow::before {
+  border-color: var(--fukidashi-yellow) transparent transparent transparent;
 }
 
-.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-blue::before
-{border-color:var(--fukidashi-blue) transparent transparent transparent;
+.y24-pickup-splide .y24-splide_slide-fukidashi.y24-fukidashi-blue::before {
+  border-color: var(--fukidashi-blue) transparent transparent transparent;
 }
 .y24-pickup-splide .y24-splide_slide-fukidashi p:first-of-type {
   margin: 0;
@@ -221,14 +221,19 @@
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-pickup {
-    padding-top: 72px;
+    padding-top: 55px;
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
     padding-bottom: 160px;
+    background-position: right 2px bottom -26px;
+    background-size: 215px auto;
   }
-}
-@media screen and (min-width: 1440px) {
-  /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-pickup .y24-section-title_h2{
+line-height: 1;
+  }
+  #y24-pickup .y24-section-title_p{
+    padding-bottom: 48px;
+  }
   .y24-pc-cta_pic {
     display: block;
     width: 760px;
@@ -258,10 +263,11 @@
   }
   .y24-pickup-splide .splide__track {
     overflow: visible;
+    padding-top: 54px;
   }
 
   .y24-pickup-splide {
-    margin-bottom: 168px;
+    margin-bottom: 162px;
   }
 
   .y24-pickup-splide .splide__slide {
@@ -276,26 +282,27 @@
 
     left: unset !important;
     transform: unset !important;
-    right: 0 !important;
-    bottom: -110px !important;
+    right: -2px !important;
+    bottom: -113px !important;
   }
 
   .y24-pickup-splide .splide__arrow {
     width: 64px !important;
     height: 64px !important;
-  }
+    border: solid 2px #333333 !important;
 
-  .y24-pickup-splide .splide__track {
-    padding-top: 30px;
   }
-
+  .y24-pickup-splide .splide__arrow svg{
+  width: 26px;
+    height: 26px;
+  }
   .y24-pickup-splide .y24-splide_card:hover .y24-splide_slide_img {
     transform: scale(1.1);
     transition: all 1s;
   }
   .y24-pickup-splide .y24-splide_slide-text {
     font-size: 24px;
-    padding: 16px 16px 0;
+    padding: 16px 16px 4px;
   }
   .y24-pickup-splide .y24-splide_slide-start {
     font-size: 18px;
@@ -309,5 +316,25 @@
   }
   .y24-pickup-splide .y24-splide_slide-fukidashi p:last-of-type {
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  .y24-pc-cta_p::before {
+    width: 120px;
+    height: 5px;
+
+    top: 55%;
+    left: -2%;
+    transform: rotate(61deg) translateY(-50%);
+  }
+  .y24-pc-cta_p::after {
+    width: 120px;
+    height: 5px;
+
+    top: 55%;
+    right: -2%; 
+    transform: rotate(-61deg) translateY(-50%);
+
   }
 }

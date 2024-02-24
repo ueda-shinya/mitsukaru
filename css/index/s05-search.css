@@ -63,20 +63,34 @@
   /* スクリーンサイズが992px以上の場合に適用 */
   .y24-search-linkbtn-area {
     grid-template-columns: 240px 240px 240px;
-    gap: 24px;
+    gap: 4px 24px;
+    padding-bottom: 44px;
   }
-  #y24-search {
-    padding-top: 72px;
+  #y24-search.y24-section {
+    background-image: url("../../images/pc-s05-bckimg.svg");
+    background-size: 403px 347px;
+    padding-top: 60px;
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
-    padding-bottom: 130px;
+    padding-bottom: 155px;
+  }
+  #y24-search .y24-section-title_h2{
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  #y24-search .y24-section-title_p{
+    margin-top: -10px;
+    padding-bottom: 20px;
+
+
+  }
+  .y24-search-linkbtn-area{
+    padding-top: 98px;
+
   }
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
-  #y24-search {
-    background-image: url("../../images/pc-s05-bckimg.svg");
-    background-size: 403px 347px;
-    padding-bottom: 154px;
-  }
+
 }

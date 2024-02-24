@@ -9,11 +9,11 @@
   padding-left: 3.846%;
   padding-top: 46px;
 }
-#y24-application .y24-section-title_h2{
-margin-bottom: 0;
-padding-bottom: 4px;
+#y24-application .y24-section-title_h2 {
+  margin-bottom: 0;
+  padding-bottom: 4px;
 }
-#y24-application .y24-section-title_p{
+#y24-application .y24-section-title_p {
   margin-bottom: 0;
   padding-bottom: 22px;
 }
@@ -58,34 +58,39 @@ padding-bottom: 4px;
 
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
-  #y24-application {
-    padding-top: 72px;
-    padding-bottom: 130px;
-    padding-left: var(--x-padding-base);
-    padding-right: var(--x-padding-base);
-  }
-  .y24-application_pic.y24-sp-pic {
-    display: none;
-  }
-  .y24-application_pic.y24-pc-pic {
-    display: block;
-  }
+    #y24-application {
+      background-image: url("../../images/pc-s13-bckimg.svg");
+      background-size: 357px 261px;
+      padding-bottom: 130px;
+      padding-top: 54px;
+    }
 
-}
-@media screen and (min-width: 1440px) {
-  /* スクリーンサイズが1440px以上の場合に適用 */
+    #y24-application .y24-section-title_h2 {
+      margin-bottom: 0;
+      padding-bottom: 0px;
+      line-height: 1;
+    }
+    #y24-application .y24-section-title_p {
+      margin-bottom: 0;
+      padding-bottom: 46px;
+    }
 
-  #y24-application {
-    background-image: url("../../images/pc-s13-bckimg.svg");
-    background-size: 357px 261px;
-    padding-bottom: 130px;
-  }
+    .y24-application_pic {
+      display: block;
+      width: 960px;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  #y24-application .y24-section-title_p {
-    margin-bottom: 0;
-    padding-bottom: 48px;
+    .y24-application_pic.y24-sp-pic {
+      display: none;
+    }
+    .y24-application_pic.y24-pc-pic {
+      display: block;
+    }
   }
-  .y24-application_pic {
-    width: 960px;
-  }
+  @media screen and (min-width: 1440px) {
+    /* スクリーンサイズが1440px以上の場合に適用 */
+  
 }

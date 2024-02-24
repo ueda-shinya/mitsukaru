@@ -585,6 +585,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
     height: 72px;
     background-size: 36px 36px;
     background-position: center top 5px;
+    border: solid 3px #f05778;
   }
 
   .y24-sp-contact-btn_p {
@@ -598,6 +599,8 @@ input:checked + .y24-sp-menu-radio-rev_label {
     margin: 0;
     background-position: center top 4px;
     background-size: 36px 36px;
+    border: solid 3px #f05778;
+
   }
 
   .y24-sp-application-btn_p {
@@ -634,6 +637,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
     width: 100%;
     height: 100%;
     position: relative;
+    bottom: 4px;
   }
   .y24-pc-nav-btn_img {
     display: block;
@@ -650,11 +654,12 @@ input:checked + .y24-sp-menu-radio-rev_label {
     height: auto;
     height: fit-content;
     margin-bottom: unset;
-    position: absolute;
     position: relative;
-    top: 50%;
+    /* top: 50%; */
+    top:5px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    transform: translateX(-50%);
     color: var(--textcolor-black);
     font-size: 13px;
     font-family: "Zen Kaku Gothic New";
@@ -735,13 +740,11 @@ input:checked + .y24-sp-menu-radio-rev_label {
 
   /* ポップアップ4 車種別免許 */
 
-  /* #y24-h-popup-04 .y24-popup-grid {
-    display: grid;
-    width: fit-content;
-    height: auto;
-    grid-template-columns: 192px 449px;
-    gap: 34px;
-  } */
+  #y24-h-popup-04 .y24-popup-grid {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   #y24-h-popup-04 .y24-sp-menu-syashu-btn-area{
     gap:8px;
   }
@@ -798,14 +801,16 @@ input:checked + .y24-sp-menu-radio-rev_label {
     font-weight: bold;
     margin-bottom: 0;
   }
-  /* #y24-h-popup-03 .y24-popup-menu {
+    /* #y24-h-popup-03 .y24-popup-menu {
     display: grid;
     grid-template-columns: 120px 1fr;
     gap: 54px;
   } */
   #y24-h-popup-03 .y24-popup-grid {
     display: grid;
-    width: 100%;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
     /* grid-template-columns: 226px 240px; */
     grid-template-columns: repeat(2, 239px);
     gap: 24px 12px;
@@ -852,6 +857,9 @@ input:checked + .y24-sp-menu-radio-rev_label {
   } */
   #y24-h-popup-05 .y24-popup-grid {
     display: grid;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
     /* grid-template-columns: 244px 204px; */
     grid-template-columns: repeat(2, 239px);
     gap: 24px 12px;
@@ -950,7 +958,7 @@ input:checked + .y24-sp-menu-radio-rev_label {
     #y24-h-popup-05,
     #y24-h-popup-06 {
       display: none;
-      /* width: 752px; */
+      width: 752px;
       padding: 24px;
       top: 122px;
       left: calc( 50vw - 436px);

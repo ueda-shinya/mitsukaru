@@ -193,9 +193,9 @@
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   .y24-footer-top {
-    height: 244px;
+    height: 180px;
     background-image: url("../images/pc-s15-bckimg.svg");
-    background-position: right calc((100vw - 960px) / 2) bottom -3px;
+    background-position: right calc((100vw - 960px) / 2 -23px ) bottom -3px;
     background-size: 463px 244px;
   }
   .y24-footer-navmenu {
@@ -233,6 +233,8 @@
     grid-template-columns: repeat(2, 160px);
     gap: 14px;
     margin: 0;
+    position: relative;
+    left:-46px;
   }
 
   .y24-footer-application-linkbtn_a {

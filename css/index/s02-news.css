@@ -74,10 +74,13 @@
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-news {
-    padding-top: 72px;
+    padding-top: 55px;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 88px;
+  }
+  #y24-news .y24-section-title_h2{
+    line-height: 1;
   }
   #y24-news .y24-section-inner {
     width: 100%;

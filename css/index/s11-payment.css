@@ -149,11 +149,49 @@
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-payment {
-    padding-top: 72px;
+    background-image: url("../../images/pc-s11-bckimg.svg");
+    background-position: right 0 bottom -26px;
+    background-repeat: no-repeat;
     padding-bottom: 130px;
-    padding-left: var(--x-padding-base);
-    padding-right: var(--x-padding-base);
+    background-size: 332px 332px;
   }
+  #y24-payment .y24-section-title_h2{
+  margin-bottom: 0;
+  line-height: 1;
+  }
+  #y24-payment .y24-section-title_p{
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  .y24-payment-cards {
+    display: grid;
+    /* width: 950px; */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(2, 400px);
+    gap: 36px;
+    padding-top: 40px;
+  }
+  .y24-payment-card {
+    width: 100%;
+  }
+  .y24-payment-card-text {
+    width: 90%;
+  }
+  .y24-payment-card-thum3 {
+    width: fit-content;
+    grid-template-columns: repeat(3, 100px);
+    gap: 30px;
+  }
+  .y24-payment-card-thum3 .y24-payment-card_pic {
+    width: 100%;
+  }
+
+
+
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -213,9 +251,12 @@
   }
   .y24-payment-card-thum3 {
     width: 372px;
-    padding-top: 36px;
-    grid-template-columns: repeat(3, 108px);
+    width: fit-content;
+    padding-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .y24-payment-card-thum3 .y24-payment-card_pic {
     width: 100%;
@@ -231,7 +272,7 @@
   }
   .y24-payment-card-thum4 {
     width: fit-content;
-    padding-top: 36px;
+    padding-top: 20px;
     padding-bottom: 22px;
     gap: 16px;
   }

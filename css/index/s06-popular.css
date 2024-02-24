@@ -4,22 +4,20 @@
   background-position: left 0 bottom 0;
   background-repeat: no-repeat;
   background-size: 163px 163px;
-}
-#y24-popular.y24-section{
   padding-top: 60px;
 }
 
-#y24-popular .y24-section-title_h2{
+#y24-popular .y24-section-title_h2 {
   padding-bottom: 6px;
 }
-#y24-popular .y24-section-title_p{
+#y24-popular .y24-section-title_p {
   padding-bottom: 0;
 }
-#y24-popular .y24-section_p{
+#y24-popular .y24-section_p {
   line-height: 1.65;
 }
 .y24-section_p:nth-of-type(2) {
-  margin-top: 24px;
+  margin-top: 25px;
   padding-bottom: 24px;
 }
 /* POPULAR バナー */
@@ -75,7 +73,7 @@
   /* スクリーンサイズが768px以上の場合に適用 */
   .y24-popular-cards {
     display: flex;
-width: fit-content;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
     gap: 20px;
@@ -91,24 +89,66 @@ width: fit-content;
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-popular {
-    padding-top: 72px;
+    padding-top: 56px;
+    padding-bottom: 72px;
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
-  padding-bottom: 72px;
+    background-image: url("../../images/pc-s06-bckimg.svg");
+    background-position: left 0 bottom 0;
+    background-size: 426px 480px;
+  }
+
+  #y24-popular .y24-section-title_h2 {
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+  #y24-popular .y24-section-title_p {
+    padding-bottom: 47px;
+    margin-bottom: 0;
+  }
+  #y24-popular .y24-section_p {
+    line-height: 1.65;
+    margin-top: 0;
+    padding-bottom: 0px;
+  }
+
+  .y24-popular-cards {
+    margin-top: 0;
+    padding-top: 72px;
+    padding-bottom: 52px;
+    gap: 8px 24px;
   }
 
   .y24-popular-card {
     width: 420px;
   }
+
+  .y24-popular-card_a {
+    border-radius: 4px;
+  }
+  .y24-popular-card_p {
+    margin-top: 12px;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+  }
+
+  #y24-popular .y24-btn-movecar{
+    width: 492px;
+  }
+  #y24-popular .y24-btn-movecar-text{
+    font-size: 24px;
+  }
+  #y24-popular .y24-btn-movecar-car_pic{
+    width: 100px;
+    height: 50px;
+    left: 22px;
+    bottom: 30px;
+  }
+  #y24-popular .y24-btn-movecar-car_pic img{
+    width: 94px;
+    height: 94px;}
 }
 @media screen and (min-width: 1440px) {
   /* スクリーンサイズが1440px以上の場合に適用 */
-  #y24-popular {
-    background-image: url("../../images/pc-s06-bckimg.svg");
-    background-size: 426px 480px;
-    padding-bottom: 72px;
-  }
-  .y24-popular-cards {
-    padding-bottom: 72px;
-  }
 }

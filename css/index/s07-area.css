@@ -5,8 +5,6 @@
   background-repeat: no-repeat;
   background-size: 136px 136px;
   background-position: bottom 0 right 19px;
-}
-#y24-area.y24-section{
   padding-top:62px;
   padding-bottom: 188px;
 }
@@ -105,16 +103,32 @@ line-height: 1.8;
 @media (min-width: 992px) {
   /* スクリーンサイズが992px以上の場合に適用 */
   #y24-area {
-    padding-top: 72px;
+    padding-top: 57px;
     padding-left: var(--x-padding-base);
     padding-right: var(--x-padding-base);
-    padding-bottom: 250px;
+    padding-bottom: 268px;
   }
+  #y24-area .y24-section-title_h2{
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    line-height: 1;}
+    #y24-area .y24-section-title_p{
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    margin-top: -10px;
+    }
+    #y24-area .y24-section_p:nth-of-type(2) {
+      margin-top: 42px;
+      padding-bottom: 0px;
+
+    }
+
+
   #y24-area .y24-maparea {
     width: 648px;
     height: 630px;
     position: relative;
-    margin-top: 105px;
+    margin-top: 95px;
     margin-left: auto;
     margin-right: auto;
   }

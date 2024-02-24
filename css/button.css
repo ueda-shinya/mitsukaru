@@ -76,12 +76,24 @@
 @media screen and (min-width: 768px) {
 }
 @media (min-width: 992px) {
-}
-@media screen and (min-width: 1440px) {
   .y24-btn-movecar {
-    width: 492px;
+    width: 429px;
     height: 82px;
   }
+  .y24-btn-movecar-car_pic {
+    display: block;
+    position: absolute;
+    width: 122px;
+    height: auto;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-40px);
+    transition: 0.5s all;
+  }
+
+}
+@media screen and (min-width: 1440px) {
+
 
   .y24-btn-movecar-car_pic.y24-movetrack {
     display: block;
