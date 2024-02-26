@@ -1,0 +1,272 @@
+@charset "UTF-8";
+.y24-section.y24-section-info {
+  background: linear-gradient(0deg, #C4EEE6 0%, #C4EEE6 100%), linear-gradient(0deg, #FFF 0%, #FFF 100%), #F3F3F3;
+}
+
+.y24-inner.y24-info-inner {
+  padding: 0;
+}
+
+.y24-school-info {
+  border-collapse: collapse;
+	max-width: 350px;
+  width: 100%;
+  margin: auto;
+  background: var( --maincolor-white);
+}
+
+.y24-school-info-row {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 16px 0; 
+  padding: 0 12px;
+}
+
+.y24-school-info-row:first-child {
+  padding-top: 12px;
+}
+
+.y24-school-info-row-left.y24-school-first {
+  border-top: 1px solid #D7D8DB;
+}
+
+.y24-school-info-row.y24-school-info-last {
+  padding: 12px 12px 0 12px;
+}
+
+.y24-school-info-row-left {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #6FBADA;
+  padding: 12px 12px 0 12px;
+}
+
+.y24-school-info-row-right {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  border-bottom: 1px solid #D7D8DB;
+  padding: 0 12px 12px 12px;
+}
+
+.y24-info-lists.y24-school-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.y24-info-lists.y24-school-date:last-child {
+  margin-bottom: 0;
+}
+
+.y24-info-lists.y24-carmodel {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.y24-info-list {
+  text-align: center;
+  color: #6FBADA;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px; /* 166.667% */
+  border: 1px solid #81C2DF;
+  width: 68px;
+  white-space: nowrap;
+  padding: 2px;
+}
+
+.y24-info-txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-align: justify;
+  margin-bottom: 9px;
+}
+
+.y24-info-txt:last-child {
+  margin-bottom: 0;
+}
+
+.y24-info-txt.y24-info-deco {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  padding: 15px 2px 0 14px;
+
+  position: relative;
+}
+
+.y24-info-txt.y24-info-deco::before {
+  position: absolute;
+  content: "※";
+  color: #645F5A;
+  font-family: "Zen Kaku Gothic New";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  top: 15px;
+  left: 0;
+}
+
+.y24-info-list03 li {
+  margin-bottom: 8px;
+}
+
+.y24-info-list03 li:last-child {
+  margin-bottom: 0;
+}
+
+.y24-info-list04 {
+  display: flex;
+  gap: 0 8px;
+}
+
+.y24-info-list04 li {
+  margin-bottom: 11px;
+}
+
+.y24-info-list04 li:last-child {
+  margin-bottom: 0;
+}
+
+.y24-info-txt.y24-info-bold {
+  font-weight: 700;
+}
+
+.y24-info-txt.y24-info-deco2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;  
+  color: #645F5A;
+  padding: 12px 0 12px 14px;
+
+  position: relative;
+}
+
+.y24-info-txt.y24-info-deco2::before {
+  content: "※";
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-school-info {
+    border-collapse: collapse;
+    max-width: 100%;
+    width: 100%;
+    background: var( --maincolor-white);
+  }
+  
+  .y24-school-info-row {
+    display: grid;
+    grid-template-columns: 238px 1fr;    
+    gap: 12px;    
+    padding: 0 12px;
+  }
+
+  .y24-school-info-row.y24-school-info-last {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 ;
+  }
+  
+  .y24-school-info-row-left {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #6FBADA;
+    border-bottom: 1px solid #D7D8DB;
+    padding: 12px 0 12px 12px;
+  }
+  
+  .y24-school-info-row-right {
+    padding: 8px 12px 12px 0;
+    border-bottom: 1px solid #D7D8DB;
+  }
+
+  .y24-school-info-row-right.y24-school-first {
+    border-top: 1px solid #D7D8DB;
+  }
+  
+  .y24-info-lists.y24-carmodel {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+  }
+  
+  .y24-info-list03 li {
+    margin-bottom: 8px;
+  }
+  
+  .y24-info-list03 li:last-child {
+    margin-bottom: 0;
+  }
+
+  .y24-info-list {
+    margin-bottom: 8px;
+  }
+
+  .y24-school-info-row-right.y24-school-info-row-right-list04 {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 8px 0;
+  }
+  
+  .y24-info-list04 {
+    display: flex;
+    gap: 0 8px;
+  }
+
+  .y24-info-list04 li {
+    margin-bottom: 0;
+  }
+
+  .y24-info-list.y24-info-list-car {
+    margin-bottom: 0;
+  }
+
+  .y24-school-info-row-right04 {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 14px 0;
+  }
+
+  .y24-school-info-row:first-child {
+    padding-top: 36px;
+  }
+
+  .y24-info-txt.y24-info-deco2 {
+    padding: 12px 0 36px 14px;
+  
+  
+
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  .y24-school-info-row {
+    padding: 0 48px;
+  }
+
+  .y24-school-info-row.y24-school-info-last {
+    padding: 0 48px;
+  }
+  
+
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

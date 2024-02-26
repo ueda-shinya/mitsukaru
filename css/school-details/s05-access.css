@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+.y24-section-access {
+  background: linear-gradient(0deg, #EFF3CE 0%, #EFF3CE 100%), linear-gradient(0deg, #F8FCD8 0%, #F8FCD8 100%), linear-gradient(0deg, #D6E816 0%, #D6E816 100%), #F3F3F3;
+}
+
+.y24-access-box {
+  padding: 12px 12px;
+  background: var(--maincolor-white);
+  margin: 14px 0 48px;
+}
+
+.y24-access-items01 {
+  margin-bottom: 24px;
+}
+
+.y24-access-ttl {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--textcolor-pink);
+  margin-bottom: 10px;
+  font-family: "Zen Maru Gothic";
+}
+
+h4.y24-access-ttl {
+  margin-bottom: 12px;
+}
+
+.y24-access-ttl.y24-access-ttl-item02 {
+  margin-bottom: 24px;
+}
+
+.y24-access-ttl.y24-access-ttl-item02-2 {
+  margin-bottom: 26px;
+}
+
+.y24-info-wrap.y24-info-access-wrap {
+  margin-bottom: 24px;
+}
+
+.y24-access-txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.y24-access-map {
+  width: 100%;
+  margin: auto;
+
+}
+
+.y24-iframe-wrap {
+  aspect-ratio: 350 / 411;
+  margin-bottom: 24px;
+
+  position: relative;
+}
+
+.y24-iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.y24-access-items02 {
+  margin-bottom: 45px;
+}
+
+.y24-access-items02:last-child {
+  margin-bottom: 24px;
+}
+
+.y24-access-item02 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  padding-left: 22px;
+  margin-bottom: 4px;
+
+  position: relative;
+}
+
+.y24-access-item02.y24-circle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 171.429% */
+  padding-left: 22px;
+  margin-bottom: 4px;
+
+  position: relative;
+}
+
+.y24-access-item02:last-child {
+  margin-bottom: 0;
+}
+
+.y24-access-item02.circle {
+  padding-left: 17px;
+}
+
+.y24-access-item02::before {
+  position: absolute;
+  content: "";
+  background: #B2C10F url(../../images/school/icon-check.svg) no-repeat center center / contain;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  top: 5px;
+  left: 0;
+}
+
+.y24-access-item02.y24-circle::before {
+  position: absolute;
+  content: "";
+  background: #B2C10F;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  top: 9px;
+  left: 2px;
+}
+
+.y24-info-row {
+  border-bottom: 1px dashed #6FBADA;
+  padding: 12px 18px;
+}
+
+.y24-info-row:first-child {
+  border-top: 1px dashed #6FBADA;
+}
+
+.y24-info-row dt {
+  padding: 0;
+  margin: 0;
+  color: #6FBADA;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;  
+  margin-bottom: 18px;
+}
+
+.y24-info-row dd {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.y24-info-row.y24-info-access-row {
+  padding: 12px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .iframe-wrap {
+    aspect-ratio: 912 / 384;
+  }
+
+  .y24-access-items02-wrap {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: flex-start;
+    gap: 0 36px;
+    padding: 0 24px;
+  }
+
+  .y24-access-ttl:first-child {
+    margin-bottom: 24px;
+  }
+
+  .y24-access-items02 {
+    margin-bottom: 0;
+  }
+
+  .y24-access-items02.y24-circle {
+    margin-bottom: 32px;
+  }
+
+  .y24-info-row {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 0 18px;
+    padding: 12px 18px;
+  }
+
+  .y24-info-row dt {
+    margin-bottom: 0;
+  }
+
+  .y24-iframe-wrap {
+    aspect-ratio: 350 / 200;
+}
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.y24-section.y24-section-hotel {
+  background: linear-gradient(0deg, #C4EEE6 0%, #C4EEE6 100%), #EDECEC;
+  position: relative;
+  z-index: 1;
+}
+
+.y24-hotel-box {
+  background: var(--maincolor-white);
+  padding: 12px;  
+}
+
+.y24-hotel-txt {
+  margin-bottom: 6px;
+  color: #645F5A;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.y24-hotel-txt:last-child {
+  margin-bottom: 0;
+}
+
+.y24-hotel-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.y24-hotel-img img {
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-hotel-box {
+    padding: 36px 48px;
+  }
+  
+  .y24-hotel-info-row {
+    display: grid;
+    grid-template-columns: 226px 1fr;
+    gap: 0 27px;
+  }
+
+  .y24-hotel-txt:last-child {
+    margin-bottom: 0;
+    padding: 0 2px 0 14px;
+  }
+
+  .y24-hotel-txt:last-child:before {
+    top: 0px;
+  }
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

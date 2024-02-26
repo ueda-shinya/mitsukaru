@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.y24-firstview{
+background-image: url("../../images/y24-subcompact-fv.svg");
+width: 100%;
+height: 238px;
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover;
+display: grid;
+place-items: center;
+text-align: center;
+padding: 0 !important;
+}
+
+.y24-firstview__title{
+font-size: 36px;
+line-height: calc(36 / 32);
+font-family: "Zen Maru Gothic";
+font-weight:900;
+}
+.y24-firstview__title::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 12px;
+  border-radius: 99px;
+  background-color: #D6E816;
+  margin-top: -7px;
+}
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+.y24-firstview{
+  min-height: 378px;
+  background-position: bottom;
+}
+.y24-firstview__title{
+  font-size: 60px;
+}
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}
+

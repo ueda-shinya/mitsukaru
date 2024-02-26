@@ -1,0 +1,78 @@
+.y24-section{
+    padding-top: 48px;
+    padding-bottom: 60px;
+  }
+.y24-recommend__inner{
+    max-width: 1010px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 0 20px;
+}
+
+.y24-cards-title{
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    padding-bottom: 12px;
+    border-bottom: 2px solid  #B2C10F;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+    font-family: "Zen Maru Gothic";
+}
+.y24-cards-title::before{
+    content: "";
+    background-image: url("../../images/y24-card-title.svg");
+    width: 51px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 12px;
+}
+
+.y24-recommend-header {
+padding:24px 0 ;
+max-width: 720px;
+width: 100%;
+margin-inline: auto;
+
+}
+
+.y24-recommend-header__text {
+font-size: 16px;
+font-weight: 400;
+line-height: calc(26 / 16);
+}
+.y24-recommend-header__text + .y24-recommend-header__text{
+    margin-top: 12px;
+}
+
+.y24-footer-top--subcompact{
+    background-color: #F7F8EB !important;
+  }
+
+.y24-sp{
+    display: block;
+  }
+@media screen and (min-width: 768px) {
+    /* スクリーンサイズが768px以上の場合に適用 */
+
+    .y24-section{
+        padding-top:72px;
+        padding-bottom: 120px;
+      }
+    .y24-recommend__inner{
+        padding: 0 25px;
+    }
+    .y24-cards-title{
+        font-size: 36px;
+        line-height: calc(52 / 36);
+
+    }
+    .y24-sp{
+        display: none;
+      }
+        
+    
+  }

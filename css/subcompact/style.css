@@ -1,0 +1,178 @@
+.y24-section{
+  padding-top: 48px;
+  padding-bottom: 60px;
+}
+.y24-plan{
+  background-color: #C4EEE6;
+}
+.y24subcompact__inner{
+    max-width: 1010px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 0 20px;
+}
+
+
+.y24-bread {
+width: 100%;
+overflow-x: scroll;
+}
+.y24-bread__inner {
+width:1270px;
+margin-inline: auto;
+}
+
+.y24-bread__list {
+display: grid;
+grid-template-columns: repeat(15,1fr);
+white-space: nowrap;
+}
+
+.y24-bread__item {
+width:80px;
+text-align: center;
+display: grid;
+grid-row: span2;
+grid-template-rows: subgrid;
+position: relative;
+flex-shrink: 0;
+
+}
+.y24-bread__item::before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 48px;
+    background-color: #C2C9D6;
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    transform: translate(-50% ,-50%);
+
+}
+.y24-bread__item:last-child::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 48px;
+    position: absolute;
+    background-color: #C2C9D6;
+    top: 50%;
+    right: 2px;
+    transform: translate(-50% ,-50%);
+
+}
+
+.y24-bread__link {
+    width: 100%;
+    height: 100%;
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+    display: inline-block;
+}
+
+.y24-brad__img {
+    max-width: 30px;
+    width: 100%;
+margin-inline: auto;
+display: inline-block;
+}
+.y24-brad__img img{
+    aspect-ratio: 30 / 30;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-inline: auto;
+}
+.y24-bread__item:nth-child(n+9) .y24-brad__img{
+    max-width: 52px;
+    width: 100%;
+margin-inline: auto;
+display: inline-block;
+}
+.y24-bread__item:nth-child(n+9) .y24-brad__img img{
+    aspect-ratio: 52 / 26;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-inline: auto;
+}
+.y24-bread__item:nth-child(n+14) .y24-brad__img{
+    max-width: 76px;
+    width: 100%;
+margin-inline: auto;
+display: inline-block;
+}
+.y24-bread__item:nth-child(n+14) .y24-brad__img img{
+    aspect-ratio: 76 / 22;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-inline: auto;
+}
+
+.y24-bread__link-text{
+font-size:8.5px;
+font-weight: bold;
+line-height: calc(13 / 10);
+margin-top: 6px;
+text-align: center;
+}
+
+.y24-bread__link.is-active{
+    background-color:#EFF3CE;
+
+}
+.y24-cards-title{
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  padding-bottom: 12px;
+  border-bottom: 2px solid  #B2C10F;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+  font-family: "Zen Maru Gothic";
+}
+.y24-cards-title::before{
+  content: "";
+  background-image: url("../../images/y24-card-title.svg");
+  width: 51px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 12px;
+}
+.y24-sp{
+  display: block;
+}
+.y-24__plan-btn{
+  max-width: 360px !important;
+  width: 100% !important;
+  margin-top: 48px;
+}
+.y24-footer-top--subcompact{
+  background-color: #F7F8EB !important;
+}
+
+@media screen and (min-width: 768px) {
+    /* スクリーンサイズが768px以上の場合に適用 */
+
+    .y24-section{
+      padding-top:72px;
+      padding-bottom: 120px;
+    }
+    .y24-subcompact__inner{
+        padding: 0 25px;
+    }
+    .y24-cards-title{
+      font-size: 36px;
+      line-height: calc(52 / 36);
+
+  }
+  .y24-sp{
+    display: none;
+  }
+    
+  }

@@ -1,0 +1,499 @@
+@charset "UTF-8";
+.y24-recommend__cards{
+  margin-top: 48px;
+}
+.y24-recommend__card-wrapper{
+  margin-top: 48px;
+  max-width: 500px;
+width: 100%;
+margin-inline: auto;
+}
+
+.y24-recommend__card {
+display: block;
+margin-top: 24px;
+
+}
+
+
+.y24-recommend__img-title {
+  font-size: 24px;
+  font-family: "Zen Maru Gothic";
+  color: #F15779;
+  font-weight: bold;
+  line-height: calc(35 / 24);
+}
+
+.y24-recommend__card-img {
+width: 100%;
+margin-inline: auto;
+margin-right:0;
+flex-shrink: 0;
+
+}
+.y24-recommend__card-img img{
+  aspect-ratio: 296 / 198;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+.y24-recommend__card__textarea{
+  margin-top: 36px;
+}
+.y24-recommend__card-text{
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  font-weight: 400;
+}
+.y24-recommend__card-text + .y24-recommend__card-text{
+  margin-top: 12px;
+}
+
+
+/* カード２ */
+.y24-recommend__cards2{
+  margin-top: 48px;
+}
+.y24-recommend__card2 {
+display: grid;
+grid-row: span 3;
+grid-template-rows: subgrid;
+max-width: 500px;
+width: 100%;
+margin-inline: auto;
+
+}
+
+.y24-recommend__card2-wrapper {
+  display: block;
+  margin-top: 48px;
+  }
+  .y24-recommend__card2 + .y24-recommend__card2{
+    margin-top: 48px;
+  }
+
+.y24-recommend__card2-img {
+max-width:none;
+width: 100%;
+display: inline-block;
+}
+.y24-recommend__card2-img img{
+  aspect-ratio: 296 / 202;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.y24-recommend__card2-title {
+font-size: 24px;
+color: #F15779;
+line-height: calc(35 / 24);
+font-weight: bold;
+font-family: "Zen Maru Gothic";
+margin-top: 24px;
+
+}
+
+.y24-recommend__card2-textarea {
+margin-top: 24px;
+}
+
+.y24-recommend__card2-text {
+font-size: 16px;
+font-weight: 400;
+line-height: calc(26 / 16);
+
+}
+.y24-recommend__card2-text + .y24-recommend__card2-text{
+  margin-top: 12px;
+}
+
+
+/* カード３ */
+.y24-recommend__cards3{
+  margin-top: 48px;
+}
+.y24-recommend__cards3{
+  display: block;
+
+}
+.y24-recommend__card3-wrapper{
+  margin-top: 48px;
+}
+
+.y24-recommend__card3 {
+max-width: 500px;
+width: 100%;
+padding: 18px;
+border: 1px solid #D7D8DB;
+border-radius: 8px;
+margin-inline: auto;
+
+}
+.y24-recommend__card3 + .y24-recommend__card3{
+  margin-top: 36px;
+}
+
+.y24-recommend__card3-img {
+max-width:128px;
+width: 100%;
+margin-inline: auto;
+display:block;
+}
+.y24-recommend__card3-img img{
+  aspect-ratio: 128 / 128;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.y24-recommend__card3-textarea {
+margin-top: 24px;
+}
+
+.y24-recommend__card3-text {
+font-size: 16px;
+font-weight: 400;
+line-height: calc(26 / 16);
+
+}
+.y24-recommend__card3-text + .y24-recommend__card3-text{
+  margin-top: 12px;
+}
+
+.y24-recommend__card3-lists {
+margin-top: 12px;
+}
+
+.y24-recommend__card3-list {
+display: flex;
+align-items: center;
+padding: 12px 18px;
+border-top: 1px dotted #6FBADA;
+}
+.y24-recommend__card3-list:last-child{
+  border-bottom: dotted 1px #6FBADA;
+}
+
+.y24-recommend__card3-term {
+font-size: 16px;
+color: #6FBADA;
+line-height: calc(23 / 16);
+width: 66px;
+flex-shrink: 0;
+font-weight: bold;
+}
+
+.y24-recommend__card3-dis {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: calc(23 / 16);
+}
+
+/* カード４ */
+
+.y24-recommend__cards4 {
+margin-top: 48px;
+}
+.y24-recommend__card4-wrapper{
+  display: block;
+  margin-top: 48px;
+}
+
+
+.y24-recommend__card4 {
+display: grid;
+grid-template-rows: subgrid;
+grid-row: span 3;
+max-width: 500px;
+width: 100%;
+margin-inline: auto;
+}
+
+.y24-recommend__card4 + .y24-recommend__card4{
+  margin-top: 36px;
+}
+
+.y24-recommend__card4-img {
+max-width: 120px;
+width: 100%;
+margin-inline: auto;
+display: inline-block;
+}
+.y24-recommend__card4-img img{
+  aspect-ratio: 120 / 120;
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.y24-recommend__card4-title {
+color: #F15779;
+font-size: 24px;
+line-height: calc(35 / 24);
+font-family: "Zen Maru Gothic";
+text-align: center;
+margin-top: 12px;
+font-weight: bold;
+
+}
+
+.y24-recommend__card4__textarea {
+margin-top: 24px;
+}
+
+.y24-recommend__card4__text {
+font-size: 16px;
+font-weight: 400;
+line-height: calc(26 / 16);
+}
+.y24-recommend__card4__text + .y24-recommend__card4__text{
+  margin-top: 12px;
+}
+.y24-recommend__timetable{
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+}
+.y24-recommend__timetable-wrapper {
+display: flex;
+justify-content: space-between;
+padding-left: 30px;
+align-items: center;
+padding-right: 12px;
+padding-top: 12px;
+padding-bottom: 12px;
+width: 100%;
+border-top: 1px solid #D7D8DB;
+}
+.y24-recommend__timetable-wrapper:last-child{
+  border-bottom: 1px solid #D7D8DB;
+}
+
+.y24-recommend__timetable-car {
+max-width: 220px;
+width: 100%;
+font-size: 16px;
+font-weight: bold;
+line-height: calc(26 / 16);
+}
+
+.y24-recommend__timetable-day {
+max-width: 180px;
+width: 100%;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+}
+
+.y24-recommend__timetable-btn {
+display: inline-block;
+min-width: 180px;
+padding: 5px 10px;
+border: solid 1px #000000;
+font-size: 14px;
+font-weight: bold;
+line-height: calc(26 / 14); 
+text-align: center;
+}
+.y24-recommend__banner{
+  margin-top: 48px;
+  text-align: center;
+}
+.y24-recommend__banner-title{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: calc(26 / 18);
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: "Zen Maru Gothic", serif;
+
+}
+
+.y24-recommend__banner-title::before{
+  content: "";
+  width:60px;
+  height: 3px;
+  background-color: #333333;
+  display: inline-block;
+  transform: rotate(63deg);
+}
+.y24-recommend__banner-title::after{
+  content: "";
+  width:60px;
+  height: 3px;
+  background-color: #333333;
+  display: inline-block;
+  transform: rotate(-63deg);
+
+}
+.y24-recommend__banner-link{
+  margin-top: 24px;
+  display: inline-block;
+}
+.y24-recommend__banner-img{
+  max-width: 760px;
+  width: 100%;
+  margin-inline: auto;
+  display: inline-block;
+}
+.y24-recommend__banner-img img{
+  aspect-ratio: 760 / 211;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+
+  .y24-recommend__cards{
+    margin-top: 60px;
+  }
+  .y24-recommend__card-wrapper{
+    max-width: none;
+  }
+  .y24-recommend__card {
+    display: flex;
+    align-items: flex-start;
+  }
+  .y24-recommend__card-wrapper:nth-of-type(2n) .y24-recommend__card{
+    flex-direction: row-reverse;
+  }
+
+
+.y24-recommend__cards:nth-child(2) .y24-recommend__card-wrapper:nth-of-type(odd) .y24-recommend__card{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.y24-recommend__cards:nth-child(2) .y24-recommend__card-wrapper:nth-of-type(2n) .y24-recommend__card{
+  display: flex;
+  flex-direction: row;
+}
+.y24-recommend__cards:nth-child(2) .y24-recommend__card-wrapper:nth-of-type(odd) .y24-recommend__card .y24-recommend__card-img{
+margin-right: 0;
+margin-left: 36px;
+}
+
+.y24-recommend__cards:nth-child(2) .y24-recommend__card-wrapper:nth-of-type(2n) .y24-recommend__card .y24-recommend__card-img{
+  margin-left: 0;
+  margin-right: 36px;
+}
+  
+
+
+  
+  .y24-recommend__card-img {
+    max-width: 296px;
+    margin-right: 36px;
+  }
+  .y24-recommend__card-wrapper:nth-of-type(even) .y24-recommend__card .y24-recommend__card-img{
+    margin-right: 0;
+    margin-left: 36px;
+  }
+  
+  .y24-recommend__card__textarea {
+  margin-top: 0;
+  }
+
+  .y24-recommend__cards2{
+    margin-top: 60px;
+  }
+  
+.y24-recommend__card2-img{
+  max-width: 296px;
+}
+  .y24-recommend__card2-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 36px;
+    margin-top: 48px;
+    }
+
+
+    .y24-recommend__card2 + .y24-recommend__card2{
+      margin-top: 0;
+    }
+
+.y24-recommend__cards3{
+  margin-top: 60px;
+}
+.y24-recommend__card3-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+  column-gap: 36px;
+}
+.y24-recommend__card3 + .y24-recommend__card3{
+  margin-top: 0;
+}
+.y24-recommend__card3:nth-child(n+4){
+  margin-top: 48px;
+}
+.y24-recommend__cards4{
+  margin-top: 60px;
+}
+.y24-recommend__card4 + .y24-recommend__card4{
+  margin-top: 0;
+}
+
+.y24-recommend__card4-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 36px;
+}
+.y24-recommend__card4:nth-child(n+4){
+  margin-top: 48px;
+}
+
+
+.y24-category__card:first-child .y24-category__img img{
+  object-fit: contain;
+}
+.y24-recommend__banner{
+  margin-top: 60px;
+}
+.y24-recommend__banner-title{
+  font-size:36px;
+  line-height: calc(52 / 36);
+}
+.y24-recommend__banner-title::before{
+  content: "";
+  width:123px;
+  height: 3px;
+  background-color: #333333;
+  display: inline-block;
+  transform: rotate(63deg);
+}
+.y24-recommend__banner-title::after{
+  content: "";
+  width:123px;
+  height: 3px;
+  background-color: #333333;
+  display: inline-block;
+  transform: rotate(-63deg);
+
+}
+.y24-recommend__banner-link{
+  margin-top: 48px;
+}
+  
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

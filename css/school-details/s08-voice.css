@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+.y24-section.y24-section-voice {
+  background: linear-gradient(0deg, #6FBADA 0%, #6FBADA 100%), linear-gradient(0deg, #FFF 0%, #FFF 100%), #F3F3F3;
+}
+
+.y24-voice-items {
+  margin-bottom: 48px;
+}
+
+.y24-voice-item {
+  background: var(--maincolor-white);
+  border-radius: 8px;
+  border: 1px solid #D7D8DB;
+  padding: 18px;
+  margin-bottom: 36px;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: 152px 311px 143px;
+}
+
+.y24-voice-item:last-child {
+  margin-bottom: 0;
+}
+
+.y24-voice-item-img {
+  margin-bottom: 24px;  
+  text-align: center;
+}
+
+.y24-voice-item-img img {
+  background: #D6E3F0;
+  border-radius: 50%;
+}
+
+.y24-voice-item-txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin-bottom: 12px;
+
+  position: relative;
+}
+
+.y24-voice-items02 {
+
+
+}
+
+.y24-voice-item02 {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 0 2px;
+  padding: 12px 18px;
+  border-bottom: 1px solid #6FBADA;
+}
+
+.y24-voice-item02:first-child {
+  border-top: 1px solid #6FBADA;
+}
+
+.y24-voice-item02 p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.y24-plan-blue {
+  color: #6FBADA;
+}
+
+.y24-plan-blue.y24-plan-first {
+  padding-left: 2px;
+}
+
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-voice-items {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: start;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .y24-voice-item {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  .y24-voice-items {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 48px 36px;
+  }
+
+  .y24-voice-item {
+    grid-template-rows: 152px 366px 163px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

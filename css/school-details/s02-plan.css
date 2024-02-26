@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+.y24-plan {
+  background: #CFE01A;
+  padding: 72px 0 120px;
+}
+
+.y24-plan-box {
+  padding: 24px 24px 32px;
+  margin-bottom: 48px;
+  background: var(--maincolor-white);
+}
+
+.y24-plan-box h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  margin-bottom: 12px;
+}
+
+.y24-plan-lists {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
+  gap: 16px;  
+  margin-bottom: 24px;
+}
+
+.y24-plan-lists li {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+  padding: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #D7D8DB;
+
+  width: 80px;
+  text-align: center;
+}
+
+.y24-plan-lists li.y24-disabled {
+  background: linear-gradient(0deg, #EAEAEC 0%, #EAEAEC 100%), #FFF;
+  color: #999;
+}
+
+.y24-plan-label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  margin-bottom: 12px;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.y24-plan-select {
+  box-shadow: none;
+  border: 1px solid #989898;        
+  padding: 12px;
+  appearance: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  background: var(--maincolor-white) url(../../images/school/plan-select.svg) no-repeat right 12px center / 12px 12px;
+}
+
+.y24-plan-select.y24-plan-select-room {
+  max-width: 350px;
+  width: 100%;
+  height: 60px;
+}
+
+.y24-plan-select.y24-plan-date {
+  width: 150px;
+}
+
+.y24-plan-result {
+  font-size: 24px;  
+  line-height: 28px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #B2C10F;
+  margin-bottom: 24px;
+}
+
+.y24-plan-result span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;    
+  color: #B2C10F;
+}
+
+.y24-plan-select-wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.y24-plan-date {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+}
+
+.y24-plan-box2 {
+  display: flex;
+  flex-flow: column;
+  gap: 16px 0;
+  background: var(--maincolor-white);
+  margin-bottom: 40px;
+}
+
+.y24-plan-box2-left {
+  padding: 2px;
+  width: 36%;
+}
+
+.y24-plan-time01 {
+  display: block;
+  border-radius: 6px 2px 2px 6px;
+  background: linear-gradient(0deg, #97A61E 0%, #97A61E 100%), linear-gradient(0deg, #EFF3CE 0%, #EFF3CE 100%), #E5F7FF;
+  color: var(--maincolor-white);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px; /* 100% */  
+  padding: 10px 13px;
+  margin-right: 12px;
+  white-space: nowrap;
+}
+
+.y24-plan-time01 span {
+  font-size: 12px;
+}
+
+.y24-plan-box2-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+  width: 100%;
+}
+
+.y24-plan-box2-center01 {
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+
+.y24-plan-box2-center02 {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+
+.y24-plan-box2-price {
+  border-radius: 2px;
+  background: #96A309;  
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 18px; /* 180% */
+  color: var(--maincolor-white);
+  padding: 2px 8px;
+}
+
+.y24-plan-box2-price2 {    
+  font-family: "Futura PT";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 18px;  
+}
+
+.y24-plan-box2-price2 span {
+  font-family: "Futura PT";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+}
+
+.y24-plan-time02 {
+  font-family: "Futura PT";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px; /* 112.5% */
+}
+
+.y24-btn.y24-btn-plan {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  border-radius: 8px;
+  background: #F05778;
+  padding: 2px 24px;
+  margin: 0 40px 24px;
+  
+  position: relative;
+}
+
+.y24-btn.y24-btn-plan a::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url(../../images/school/y24-plan-arrow.svg) no-repeat center center / contain;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 6px;
+}
+
+.y24-plan-fv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 760 / 211;
+  margin-top: 40px;
+}
+
+.y24-plan-fv img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.y24-plan-box2-price2 {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 18px;
+}
+
+.y24-plan-time02 {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 18px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-plan-lists {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    gap: 18px;  
+    margin-bottom: 24px;
+  }
+
+  .y24-plan-lists li {  
+    width: 145px;
+  }
+
+  .y24-plan-select.room {
+    width: 350px;
+    }
+
+
+  .y24-plan-box2 {
+    display: flex;
+    flex-flow: nowrap;
+    gap: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 12px;
+    margin-bottom: 48px;
+  }
+  
+  .y24-plan-box2-left {
+    padding: 2px;
+    width: 12.5%;
+  } 
+
+  .y24-plan-box2-center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 20px;
+    width: 70%;
+  }
+  
+  .y24-plan-box2-center01 {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+  }
+
+  .y24-plan-box2-center02 {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+  } 
+
+  .y24-btn.y24-btn-plan {
+    width: 30%;
+    margin: 0;
+  }
+    
+  .y24-btn.y24-btn-plan a {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px; /* 171.429% */
+    border-radius: 8px;
+    background: #F05778;
+    padding: 2px 24px;
+    
+    position: relative;
+  }
+
+  .y24-btn.y24-btn-plan a::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: url(../../images/school/y24-plan-arrow.svg) no-repeat center center / contain;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6px;
+  }
+  
+  .y24-btn-movecar.plan {
+    margin: 0 auto 48px;  
+  }
+
+  .y24-plan-fv img {
+    width: 760px;
+    height: 211px;        
+  }
+
+  .y24-btn.y24-btn-cam a {
+    font-size: 16px;
+  }
+
+  
+  
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  .y24-plan-lists {
+    grid-template-columns: repeat(6,1fr);
+    gap: 0 18px;  
+}
+  
+  .y24-plan-box2-center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 20px;
+    width: 69.16%;
+  }
+
+  .y24-btn.y24-btn-plan {
+    width: 18.34%;
+    margin: 0;
+  }
+
+  .y24-plan {
+    padding: 42px 0 92px;
+  }
+
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  .y24-plan-result {
+    padding-left: 13px;
+    margin-bottom: 24px;
+  }
+
+  .y24-plan-select-wrap {
+    margin-bottom: 27px;
+  }
+
+  .y24-plan-box2-left {
+    width: 14.5%;
+  }
+
+  .y24-plan-box2-price {
+    padding: 2px 7px;
+  }
+
+  .y24-plan-box2-price2 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 18px;
+  }
+
+  .y24-plan-fv {
+    margin-top: 18px;
+  }
+
+
+ 
+}
+}

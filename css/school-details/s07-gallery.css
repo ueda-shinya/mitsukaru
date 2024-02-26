@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.y24-section.gallery {
+  background: linear-gradient(0deg, #D6E816 0%, #D6E816 100%), #F3F3F3;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

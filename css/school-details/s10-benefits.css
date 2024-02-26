@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.y24-benefits-items {
+  margin-bottom: 48px;
+}
+
+.y24-benefits-item {
+  margin-bottom: 48px;
+}
+
+.y24-benefits-item:first-child {
+  border-bottom: 2px solid #0FC2A0;
+  padding-bottom: 12px;
+}
+
+.y24-benefits-co1 {
+  border-radius: 2px;
+  background: #0FC2A0;
+  width: 60px;
+  height: 60px;
+  padding: 9px 17px;
+  margin: auto;
+
+  margin-bottom: 12px;
+}
+
+
+.y24-benefits-co1-ttl {
+  font-family: "Zen Maru Gothic";
+  color: var(--maincolor-white);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px; /* 116.667% */
+  text-align: center;
+}
+
+.y24-benefits-co1-number {
+  font-family: "Zen Maru Gothic";
+  color: var(--maincolor-white);
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 26px; /* 86.667% */
+  text-align: center;
+}
+
+.y24-benefits-ttl2 {
+  font-family: "Zen Maru Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  text-align: center;
+}
+
+.y24-benefits-co2 {
+
+}
+
+.y24-benefits-co2-img {
+  margin-bottom: 36px;
+
+}
+
+.y24-benefits-co2-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.y24-benefits-co2-txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.y24-benefits-co2-txt-wrap {
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-benefits-ttl-line {
+    display: none;
+  }
+
+  .y24-benefits-co1 {
+    margin: 0;
+  }
+
+  .y24-benefits-ttl2 {
+    padding-bottom: 0;
+    text-align: start;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .y24-benefits-item:first-child {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 12px;
+  }
+
+  .y24-benefits-co2 {
+    display: grid;
+    grid-template-columns: 296px 1fr;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0 36px;   
+  }
+
+  .y24-benefits-co2-img {
+    margin-bottom: 0;
+  }
+  
+  .y24-benefits-co2-txt {
+
+  }
+  
+  
+
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

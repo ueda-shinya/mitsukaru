@@ -1,0 +1,290 @@
+@charset "UTF-8";
+.y24-plan{
+  position: relative;
+}
+.y24-plan__buttons-wrapper{
+  margin-top: 48px;
+}
+.y24-plan__buttons{
+  max-width: 500px;
+  width: 100%;
+  margin-inline: auto;
+}
+.y24-plan__buttons + .y24-plan__buttons{
+  margin-top: 24px;
+}
+.y24-plan__button-header{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: calc(24 / 16);
+}
+.y24-plan__button-wrapper{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+.y24-plan__buttons:nth-of-type(2) .y24-plan__button-wrapper {
+  grid-template-columns: repeat(3,1fr);
+}
+.y24-plan__buttons:nth-of-type(2) .y24-plan__button-wrapper .y24-plan__button {
+  max-width: 108px;
+}
+
+.y24-plan__button{
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  font-weight: bold;
+  padding: 7px;
+  border: 1px solid #333333;
+  display:inline-block;
+  max-width:76px;
+  width: 100%;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .12);
+}
+
+.y24-plan__cards-wrapper{
+  margin-top: 48px;
+}
+
+
+
+.y24-plan__card {
+max-width: 500px;
+width: 100%;
+background-color:#FFFFFF ;
+border: 1px solid #D7D8DB;
+box-shadow: 0 2px 2px rgba(0, 0, 0, .12);
+border-radius: 12px;
+padding: 12px;
+margin-inline:auto;
+
+}
+.y24-plan__card + .y24-plan__card{
+  margin-top: 24px;
+}
+
+.y24__plan-card-img {
+width: 100%;
+margin-right: 0;
+display:inline-block;
+}
+.y24__plan-card-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 320 / 180;
+  border-radius: 12px;
+}
+
+.y24-plan__card-textarea {
+margin-top: 12px;
+}
+
+.y24-plan__card-textarea-title {
+font-size: 18px;
+font-weight: bold;
+line-height: calc(24 / 18);
+display: inline-block;
+border-bottom: 1px solid #333333;
+}
+
+.y24-plan__card-lists {
+margin-top: 12px;
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.y24-plan__card-list1 {
+font-size: 12px;
+line-height: calc(18 / 12);
+font-weight: 500;
+padding: 3px 6px;
+border: 1px solid #D7D8DB;
+}
+
+.y24-plan__card-list2 {
+font-size: 14px;
+line-height: calc(18 / 14);
+font-weight: 400;
+display: inline-flex;
+align-items: center;
+}
+.y24-plan__card-list2::before{
+  content: "";
+  display: inline-block;
+  background-image:url("../../images/y24-plan-icon.svg");
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center;
+  margin-right: 6px;
+}
+
+.y24-plan__card-list3 {
+  font-size: 12px;
+  line-height: calc(18 / 12);
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+}
+.y24-plan__card-list3::before{
+  content: "";
+  display: inline-block;
+  background-image:url("../../images/y24-plan-icon2.svg");
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center;
+  margin-right: 6px;
+}
+.y24-plan__card-rooms {
+margin-top: 10px;
+}
+
+.y24-plan__card-room {
+font-size:12px;
+font-weight: 500;
+line-height: calc(18 / 12);
+
+
+}
+
+.y24-plan__card-plan-wrapper{
+  margin-top: 5px;
+}
+
+
+.y24-plan__card-plan {
+font-size: 20px;
+line-height: calc(24 / 20);
+margin-right: 0;
+
+}
+
+.y24-plan__card-sub-plan {
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: #DD2020;
+  margin-top: 5px;
+
+
+}
+.y24-plan__card-sub-plan span{
+  color: #FFFFFF;
+  background-color: #DD2020;
+  font-size: 10px;
+  line-height: calc(18 / 10);
+  padding:2px 6px;
+  display: inline-block;
+  margin-right: 6px;
+
+
+}
+
+.y24-plan__card-tags {
+display: flex;
+gap: 6px;
+margin-top: 10px;
+}
+
+.y24-plan__card-tag {
+font-size: 10px;
+line-height: calc(18 / 10);
+padding: 2px 6px;
+border: 1px solid #D7D8DB;
+font-weight: 400;
+}
+
+.y24-plan__bg{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.y24-plan__bg{
+  position: initial;
+  display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+
+ 
+  .y24-plan__button-wrapper{
+    display: flex;
+    margin-top: 20px;
+  
+  }
+  .y24-plan__button{
+    padding: 7px 15px;
+    max-width:126px;
+    
+  }
+  .y24-plan__buttons{
+    max-width:none;
+    
+  }
+  
+  
+  .y24-plan__card {
+  display: flex;
+  align-items: flex-start;
+  max-width:none;
+  }
+  
+  .y24__plan-card-img {
+  margin-right: 12px;
+  max-width: 240px;
+  width: 100%;
+  display: inline-block;
+  
+  }
+.y24__plan-card-img img{
+  aspect-ratio: 240 / 180;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.y24-plan__card-textarea{
+  margin-top: 0;
+}
+  
+  .y24-plan__card-list1 {
+font-size: 18px;
+  }
+ 
+  
+  .y24-plan__card-plan-wrapper {
+display: flex;
+align-items: center;
+
+  }
+  
+  .y24-plan__card-plan {
+margin-right: 12px;
+  }
+  
+  .y24-plan__card-sub-plan {
+    margin-top: 0;
+  
+  }
+  .y24-plan__bg{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

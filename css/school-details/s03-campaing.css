@@ -1,0 +1,296 @@
+@charset "UTF-8";
+.y24-cam-co1 {
+  margin-top: 8px;
+}
+
+.y24-car-ttl {
+  font-family: "Zen Maru Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */  
+  padding-left: 43px;
+  margin-bottom: 17px;
+
+  position: relative;
+}
+
+.y24-car-ttl::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 16px;
+  background: url(../../images/school/car.svg) no-repeat center center / contain;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.y24-car-ttl.alert::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../../images/school/icon-alert.svg) no-repeat center center / contain;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.y24-car-ttl-line {
+  width: 100%;
+  height: 2px;
+  margin: auto;
+  background: #B2C10F;
+  margin-bottom: 32px;
+}
+
+.y24-cam-ttl2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+  margin-bottom: 24px;
+}
+
+.y24-cam-ttl3 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  padding-left: 22px;
+  margin-bottom: 16px;
+
+  position: relative;
+}
+
+.y24-cam-ttl3::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url(../../images/school/icon-date.svg) no-repeat center center / contain;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.y24-cam-table {
+  width: 100%;
+  border-collapse: collapse;  
+}
+
+.y24-cam-news {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.y24-cam-items {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px; /* 150% */  
+  margin: 8px 0 24px;
+}
+
+.y24-cam-item {
+  color: #337ab7;
+}
+
+.y24-cam-item:hover {
+  color: #337ab7;
+  opacity: 0.8;
+}
+
+.y24-cam-red {
+  color: blue;
+}
+
+.y24-cam-red {
+  color: red;
+  font-weight: 700;
+}
+
+.y24-btn.y24-btn-cam {
+  border-radius: 30px;
+  padding: 8px 24px;  
+  margin-bottom: 32px;
+}
+
+.y24-cam-items02 {
+  margin-bottom: 43px;
+}
+
+.y24-cam-item02 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 6px;
+  padding-left: 20px;
+
+  position: relative;
+}
+
+.y24-cam-item02::before {
+  position: absolute;
+  content: "※";
+  color: #645F5A;
+  font-family: "Zen Kaku Gothic New";
+  font-size: 14px;
+  font-weight: 500;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.y24-cam-item02:last-child {
+  margin-bottom: 0;
+}
+
+.y24-cam-co-txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin-bottom: 48px;
+}
+
+.y24-cam-co-txt.co2 {
+  margin-bottom: 48px;
+}
+
+.y24-cam-co-txt.co3 {
+  margin-bottom: 30px;
+}
+
+
+.y24-cam-co4 {
+  margin-bottom: 32px;
+}
+
+.y24-cam-co4-items {
+  padding: 12px 18px;
+  border-bottom: 1px dashed #6FBADA;
+}
+
+.y24-cam-co4-items:first-child {
+  border-top: 1px dashed #6FBADA;
+}
+
+.y24-cam-co4-item-img {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.y24-cam-co4-item-txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.y24-cam-co8 {
+  margin-bottom: 37px;
+}
+
+.y24-cam-co-txt.y24-cam-co7-txt {
+  margin-bottom: 33px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-car-ttl {
+    font-size: 36px;
+    padding-left: 64px;
+    margin-bottom: 24px;
+  }
+  
+  .y24-car-ttl::before {
+    width: 52px;
+    height: 24px;
+  }
+  
+  .y24-car-ttl.alert::after {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .y24-cam-items01 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    gap: 0 24px;
+    margin-bottom: 32px;
+  }   
+
+  .y24-btn.y24-btn-cam {
+    margin-bottom: 0;
+  }
+
+  .y24-cam-items02 {
+    margin-bottom: 48px;
+  }
+  
+  .y24-cam-item02 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 6px;
+    padding-left: 20px;
+  
+    position: relative;
+  }
+  
+  .y24-cam-item02::before {
+    position: absolute;
+    content: "※";
+    color: #645F5A;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 14px;
+    font-weight: 500;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  
+  .y24-cam-co4-items {
+    display: grid;
+    grid-template-columns: 104px 1fr;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .y24-cam-co4-items:first-child {
+    border-top: 1px dashed #6FBADA;
+  }
+  
+  .y24-cam-co4-item-img {
+    margin-bottom: 0;
+  }
+  
+  .y24-cam-co4-item-img img {
+  
+  }
+  
+  .y24-cam-co4-item-txt {
+    font-size: 14px;
+    padding-left: 16px;
+  }  
+
+  .y24-cam-co8 {
+    margin-bottom: 37px;
+  }  
+
+  .y24-cam-co1 {
+    margin-top: 23px;
+  }
+
+  .y24-btn
+
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  .y24-section-cam {
+    padding-top: 41px;
+  }
+}

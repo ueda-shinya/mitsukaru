@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.y24-section.y24-section-licence {
+  background: linear-gradient(0deg, #C4EEE6 0%, #C4EEE6 100%), linear-gradient(0deg, #FFF 0%, #FFF 100%), #F3F3F3;
+}
+
+.y24-licence-box {
+  background: var(--maincolor-white);
+  padding: 12px;
+}
+
+.y24-licence-txt {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  padding: 12px 0 0 14px;
+
+  position: relative;
+}
+
+.y24-licence-txt::before {
+  content: "※";
+  position: absolute;
+  font-size: 14px;
+  color: #645F5A;
+  top: 13px;
+  left: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-licence-info-row {
+    grid-template-columns: 220px 1fr;
+    gap: 0 12px;
+  }
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  .y24-licence-box {
+    padding: 36px 48px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}
