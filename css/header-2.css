@@ -1,0 +1,973 @@
+footer {
+  display: none;
+}
+.y24-header {
+  display: block;
+  width: 100%;
+  height: 66px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  /* ヘッダーメニュー固定しない */
+  /* position: absolute; */
+}
+
+.y24-header-logo {
+  width: 287px;
+  height: 54px;
+  position: relative;
+  background-color: var(--maincolor-green);
+  border-radius: 0 0 39px 0;
+}
+.y24-header-logo_pic {
+  display: block;
+  width: 182px;
+  height: 24px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.y24-header-logo_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* sp-menu-btn */
+#y24-sp-menu .y24-container {
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 16px;
+}
+
+.y24-sp-menu-btn_span {
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s all;
+  animation: sp-btn-close 0.5s linear;
+}
+.y24-sp-menu-btn_span::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  top: -8px;
+  left: 0;
+  transform: translateY(-50%) rotate(0);
+  transition: 0.2s all;
+}
+.y24-sp-menu-btn_span::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 3px;
+  background-color: white;
+  bottom: -8px;
+  transform: translateY(-50%) rotate(0);
+  transition: 0.2s all;
+}
+@keyframes sp-btn-close {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes sp-btn-open {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.y24-sp-menu-btn_span.y24-sp-menu-open {
+  background-color: var(--sp-btn-color);
+  animation: sp-btn-open 0.5s linear;
+}
+.y24-sp-menu-open.y24-sp-menu-btn_span::before {
+  width: 28px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: 0.2s all;
+}
+.y24-sp-menu-open.y24-sp-menu-btn_span::after {
+  width: 28px;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 0.2s all;
+}
+/* sp MENU */
+.y24-sp-menu {
+  display: block;
+  width: 390px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  transform: translateY(-100%);
+  transition: 0.5s all;
+  z-index: 200;
+}
+.y24-sp-menu-inner {
+  padding-left: 32px;
+  padding-right: 18px;
+}
+.y24-sp-menu-open.y24-sp-menu {
+  transform: translateY(0%);
+  transition: 0.5s all;
+}
+.y24-sp-menu_a {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: var(--textcolor-black);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: dashed 1px #b3b3b3;
+}
+.y24-sp-menu_p {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: var(--textcolor-black);
+  font-size: 1.6rem;
+  font-size: 16px;
+  font-weight: bold;
+}
+.y24-sp-menu-todoufuken-area,
+.y24-sp-menu-syashu-area {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: dashed 1px #b3b3b3;
+}
+.y24-sp-menu_p {
+  display: block;
+  padding-bottom: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--sp-menu-textcolor-black);
+}
+.y24-sp-menu-todoufuken-btn-area {
+  display: flex;
+  width: 300px;
+  height: auto;
+
+  flex-wrap: wrap;
+}
+.y24-sp-menu-todoufuken_btn {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 12px 14px;
+  border-radius: 2px;
+  border: solid #6fbada 2px;
+  font-size: 16px;
+  color: #6fbada;
+  background-color: white;
+}
+.y24-sp-menu-todoufuken_btn:hover {
+  color: white;
+  background-color: #6fbada;
+}
+input:checked + .y24-sp-menu-radio_label {
+  background-color: #6fbada;
+  color: white;
+}
+
+input.y24-sp-menu-radio_btn,
+input.y24-sp-menu-radio-rev_btn {
+  display: none;
+}
+.y24-sp-menu-syashu-btn-area {
+  display: flex;
+  width: 320px;
+  height: auto;
+
+  flex-wrap: wrap;
+}
+
+.y24-sp-menu-radio-rev_label,
+.y24-sp-menu-syashu_btn {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 12px 14px;
+  border: solid #6fbada 2px;
+  border-radius: 2px;
+  border-radius: 2px;
+  font-size: 16px;
+  color: white;
+  background-color: #6fbada;
+}
+.y24-sp-menu-syashu_btn:hover {
+  color: #6fbada;
+  background-color: white;
+}
+input:checked + .y24-sp-menu-radio-rev_label {
+  background-color: white;
+  color: #6fbada;
+}
+
+.y24-sp-menu-link_btn-area {
+  display: flex;
+  width: 280px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+}
+.y24-sp-menu-link_btn_a {
+  display: grid;
+  width: 128px;
+  height: 48px;
+  border: solid 2px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+.y24-sp-menu .y24-summary {
+  color: var(--sp-menu-textcolor-black);
+}
+.y24-sp-menu .y24-summary::before {
+  content: none;
+}
+.y24-sp-menu .y24-answer_link {
+  padding-left: 16px;
+}
+.y24-sp-menu .y24-answer_link::before {
+  border-bottom: unset;
+}
+
+.y24-sp-menu-btn {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  background-color: var(--sp-btn-color);
+  border-radius: 20px;
+  top: 12px;
+  right: 15px;
+  z-index: 300;
+  /* ヘッダーメニュー固定しない */
+  /* position: fixed; */
+}
+.y24-sp-menu-minhight {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-image: url("../../images/sp-menu-footer-img.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 85px;
+}
+/* .y24-sp-menu-footer_pic {
+  display: block;
+  display: none;
+  width: 100%;
+  height:auto;
+  position: absolute;
+  bottom: 0;
+} */
+/* .y24-sp-menu-footer_pic img {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+.y24-contact_btn {
+  border-color: #f05778;
+  color: #f05778;
+  background-color: white;
+  /* ヘッダーメニュー固定しない */
+  /* position: fixed; */
+}
+.y24-contact_btn:hover {
+  color: white;
+  background-color: #f05778;
+}
+/* headermenu */
+.y24-pc-nav-btn {
+  display: none;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+/* ポップアップ */
+#y24-h-popup-01,
+#y24-h-popup-02,
+#y24-h-popup-03,
+#y24-h-popup-04,
+#y24-h-popup-05,
+#y24-h-popup-06 {
+  display: none;
+  width: 550px;
+  height: auto;
+  padding: 24px;
+  top: 112px;
+  left: 220px;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-header {
+    display: flex;
+    background-color: unset;
+  }
+  .y24-header-logo_pic {
+    width: 174px;
+    height: auto;
+    left: 40px;
+    transform: translateY(-50%);
+  }
+  /* sp-menu-btn */
+  .y24-sp-menu-btn {
+    width: 54px;
+    height: 54px;
+    right: 32px;
+    border-radius: 20px;
+    top: 6px;
+  }
+  .y24-sp-menu-btn_span {
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s all;
+  }
+  .y24-sp-menu-btn_span::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    top: -8px;
+    transform: translateY(-50%) rotate(0);
+    transition: 0.5s all;
+  }
+  .y24-sp-menu-btn_span::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 14px;
+    height: 3px;
+    background-color: white;
+    bottom: -8px;
+    transform: translateY(-50%) rotate(0);
+    transition: 0.5s all;
+  }
+  .y24-sp-menu-btn_span.y24-sp-menu-open {
+    background-color: var(--sp-btn-color);
+  }
+  .y24-sp-menu-open.y24-sp-menu-btn_span::before {
+    width: 28px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: 0.5s all;
+  }
+  .y24-sp-menu-open.y24-sp-menu-btn_span::after {
+    width: 28px;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transition: 0.5s all;
+  }
+
+  .y24-navmenu-sp768 {
+    display: flex;
+    position: relative;
+    width: 147px;
+    height: 66px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 104px;
+    /* ヘッダーメニュー固定しない */
+    /* position: fixed; */
+    /* right: 0px; */
+  }
+  .y24-sp-contact-btn {
+    display: block;
+    width: 65px;
+    height: 54px;
+    position: relative;
+    background-color: white;
+    border: solid 2px #f05778;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../../images/sp-contact-btn-red.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center top 7px;
+    transition: 0.3s all ease;
+  }
+  .y24-sp-contact-btn:hover {
+    background-color: #f05778;
+    background-image: url("../../images/sp-contact-btn-white.svg");
+  }
+  .y24-sp-contact-btn:hover .y24-sp-contact-btn_p {
+    color: white;
+  }
+
+  .y24-sp-contact-btn_img,
+  .y24-sp-application-btn_img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .y24-sp-contact-btn_p {
+    display: block;
+    margin-top: 28px;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 10px;
+    font-weight: bold;
+    color: #f05778;
+    transition: 0.3s all ease;
+  }
+
+  .y24-sp-application-btn {
+    display: block;
+    width: 65px;
+    height: 54px;
+    position: relative;
+    background-color: #f05778;
+    border: solid 2px #f05778;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../../images/sp-application-btn-white.svg");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center top 7px;
+    transition: 0.3s all ease;
+  }
+  .y24-sp-application-btn:hover {
+    background-color: white;
+    background-image: url("../../images/sp-application-btn-red.svg");
+  }
+  .y24-sp-application-btn:hover .y24-sp-application-btn_p {
+    color: #f05778;
+  }
+  .y24-sp-application-btn_pic {
+    display: block;
+    width: 18px;
+    height: auto;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s all ease;
+  }
+
+  .y24-sp-application-btn_p {
+    display: block;
+    margin-top: 28px;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s all ease;
+  }
+
+  .y24-summary {
+    font-size: 16px;
+  }
+  .y24-answer_p {
+    font-size: 16px;
+  }
+  .y24-summary::before {
+    width: 20px;
+    height: 30px;
+    top: 4px;
+    left: -25px;
+  }
+  .y24-answer_p::before {
+    width: 20px;
+    height: 30px;
+    top: 4px;
+    left: -25px;
+  }
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  .y24-header {
+    display: flex;
+    display: grid;
+    grid-template-columns: 804px 1fr;
+    gap: 22px;
+    height: 112px;
+  }
+
+  .y24-header-logo {
+    display: grid;
+    width: fit-content;
+    height: 112px;
+    border-radius: 0 0 42px 0;
+    grid-template-columns: 220px 550px 34px;
+  }
+
+  .y24-header-logo_pic {
+    display: block;
+    width: 187px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* sp-menu */
+  .y24-sp-menu-btn,
+  .y24-sp-menu {
+    display: none;
+  }
+  .y24-navmenu-sp768 {
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(2, 72px);
+    gap: 12px;
+    width: 156px;
+    height: 72px;
+    margin: 0;
+    top: 40px;
+    /* ヘッダーメニュー固定しない */
+    /* top:8px; */
+    /* transform: unset; */
+    right: 10px;
+  }
+
+  .y24-sp-contact-btn {
+    width: 72px;
+    height: 72px;
+    background-size: 36px 36px;
+    background-position: center top 5px;
+    border: solid 3px #f05778;
+  }
+
+  .y24-sp-contact-btn_p {
+    margin: 45px 0 0;
+    font-size: 12px;
+  }
+
+  .y24-sp-application-btn {
+    width: 72px;
+    height: 72px;
+    margin: 0;
+    background-position: center top 4px;
+    background-size: 36px 36px;
+    border: solid 3px #f05778;
+  }
+
+  .y24-sp-application-btn_p {
+    margin: 45px 0 0;
+    font-size: 12px;
+  }
+
+  /* ヘッダーメニュー */
+  .y24-pc-nav-btn {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 51% 1fr;
+  }
+  .y24-pc-nav-btn-area {
+    display: grid;
+    width: fit-content;
+    height: 100%;
+    top: 50%;
+    grid-template-columns: repeat(6, 90px);
+    gap: 2px;
+  }
+  .y24-pc-nav-btn-area a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .y24-pc-nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .y24-pc-nav-btn_pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* bottom: 4px; */
+  }
+  .y24-pc-nav-btn_img {
+    display: block;
+    height: 40px;
+    position: relative;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+  }
+  .y24-pc-nav-btn_p {
+    display: block;
+    width: 100%;
+    height: auto;
+    height: fit-content;
+    margin-bottom: unset;
+    position: relative;
+    top: 50%;
+    /* top: 5px; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* transform: translateX(-50%); */
+    color: var(--textcolor-black);
+    font-size: 13px;
+    font-family: "Zen Kaku Gothic New";
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  /* ポップアップ */
+
+  .popup-open {
+    overflow: hidden;
+    height: 100%;
+    z-index: 999;
+  }
+  .y24-pc-nav-btn.active {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  /* ポップアップ2 都道府県から探す */
+  #y24-h-popup-02 {
+  }
+  #y24-h-popup-02 .y24-popup-grid {
+    display: grid;
+    width: fit-content;
+    height: auto;
+    grid-template-columns: 192px 449px;
+
+    gap: 34px;
+  }
+
+  #y24-h-popup-02 p {
+    display: block;
+    width: 100%;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  #y24-h-popup-02 .y24-sp-menu-todoufuken-btn-area {
+    width: 100%;
+  }
+  #y24-h-popup-02 a {
+    height: 50px;
+    font-size: 18px;
+    margin: 0 8px 8px 0;
+  }
+  #y24-h-popup-02 .y24-sp-menu-todoufuken_btn {
+    margin: 0;
+    text-align: center;
+  }
+  #y24-h-popup-02 a:nth-of-type(1) {
+    width: 136px;
+  }
+  #y24-h-popup-02 a:nth-of-type(2) {
+    width: 64px;
+  }
+
+  #y24-h-popup-02 a:nth-of-type(3) {
+    width: 82px;
+  }
+  #y24-h-popup-02 a:nth-of-type(4) {
+    width: 118px;
+  }
+  #y24-h-popup-02 a:nth-of-type(5) {
+    width: 64px;
+  }
+  #y24-h-popup-02 a:nth-of-type(6) {
+    width: 64px;
+  }
+  #y24-h-popup-02 a:nth-of-type(7) {
+    width: 64px;
+  }
+  #y24-h-popup-02 a:nth-of-type(8) {
+    width: 118px;
+  }
+
+  /* ポップアップ4 車種別免許 */
+
+  #y24-h-popup-04 .y24-popup-grid {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #y24-h-popup-04 .y24-sp-menu-syashu-btn-area {
+    gap: 8px;
+  }
+  #y24-h-popup-04 p {
+    display: block;
+    width: 100%;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px 14px;
+    margin-bottom: 0;
+  }
+  #y24-h-popup-04 a {
+    height: 50px;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 18px;
+    /* margin: 0 8px 0 0; */
+    margin: 0;
+    line-height: 1;
+  }
+  #y24-h-popup-04 .y24-sp-menu-syashu_btn {
+    margin: 0;
+    text-align: center;
+  }
+  #y24-h-popup-04 a:nth-of-type(1) {
+    width: 82px;
+  }
+  #y24-h-popup-04 a:nth-of-type(2) {
+    width: 200px;
+  }
+
+  #y24-h-popup-04 a:nth-of-type(3) {
+    width: 82px;
+  }
+
+  #y24-h-popup-04 p {
+    display: block;
+    width: 100%;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  #y24-h-popup-04 .y24-sp-menu-syashu-btn-area {
+    width: 100%;
+  }
+  /* ポップアップ3 人気プラン */
+
+  #y24-h-popup-03 p {
+    display: block;
+    width: 100%;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  /* #y24-h-popup-03 .y24-popup-menu {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 54px;
+  } */
+  #y24-h-popup-03 .y24-popup-grid {
+    display: grid;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    /* grid-template-columns: 226px 240px; */
+    grid-template-columns: repeat(2, 239px);
+    gap: 24px 12px;
+  }
+  #y24-h-popup-03 .y24-popup-grid a {
+    display: block;
+    font-size: 18px;
+    font-family: "Zen Kaku Gothic New";
+    position: relative;
+    padding-left: 20px;
+    line-height: 1;
+  }
+  #y24-h-popup-03 .y24-popup-grid a:hover {
+    color: #f05778;
+  }
+  #y24-h-popup-03 .y24-popup-grid a:hover:before {
+    background-image: url("../images/popup-arrow-red.svg");
+  }
+  #y24-h-popup-03 .y24-popup-grid a::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 8px;
+    left: 0;
+    background-image: url("../images/popup-arrow-black.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  /* ポップアップ5 お申し込みについて */
+
+  #y24-h-popup-05 p {
+    display: block;
+    width: 100%;
+    font-family: "Zen Kaku Gothic New";
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  /* #y24-h-popup-05 .y24-popup-menu {
+    display: grid;
+    grid-template-columns: 216px 1fr;
+    gap: 54px;
+  } */
+  #y24-h-popup-05 .y24-popup-grid {
+    display: grid;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    /* grid-template-columns: 244px 204px; */
+    grid-template-columns: repeat(2, 239px);
+    gap: 24px 12px;
+  }
+  #y24-h-popup-05 .y24-popup-grid a {
+    display: block;
+    font-size: 18px;
+    font-family: "Zen Kaku Gothic New";
+    position: relative;
+    padding-left: 20px;
+    line-height: 1;
+  }
+  #y24-h-popup-05 .y24-popup-grid a:hover {
+    color: #f05778;
+  }
+  #y24-h-popup-05 .y24-popup-grid a:hover:before {
+    background-image: url("../images/popup-arrow-red.svg");
+  }
+  #y24-h-popup-05 .y24-popup-grid a::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 8px;
+    left: 0;
+    background-image: url("../images/popup-arrow-black.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  .y24-header {
+    height: 123px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .y24-header-logo {
+    width: 1066px;
+    width: fit-content;
+    height: 122px;
+    border-radius: 0 0 60px 0;
+    grid-template-columns: 284px 752px 30px;
+    padding-left: calc((100vw - 1440px) / 2);
+  }
+
+  .y24-header-logo_pic {
+    width: 218px;
+    height: 28px;
+  }
+
+  .y24-navmenu-sp768 {
+    width: 240px;
+    height: 108px;
+    grid-template-columns: repeat(2, 108px);
+    gap: 24px;
+    top: 16px;
+    right: calc(26px + (100vw - 1440px) / 2);
+  }
+  /* ヘッダーメニュー */
+  .y24-pc-nav-btn {
+    grid-template-rows: 47% 1fr;
+  }
+
+
+  .y24-pc-nav-btn-area {
+    left: 293px;
+    height: 100%;
+    grid-template-columns: repeat(6, 114px);
+    gap: 12px;
+  }
+  .y24-pc-nav-btn_img {
+    /* top: 14%; */
+  }
+  .y24-pc-nav-btn_p {
+    font-size: 16px;
+    /* bottom: 16%; */
+    line-height: 1.2;
+    top: 37%;
+
+  }
+
+  .y24-sp-contact-btn,
+  .y24-sp-application-btn {
+    width: 108px;
+    height: 108px;
+    border-radius: 20px;
+    background-size: 38px 38px;
+    background-position: center top 17px;
+  }
+
+  .y24-sp-contact-btn_p,
+  .y24-sp-application-btn_p {
+    margin-top: 62px;
+    font-size: 16px;
+  }
+  /* ポップアップ */
+  #y24-h-popup-01,
+  #y24-h-popup-02,
+  #y24-h-popup-03,
+  #y24-h-popup-04,
+  #y24-h-popup-05,
+  #y24-h-popup-06 {
+    display: none;
+    width: 752px;
+    padding: 24px;
+    top: 122px;
+    left: calc(50vw - 436px);
+  }
+}

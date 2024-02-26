@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* 02 - 特殊ページ（大型・準中型・二種） */
+/* section-00 header    */
+
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

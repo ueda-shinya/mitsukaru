@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+/* リーリース時には消すこと!!! */
+* {
+  /* outline: 1px rgba(255, 0, 0, 0.8) solid; */
+}
+/* 変数の定義 */
+:root {
+  --content-width: 1440px;
+  --min-content-width: 375px;
+  --maincolor-green: #d6e816;
+  --maincolor-white: #ffffff;
+  --maincolor-blue: #6fbada;
+  --sp-btn-color: #f15779;
+  --textcolor-black: #333333;
+  --textcolor-pink: #f15779;
+  --textcolor-green: #8a8e2f;
+  --sp-menu-textcolor-black: #202020;
+  --fukidashi-pink:#FFADBF;
+  --fukidashi-yellow:#f2fb92;
+  --fukidashi-blue:#b6e7fc;
+
+  /* @group @variables x-padding */
+  --x-padding-base: 5vw;
+  --x-padding: var(--x-padding-base);
+  --x-padding-right: var(--x-padding);
+  --x-padding-left: var(--x-padding);
+}
+
+/* 新しい構文でのセーフエリアの利用 */
+@supports (padding-top: env(safe-area-inset-top)) {
+  :root {
+    --x-padding-right: calc(env(safe-area-inset-right) + var(--x-padding));
+    --x-padding-left: calc(env(safe-area-inset-left) + var(--x-padding));
+  }
+}
+
+/* 古いiOSバージョン用のフォールバック */
+@supports (padding-top: constant(safe-area-inset-top)) {
+  :root {
+    --x-padding-right: calc(constant(safe-area-inset-right) + var(--x-padding));
+    --x-padding-left: calc(constant(safe-area-inset-left) + var(--x-padding));
+  }
+}
+@media all and (min-width: 64em) {
+  :root {
+    --x-padding-base: calc((100vw - 960px) / 2);
+  }
+}
+
+/* @end @variables x-padding */
+
+html {
+  scroll-behavior: smooth;
+  /* コンテンツ幅でのフォントサイズ */
+  min-width: var(--min-content-width);
+  /* max-width: var(--content-width); */
+  color: var(--textcolor-black);
+  font-family: "Zen Kaku Gothic New";
+  font-weight: 500;
+  font-size: 10px;
+}
+
+/************************************************
+    レスポンシブ */
+
+/* モバイル向けのスタイル */
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+a:hover {
+  cursor: pointer;
+  color: unset;
+}
+a:visited,
+a:active {
+  color: unset;
+  text-decoration: none;
+}
+.y24-navmenu-sp768 {
+  display: none;
+}
+.y24-pc-none {
+  display: initial;
+}
+.y24-sp-none {
+  display: none;
+}
+.y24-bold {
+  font-weight: bold;
+}
+
+/* common */
+.y24-section {
+  padding-top: 71px;
+  padding-bottom: 184px;
+}
+
+.y24-font-zenmaru {
+  font-family: "Zen Maru Gothic";
+  font-weight: bold;
+}
+.y24-font-jost {
+  font-family: "Jost";
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 1px 1px 0 var(--textcolor-black),
+    -1px -1px 0 var(--textcolor-black), -1px 1px 0 var(--textcolor-black),
+    1px -1px 0 var(--textcolor-black), 1px 0 0 var(--textcolor-black),
+    -1px 0 0 var(--textcolor-black), 0 1px 0 var(--textcolor-black),
+    0 -1px 0 var(--textcolor-black), 2px 2px 0 var(--textcolor-black),
+    -2px -2px 0 var(--textcolor-black), -2px 2px 0 var(--textcolor-black),
+    2px -2px 0 var(--textcolor-black), 2px 0 0 var(--textcolor-black),
+    -2px 0 0 var(--textcolor-black), 0 2px 0 var(--textcolor-black),
+    0 -2px 0 var(--textcolor-black);
+}
+
+.y24-text-pink {
+  color: var(--textcolor-pink);
+}
+.y24-text-green {
+  color: var(--textcolor-green);
+}
+.y24-text-bold {
+  font-weight: bold;
+}
+.y24-section-title_h2 {
+  display: block;
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-bottom: 12px;
+  text-align: center;
+  font-family: "Jost";
+  font-weight: bold;
+}
+.y24-section-title_p {
+  display: block;
+  width: fit-content;
+  font-size: 24px;
+  font-family: "Zen Maru Gothic";
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 36px;
+}
+
+.y24-section-title_pic {
+  display: block;
+  width: fit-content;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+.y24-section-title_img {
+  display: block;
+  width: fit-content;
+  height: auto;
+}
+.y24-section_p {
+  margin-bottom: unset;
+  font-size: 16px;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: 500;
+  text-align: center;
+}
+
+.y24-bck-color-blue {
+  background-color: var(--maincolor-blue);
+}
+.y24-bck-color-white {
+  background-color: var(--maincolor-white);
+}
+.y24-bck-color-green {
+  background-color: var(--maincolor-green);
+}
+
+/* アコーディオン */
+.y24-details {
+  display: block;
+  width: 100%;
+  margin-bottom: 4px;
+  padding-top: 18px;
+  padding-right: 37px;
+  background-color: white;
+  border-radius: 10px;
+}
+.y24-summary {
+  display: block;
+  position: relative;
+  padding-right: 30px;
+  padding-bottom: 18px;
+  color: #2297c8;
+  font-family: "Zen Kaku Gothic New";
+  font-size: 14px;
+  line-height: 1.643;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: justify;
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  /* Safariで表示されるデフォルトの三角形アイコンを消します */
+  display: none;
+}
+.y24-summary::before {
+  content: "";
+  width: 15px;
+  height: 22px;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  background-image: url("../images/sp-faq-q-pic.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.y24-details[open] .y24-summary::after {
+  transform: rotate(180deg);
+}
+.y24-summary::after {
+  content: "";
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  top: 5px;
+  right: -16px;
+  background-image: url("../images/sp-faq-close-pic.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.2s all;
+}
+.y24-answer {
+  width: 100%;
+}
+.y24-answer_p {
+  width: 100%;
+  height: auto;
+  position: relative;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.643;
+  padding-bottom: 18px;
+}
+.y24-answer_p::before {
+  content: "";
+  width: 13px;
+  height: 22px;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  background-image: url("../images/sp-faq-a-pic.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.y24-answer_a,
+.y24-answer_link {
+  display: grid;
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  color: var(--textcolor-black);
+  text-align: left;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+}
+.y24-answer_a::before {
+  content: "";
+  width: 110%;
+  height: 48px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  border-bottom: dotted var(--textcolor-black) 1px;
+}
+.y24-answer_link::before {
+  content: "";
+  width: 110%;
+  height: 48px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  border-bottom: dotted var(--textcolor-black) 1px;
+}
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+
+  .y24-768-none {
+    display: none;
+  }
+  .y24-map-none {
+    display: initial;
+  }
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  html {
+    font-size: 10px;
+  }
+  .y24-pc-none,
+  .y24-submenu {
+    display: none;
+  }
+  .y24-sp-none {
+    display: initial;
+  }
+  .y24-section-title_h2 {
+    font-size: 130px;
+    width: fit-content;
+    padding-bottom: 0;
+  }
+  .y24-section-title_p {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+ 
+}
