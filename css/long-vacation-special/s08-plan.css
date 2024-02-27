@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  #y24-plan {
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+  #y24-plan .y24-section-inner .y24-section_p:nth-of-type(2) {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-plan.y24-section {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+  #y24-plan .y24-special_plan {
+    margin-top: 0;
+  }
+}

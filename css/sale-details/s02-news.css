@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* section-02 news  */
+#y24-news {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+.y24-news-area {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+.y24-news-card {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 16px 38px 16px 12px;
+}
+.y24-news-card:not(:last-child) {
+  border-bottom: dashed var(--textcolor-black) 1px;
+}
+.y24-news-card::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  right: 0;
+  background-image: url("../../images/sp-faq-close-pic.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(-90deg);
+}
+.y24-news-card-date {
+  display: block;
+  width: fit-content;
+  height: auto;
+  padding: 0 4px;
+  background-color: var(--maincolor-blue);
+  font-size: 14px;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: 500;
+  color: white;
+}
+
+.y24-news-card-text {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  text-align: justify;
+  font-size: 16px;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: 500;
+}
+
+/* 今掲載中のプラン */
+
+.y24-now-plan {
+  border-radius: 8px;
+  padding-left: 41px;
+  padding-right: 41px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  max-width: 960px;
+  margin-right: 40px;
+  margin-left: -20px;
+  margin-top: 60px;
+  min-width: 350px;
+  box-sizing: border-box;
+}
+
+.y24-sale-details-title--small {
+  width: auto;
+  margin-top: 0;
+  padding-bottom: 8px;
+}
+
+.y24-section-title_p--small {
+  margin: 0 auto;
+  padding-bottom: 24px;
+  font-size: 18px;
+}
+
+.y24-now-plan__btnbox {
+  display: grid;
+  column-gap: 24px;
+  row-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+  justify-items: center;
+}
+.y24-now-plan__btn {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: var(--textcolor-black);
+  background-color: var(--maincolor-white);
+  padding: 12px 0;
+  border: 2px solid var(--textcolor-black);
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  width: 268px;
+}
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-now-plan__btnbox {
+    column-gap: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  #y24-news {
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+
+  .y24-sale-details-title--small {
+    font-size: 100px;
+  }
+
+  .y24-section-title_p--small {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  .y24-section {
+    padding-top: 72px;
+    box-sizing: border-box;
+  }
+
+  #y24-news {
+    padding-bottom: 120px;
+  }
+
+  .y24-now-plan {
+    margin-top: 48px;
+  }
+}

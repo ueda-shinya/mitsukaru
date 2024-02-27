@@ -1,0 +1,107 @@
+/* section-08 reason    */
+#y24-reason {
+  background-image: url("../../images/sp-s08-bckimg.svg");
+  background-position: left 0 bottom 0;
+  background-repeat: no-repeat;
+  padding-bottom: 160px;
+  background-size: 159px 159px;
+}
+#y24-reason .y24-section_p {
+  margin-bottom: 0;
+  padding-bottom: 48px;
+}
+.y24-reason-crads {
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-reason-card {
+  display: flex;
+  width: 350px;
+  height: 94px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-reason-card:last-of-type {
+  margin-bottom: 0;
+}
+.y24-reason_pic {
+  display: block;
+  width: 88px;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 28px;
+  transform: translateY(-50%);
+}
+.y24-reason_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-reason-card_p {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: 50%;
+  left: 44px;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  #y24-reason {
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-reason {
+    background-image: url("../../images/pc-s08-bckimg.svg");
+    padding-bottom: 130px;
+    background-size: 414px 330px;
+  }
+  .y24-reason-crads {
+    display: grid;
+    grid-template-columns: repeat(3, 308px);
+    gap: 18px;
+  }
+  .y24-reason-card {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+    padding-bottom: 29px;
+  }
+  .y24-reason_pic {
+    width: 150px;
+    position: unset;
+    top: 0;
+    left: 0;
+    transform: unset;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .y24-reason-card_p {
+    height: auto;
+    transform: none;
+    font-size: 24px;
+    top: 31px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--textcolor-pink);
+  }
+}

@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+.y24-bck-color-aqua {
+  background-color: var(--maincolor-aqua);
+}
+
+section#y24-plan {
+  padding-top: 96px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-image: url(../../images/pc-plan-bckimg.svg);
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+  background-size: 232px 200px;
+}
+
+
+#y24-plan .y24-section-title_p {
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+.y24-section-title__plan {
+  margin: 0 auto;
+  padding-bottom: 18px;
+}
+
+.y24-plan-card__ttl {
+  font-size: 36px;
+  font-weight: bold;
+  height: 64px;
+  color: var(--textcolor-black);
+  border-bottom: solid 2px var(--bordercolor-turquoise);
+  padding-left: 14.44px;
+}
+
+.y24-plan-card__img,
+.y24-plan-card__txtbox {
+  width: 100%;
+}
+
+/* スマートフォンでの表示: 全ての要素を縦に並べる */
+.y24-plan__cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.y24-plan__card:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.y24-plan-card__ttl {
+  margin: 0 0 48px;
+}
+
+.y24-plan-card__img {
+  aspect-ratio: 350/236;
+  margin-bottom: 36px;
+}
+
+.y24-plan-card__img img {
+  width: 100%;
+}
+
+.y24-plan-card__txt {
+  font-size: 16px;
+  line-height: 1.625;
+  margin: 0;
+}
+
+.y24-plan-card__txt:not(:last-child) {
+  padding-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-plan__cards {
+    display: grid;
+    gap: 20px;
+  }
+
+  .y24-plan__card:nth-child(even) .y24-plan-card__box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .y24-plan__card:nth-child(odd) .y24-plan-card__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .y24-plan-card__ttl:before {
+    content: url("../../images/plan-icon-car.svg");
+    display: inline-block;
+    margin-right: 12px;
+    width: 52px;
+    height: 52px;
+    vertical-align: middle;
+  }
+
+  .y24-plan-card__img {
+    width: 30.9%;
+  }
+  .y24-plan-card__txtbox {
+    width: 65.5%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

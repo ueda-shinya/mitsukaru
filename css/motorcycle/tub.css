@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.y24-tabs {
+  display: flex; /* フレックスボックスを使ってタブを横並びにします */
+  width: 100%; /* タブナビゲーションが親要素の幅いっぱいに広がるようにします */
+  max-width: 960px;
+  height: 66px;
+  margin: 0 auto;
+}
+
+.y24-tab {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.25;
+  font-family: "Zen Kaku Gothic New";
+  flex: 1; /* 各タブが均等にスペースを取るようにします */
+  text-align: center; /* テキストを中央揃えにします */
+  cursor: pointer;
+  padding: 10px 0; /* タブの高さを設定します */
+  border: none; /* タブの境界線を設定します */
+  background-color: #ffffff; /* タブの背景色を設定します */
+  transition: background-color 0.3s; /* 背景色の変更にアニメーションを加えます */
+  /* タブの間の縦線を追加 */
+  border-right: none; /* 最後のタブに対する境界線を除去するために後で上書きします */
+}
+/* 最初のタブの右側に縦線を追加、上下に空白を作成 */
+.y24-tab:first-child {
+  margin-right: 1px;
+  position: relative;
+  background-color: #eff3ce;
+}
+
+.y24-tab:first-child::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10%; /* 上の空白 */
+  bottom: 10%; /* 下の空白 */
+  width: 1px;
+  background-color: #c2c9d6;
+}
+
+.y24-tab:hover {
+  background-color: #ddd; /* ホバー時のタブの背景色を設定します */
+}
+
+.y24-tab.active {
+  background-color: #eff3ce; /* アクティブなタブの背景色を設定します */
+}
+
+.y24-tab__button-icon {
+  height: 48px; /* 画像の高さを設定 */
+  width: 48px; /* 画像の幅を自動調整 */
+  margin-right: 6px; /* テキストとの間隔 */
+  vertical-align: middle; /* テキストとの縦位置を揃える */
+}
+
+.y24-tab__content {
+  display: none; /* 初期状態ではタブのコンテンツを非表示にします */
+  border-top: 1px solid #c2c9d6;
+}
+
+@media screen and (min-width: 768px) {
+}
+@media (min-width: 961px) {
+  .y24-tab:first-child,
+  .y24-tab:last-child {
+    position: relative;
+  }
+
+  .y24-tab:first-child::before,
+  .y24-tab:last-child::after {
+    content: "";
+    position: absolute;
+    top: 10%; /* 上の空白 */
+    bottom: 10%; /* 下の空白 */
+    width: 1px;
+    background-color: #c2c9d6;
+  }
+
+  .y24-tab:first-child::before {
+    left: 0;
+  }
+
+  .y24-tab:last-child::after {
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+}
+@media screen and (min-width: 1440px) {
+}

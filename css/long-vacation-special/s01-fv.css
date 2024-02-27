@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.y24-content-inner {
+  margin-right: 15px;
+  margin-left: 15px;
+  line-height: calc(26 / 16);
+  font-size: 16px;
+  display: grid;
+  gap: 12px;
+}
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+}

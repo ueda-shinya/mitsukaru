@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/* section-09 point    */
+#y24-point.y24-section {
+  padding-bottom: 140px;
+}
+#y24-point.y24-section h2 {
+  padding-top: 16px;
+}
+
+#y24-point .y24-section-inner .y24-section_p:last-of-type {
+  margin-bottom: 30px;
+}
+.y24-point-cards {
+  display: grid;
+  gap: 24px;
+}
+.y24-point-card {
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 24px;
+  background-color: white;
+  border-radius: 10px;
+}
+.y24-point-card:last-of-type {
+  margin-bottom: 0;
+}
+.y24-point-card:nth-of-type(2) {
+  padding-bottom: 36px;
+}
+.y24-point-card:nth-of-type(3) {
+  padding-bottom: 12px;
+}
+.y24-point-card-thum {
+  display: block;
+  width: 220px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-point-card_pic {
+  display: block;
+  width: 220px;
+  height: auto;
+}
+.y24-point-card_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-point-card-num_pic {
+  display: block;
+  width: 65px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.y24-point-card-text {
+  width: 310px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-point-card_h3 {
+  padding-top: 14px;
+  padding-bottom: 22px;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+.y24-point-card-text_p {
+  display: grid;
+  gap: 5px;
+}
+.y24-point-card_p {
+  padding-bottom: 12px;
+  font-family: "Zen Kaku Gothic New";
+  font-weight: 500;
+  font-size: 14px;
+  text-align: justify;
+  line-height: calc(24 / 14);
+  letter-spacing: -0.1em;
+}
+
+.y24-bck-color-C4EEE6 {
+  background: #c4eee6;
+}
+.y24-pc {
+  display: none;
+}
+.y24-sp {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-point-card_h3 {
+    font-size: 24px;
+  }
+  .y24-point-card {
+    width: 560px;
+  }
+  .y24-point-card-text {
+    width: 480px;
+  }
+  .y24-point-card_p {
+    font-size: 16px;
+  }
+  .y24-pc {
+    display: none;
+  }
+  .y24-sp {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  #y24-point {
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+  .y24-content-inner {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .y24-sp {
+    display: none;
+  }
+  .y24-pc {
+    display: block;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-point.y24-section {
+    padding-top: 53px;
+  }
+  #y24-point .y24-section-inner .y24-section-title_p {
+    margin-top: -10px;
+  }
+  #y24-point.y24-section {
+    padding-bottom: 120px;
+  }
+
+  .y24-point-cards {
+    display: grid;
+    gap: 24px;
+  }
+  .y24-point-card {
+    display: grid;
+    width: 960px;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    grid-template-columns: 264px 1fr;
+  }
+  .y24-point-card:nth-of-type(2) {
+    padding-bottom: 0;
+  }
+  .y24-point-card:nth-of-type(3) {
+    padding-bottom: 0;
+  }
+
+  .y24-point-card-thum {
+    width: 180px;
+    height: fit-content;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .y24-point-card_pic {
+    width: 180px;
+  }
+
+  .y24-point-card-text {
+    width: 636px;
+    margin-left: 0;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    display: grid;
+    gap: 12px;
+  }
+  .y24-point-card_h3 {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 24px;
+    text-align: justify;
+  }
+  .y24-point-card_p {
+    padding-bottom: 0;
+  }
+  .y24-sp {
+    display: none;
+  }
+  .y24-pc {
+    display: block;
+  }
+}

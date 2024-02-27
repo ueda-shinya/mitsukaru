@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+#y24-special.y24-section {
+  padding-top: 60px;
+  padding-bottom: 154px;
+}
+#y24-special.y24-section-title_h2 {
+  padding-top: 20px;
+}
+
+.y24-special_plan {
+  background: #d6e816;
+  border-radius: 8px;
+  padding: 24px 40px;
+  margin-top: 48px;
+}
+
+.y24-section-title_special_plan {
+  font-size: 42px;
+  text-align: center;
+}
+.y24-section-title_special_plan_p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: -27px;
+}
+
+.y24-special_plan-content {
+  text-align: center;
+  margin-top: 8px;
+  display: grid;
+  gap: 20px;
+}
+
+.y24-special_plan h2 {
+  margin-top: -16px;
+}
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  #y24-special {
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+  .y24-content-inner {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-special.y24-section {
+    padding-top: 45px;
+    padding-bottom: 115px;
+  }
+  #y24-special .y24-search_contents {
+    margin-top: 10px;
+  }
+  #y24-special .y24-search_content {
+    gap: 14px;
+  }
+  .y24-special_plan {
+    margin-top: 71px;
+    padding: 37px;
+  }
+  .y24-section-title_special_plan {
+    font-size: 93px;
+  }
+  .y24-section-title_special_plan_p {
+    font-size: 35px;
+    margin-top: -10px;
+  }
+  .y24-special_plan-content {
+    margin-top: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}

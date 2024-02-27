@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+#y24-plan {
+  background: #c4eee6;
+}
+#y24-plan.y24-section {
+  padding-bottom: 102px;
+}
+
+.y24-plan_content-area {
+  margin-top: -5px;
+  display: grid;
+  gap: 20px;
+}
+
+.y24-plan_content-title {
+  position: relative;
+  padding-left: 51px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Zen Maru Gothic";
+}
+
+.y24-plan_content-title::before {
+  content: url(../../images/title-car.svg);
+  position: absolute;
+  left: 5px;
+}
+
+.y24-plan_content-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  margin-top: -5px;
+  border-bottom: solid 2px #0fc2a0;
+  bottom: -20px;
+  left: 0;
+}
+
+.y24-pc-2colum_1-2 {
+  margin-top: 68px;
+}
+.y24-plan_content-img img {
+  width: 100%;
+}
+
+.y24-plan_content-text {
+  margin-top: 36px;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  display: grid;
+  gap: 12px;
+}
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-plan.y24-section {
+    padding-top: 52px;
+    padding-bottom: 117px;
+  }
+  .y24-pc-inner,
+  .y24-content-inner {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .y24-plan_content-area {
+    margin-top: 20px;
+    gap: 50px;
+  }
+  .y24-plan_content-title {
+    font-size: 36px;
+  }
+  .y24-pc-2colum_1-2 {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 2fr;
+  }
+  .y24-plan_content-text {
+    margin-top: 0;
+  }
+  .y24-plan_content-title {
+    padding-left: 66px;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Zen Maru Gothic";
+  }
+
+  .y24-plan_content-title::before {
+    content: "";
+    background-image: url(../../images/title-car.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+}

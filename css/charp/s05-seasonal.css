@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* section-04 seasonal    */
+#y24-seasonal {
+  padding-bottom: clamp(1px, 36.923vw, 560px);
+  background-image: url("../../images/sp-s04-bckimg.svg");
+  background-position: left 0 bottom 0;
+  background-repeat: no-repeat;
+  background-size: 144px 155px;
+  padding-top: 37px;
+}
+#y24-seasonal .y24-section-inner .y24-section_p:nth-of-type(2) {
+  margin-top: 0;
+}
+#y24-seasonal .y24-section_p:nth-of-type(2) {
+  margin-top: 0;
+}
+.y24-seasonal-cards {
+  display: grid;
+  width: fit-content;
+  height: auto;
+  grid-template-columns: repeat(3, 110px);
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.y24-seasonal-3cards {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.y24-seasonal-card_a {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.y24-seasonal-card_a:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+.y24-seasonal-card_pic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-seasonal-card_pic img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-special {
+  padding-top: 60px;
+}
+.y24-special .y24-section-title_h2 {
+  font-size: 18px;
+  background-image: url("../../images/sp-special-bckimg.svg");
+  background-size: auto 105px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.y24-special .y24-section-title_p {
+  font-size: 18px;
+  margin-top: -5px;
+}
+.y24-special .y24-font-jost {
+  font-size: 42px;
+}
+.y24-special-banners {
+  display: grid;
+  width: fit-content;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 350px;
+  gap: 16px;
+}
+.y24-special-banner {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
+}
+.y24-special-banner:hover {
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.6));
+}
+.y24-special-banner_a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-special-banner_pic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-special-banner_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-seasonal-cards {
+    grid-template-columns: 110px 110px 110px 110px;
+    gap: 20px;
+  }
+  .y24-special-banners {
+    grid-template-columns: 464px;
+    gap: 24px;
+  }
+  .y24-popular-cards {
+    display: grid;
+    height: auto;
+    justify-content: center;
+    grid-template-columns: repeat(2, 350px);
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+
+  .y24-seasonal-cards {
+    grid-template-columns: 200px 200px 200px 200px;
+  }
+  #y24-seasonal {
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+  .y24-special-banners {
+    grid-template-columns: 420px 420px;
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-seasonal {
+    padding-top: 45px;
+    padding-bottom: 130px;
+  }
+  #y24-seasonal .y24-section_p {
+    line-height: calc(26 / 16);
+  }
+  #y24-seasonal .y24-section-title_p {
+    font-size: 35px;
+  }
+  .y24-seasonal-cards {
+    width: 960px;
+    grid-template-columns: 220px 220px 220px 220px;
+    gap: 24px;
+    margin-top: 8px;
+  }
+  .y24-special-banners {
+    grid-template-columns: 464px 464px;
+    gap: 24px;
+    margin-top: 12px;
+  }
+  /* SPECIAL */
+  .y24-special {
+    padding-top: 0;
+  }
+  .y24-special .y24-section-title_h2 {
+    height: 267px;
+    background-size: 267px 267px;
+    margin-bottom: 0;
+    padding-top: 64px;
+  }
+  .y24-special .y24-font-jost {
+    font-size: 98px;
+  }
+  .y24-special .y24-section-title_p {
+    margin-top: -92px;
+    margin-bottom: 0;
+    padding-bottom: 90px;
+  }
+  #y24-seasonal .y24-section-inner .y24-section_p:nth-of-type(2) {
+    margin-top: 25px;
+    padding-bottom: 35px;
+  }
+}

@@ -1,0 +1,460 @@
+@charset "UTF-8";
+/* section-05 search    */
+#y24-search {
+  background-image: url("../../images/sp-s05-bckimg.svg");
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+  background-size: 161px 149px;
+}
+#y24-search.y24-section {
+  padding-bottom: 59px;
+}
+.y24-section-title_p {
+  margin-top: -3px;
+}
+.y24-search-banner.y24-sp {
+  margin-top: 18px;
+}
+.y24-search-banner img {
+  width: 100%;
+}
+
+.y24-search-area {
+  margin-top: 26px;
+}
+
+.y24-search-select {
+  text-align: right;
+}
+
+.y24-search-btn_p {
+  background: #fff;
+  padding: 9px 35px 9px 17px;
+  border: solid 1px #333;
+  position: relative;
+  font-family: "Zen kaku Gothic New";
+  font-weight: 900;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 24px;
+}
+
+.y24-search-btn_p::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin-top: -5px;
+  border-top: solid 2px #555;
+  border-right: solid 2px #555;
+  transform: rotate(135deg);
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
+.y24-search-linkbtn-area {
+  display: grid;
+  grid-template-columns: 160px 160px;
+  gap: 18px;
+  width: fit-content;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 48px;
+  padding-bottom: 30px;
+}
+.y24-search-linkbtn_a {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 18px;
+  position: relative;
+}
+.y24-search-linkbtn_pic,
+.y24-search-linkbtn_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-search-linkbtn_img {
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
+}
+.y24-search-linkbtn_img:hover {
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.6));
+}
+
+.y24-search-area_e-w {
+  background: #f7f7f8;
+  margin-top: 24px;
+  padding: 18px;
+}
+
+.y24-search-area_e-w-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+.y24-search-area_e-w-item {
+  background: #fff;
+  padding: 12px;
+  text-align: center;
+}
+.y24-search-area_e-w_title {
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+}
+.y24-search-area_e-w_title::after {
+  content: "";
+  width: 100%;
+  margin-top: -5px;
+  border-bottom: solid 1px #b2c10f;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+.y24-search-area_e-w_itemlist {
+  display: grid;
+  gap: 8px;
+  margin-top: 20px;
+}
+.y24-search-area_e-w_list {
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+  border: solid 1px #d7d8db;
+  border-radius: 7.5px;
+  padding: 17px 5px;
+  box-shadow: 0 2.5px 2.5px rgba(0, 0, 0, 0.12);
+}
+.y24-search-area_e-w_list.y24-select {
+  border: solid 1px #000;
+}
+.y24-search-area_e-w_list a {
+  position: relative;
+  padding-left: 25px;
+}
+.y24-search-area_e-w_list a::before {
+  content: url(../../images/checkbox.svg);
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+.y24-search-area_e-w_list.y24-select a::before {
+  content: url(../../images/checkbox_select.svg);
+}
+
+.y24-search-area_e-w_foodcheck {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 25px;
+  padding-left: 35px;
+  position: relative;
+}
+
+.y24-search-area_e-w_foodcheck::before {
+  content: url(../../images/checkbox_food.svg);
+  position: absolute;
+  top: -2px;
+  left: 4px;
+}
+
+/* section-05 search  検索結果  */
+.y24-display-area {
+  margin-top: 55px;
+  margin-bottom: 67px;
+}
+.y24-display-count {
+  font-size: 18px;
+  position: relative;
+  padding-left: 15px;
+}
+.y24-display-count span {
+  font-weight: bold;
+  color: #b2c10f;
+}
+.y24-display-count::after {
+  content: "";
+  width: 100%;
+  margin-top: -5px;
+  border-bottom: solid 2px #b2c10f;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+}
+.y24-display-day_btn_p {
+  margin-top: 36px;
+}
+.y24-display-day_btn {
+  margin-top: 24px;
+}
+
+.y24-display-cards {
+  display: grid;
+  gap: 58px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.y24-display-card {
+  position: relative;
+}
+
+.y24-display-card::after {
+  content: "";
+  width: 100%;
+  border-bottom: solid 1px #d7d8db;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+}
+
+.y24-display-card_img img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.y24-display-card_name {
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+  display: inline-block;
+}
+
+.y24-display-card_icon {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+  font-size: 13px;
+  align-items: center;
+}
+.y24-pc_right {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.y24-display-card_area {
+  border: solid 1px #555;
+  padding: 3px 5px;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.y24-display-card_model,
+.y24-display-card_in,
+.y24-display-card_graduation {
+  padding-left: 22px;
+  position: relative;
+}
+
+.y24-display-card_model::before,
+.y24-display-card_in::before {
+  content: url(../../images/icon-check-in.svg);
+  position: absolute;
+  top: -1px;
+  left: 0;
+}
+
+.y24-display-card_graduation::before {
+  content: url(../../images/icon-calendar.svg);
+  position: absolute;
+  top: -1px;
+  left: 0;
+}
+
+.y24-display-card_hotel {
+  margin-top: 18px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.y24-display-card_price-area {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.y24-display-card_in-tax {
+  position: relative;
+  padding-left: 38px;
+  font-size: 14px;
+  color: red;
+}
+.y24-display-card_in-tax::before {
+  content: "税込";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: red;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 6px;
+}
+
+.y24-display-card_app-btn {
+  display: block;
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  padding: 10px;
+  border: #000 solid 1px;
+  border-radius: 6px;
+  box-shadow: 0 2.5px 2.5px rgba(0, 0, 0, 0.12);
+}
+
+.y24-charp_car-btn {
+  margin-top: 20px;
+}
+
+.y24-pc {
+  display: none;
+}
+.y24-sp {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-search-linkbtn-area {
+    grid-template-columns: repeat(3, 160px);
+  }
+  .y24-pc {
+    display: none;
+  }
+  .y24-sp {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  .y24-search-linkbtn-area {
+    grid-template-columns: 240px 240px 240px;
+    gap: 24px;
+  }
+  .y24-sp {
+    display: none;
+  }
+  .y24-pc {
+    display: block;
+  }
+  #y24-search {
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+  .y24-search-month_btn.y24-pc {
+    list-style: none;
+    font-size: 24px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+    text-align: center;
+    margin-top: 14px;
+  }
+  .y24-search-month_btn.y24-pc li {
+    border: solid 1px #d7d8db;
+    border-radius: 7.5px;
+    padding: 10px 0px;
+    box-shadow: 0 2.5px 2.5px rgba(0, 0, 0, 0.12);
+  }
+  .y24-search-month_btn.y24-pc .y24-select {
+    border: solid 1px #000;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-search {
+    background-image: url("../../images/pc-s05-bckimg.svg");
+    background-size: 403px 347px;
+  }
+  #y24-search.y24-section {
+    padding-top: 16px;
+    padding-bottom: 120px;
+  }
+  .y24-section-title_p {
+    margin-top: -10px;
+  }
+  .y24-search-banner.y24-pc {
+    margin-top: 59px;
+    margin-bottom: 48px;
+    width: 760px;
+  }
+
+  .y24-search-area_e-w {
+    margin-top: 48px;
+  }
+  .y24-search-area_e-w_list {
+    padding: 15px 0;
+  }
+  .y24-search-area_e-w-items {
+    gap: 20px;
+  }
+  .y24-search-area_e-w_title::after {
+    bottom: -9px;
+  }
+  .y24-search-area_e-w_itemlist {
+    margin-top: 30px;
+  }
+  .y24-search-area_e-w_foodcheck {
+    padding-left: 30px;
+  }
+  .y24-display-area.y24-content-inner {
+    margin-top: 53px;
+  }
+  .y24-display-count {
+    font-size: 24px;
+  }
+  .y24-display-cards {
+    gap: 38px;
+  }
+  .y24-display-cards :nth-child(n + 4) {
+    display: none;
+  }
+  .y24-display-card {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 3fr;
+  }
+  .y24-display-card_img img {
+    height: 160px;
+  }
+  .y24-pc-2colum {
+    margin-top: -5px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .y24-pc_right {
+    margin-top: -20px;
+  }
+  .y24-display-card::after {
+    bottom: -13px;
+  }
+  .y24-display-card_price-area {
+    margin-top: 14px;
+  }
+  .y24-display-card_in-tax::before {
+    top: -6px;
+    padding: 6px 6px;
+  }
+  .y24-display-card_app-btn {
+    width: 120px;
+  }
+  .y24-search-area_e-w_itemlist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .y24-sp {
+    display: none;
+  }
+  .y24-pc {
+    display: block;
+  }
+}

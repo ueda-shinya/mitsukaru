@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/* section-05 search    */
+#y24-search {
+  background-image: url("../../images/sp-s05-bckimg.svg");
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+  background-size: 161px 149px;
+}
+#y24-search.y24-section {
+  padding-top: 60px;
+}
+
+.y24-search-linkbtn-area {
+  display: grid;
+  grid-template-columns: 160px 160px;
+  gap: 18px;
+  width: fit-content;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 48px;
+  padding-bottom: 30px;
+}
+.y24-search-linkbtn_a {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 18px;
+  position: relative;
+}
+.y24-search-linkbtn_pic,
+.y24-search-linkbtn_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.y24-search-linkbtn_img {
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
+}
+.y24-search-linkbtn_img:hover {
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.6));
+}
+
+.y24-search_contents {
+  margin-top: 35px;
+  display: grid;
+  gap: 32px;
+}
+.y24-search_content {
+  margin-top: 20px;
+  text-align: center;
+  display: grid;
+  gap: 14px;
+}
+.y24-search-banner_sp {
+  margin-top: 10px;
+}
+
+.y24-search_content-img img {
+  width: 100%;
+}
+
+.y24-search_content-title {
+  color: #f15779;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.y24-search_plan {
+  background: #d6e816;
+  border-radius: 8px;
+  margin-top: 48px;
+  padding: 24px;
+}
+.y24-section-title_search_plan {
+  font-size: 42px;
+  text-align: center;
+}
+.y24-section-title_search_plan_p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.y24-search_plan-content {
+  text-align: center;
+  margin-top: 24px;
+  margin: 24px 17px 0px;
+  display: grid;
+  gap: 24px;
+}
+
+.y24-searchplan-btn {
+  width: 100%;
+  background: #fff;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 11px;
+  border: #000 solid 2px;
+  border-radius: 2px;
+}
+
+.y24-search-banner_sp img {
+  width: 100%;
+}
+.y24-search-banner {
+  margin-top: 48px;
+  display: grid;
+  gap: 24px;
+  position: relative;
+}
+.y24-search-banner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  rotate: -117deg;
+  background: #333;
+  top: 0;
+  left: 0;
+  transform: translate(-45%, 50%);
+}
+.y24-search-banner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  rotate: -63deg;
+  background: #333;
+  top: 0;
+  right: 0;
+  transform: translate(-45%, 50%);
+}
+
+.y24-banner-text p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.y24-pc-2colum_1-2 {
+  margin-top: 57px;
+}
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+  .y24-search-linkbtn-area {
+    grid-template-columns: repeat(3, 160px);
+  }
+}
+
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  .y24-search-linkbtn-area {
+    grid-template-columns: 240px 240px 240px;
+    gap: 24px;
+  }
+  #y24-search {
+    padding-left: var(--x-padding-base);
+    padding-right: var(--x-padding-base);
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-search.y24-section {
+    padding-top: 41px;
+  }
+  #y24-search .y24-section-inner .y24-section-title_p {
+    margin-top: -10px;
+  }
+  #y24-search.y24-section {
+    padding-bottom: 120px;
+  }
+
+  #y24-search {
+    background-image: url("../../images/pc-s05-bckimg.svg");
+    background-size: 403px 347px;
+    padding-bottom: 154px;
+  }
+  .y24-search_contents.y24-content-inner {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .y24-search_contents {
+    display: grid;
+    gap: 36px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .y24-search_contents .y24-search_content {
+    gap: 12px;
+  }
+  .y24-search_content {
+    gap: 8px;
+  }
+  .y24-search_content-img img {
+    height: 185px;
+    object-fit: cover;
+  }
+  .y24-banner-text p {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .y24-search-banner {
+    margin-top: 96px;
+    gap: 62px;
+  }
+  .y24-search-banner::before {
+    width: 120px;
+    height: 5px;
+    left: 68px;
+    transform: translate(-45%, 50%);
+  }
+  .y24-search-banner::after {
+    width: 120px;
+    height: 5px;
+    right: 68px;
+    transform: translate(-45%, 50%);
+  }
+  .y24-search-banner_sp.y24-content-inner {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  .y24-search-banner_sp img {
+    width: 760px;
+  }
+}

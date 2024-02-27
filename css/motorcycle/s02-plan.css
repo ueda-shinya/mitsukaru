@@ -1,0 +1,255 @@
+@charset "UTF-8";
+#y24-plan {
+  border-radius: 12px;
+  padding: 0 0 60px 0;
+}
+
+.y24-plan-inner {
+  padding: 48px 20px;
+}
+.y24-bck-color-aqua {
+  background-color: var(--maincolor-aqua);
+}
+/* プランを検索する */
+.y24-plan-search {
+  width: 100%; /* ビューポートの幅に合わせる */
+  margin-top: 48px;
+}
+
+.y24-plan-search__section {
+  margin-bottom: 24px;
+}
+
+.y24-plan-search__title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.y24-plan-search__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.grid-item {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Zen Kaku Gothic New";
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #d9d9d9; /* ボタンの枠線 */
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.grid-item:hover {
+  background-color: #6eb9d2; /* ホバー時の背景色 */
+  color: #ffffff; /* ホバー時のテキスト色 */
+}
+.room-plan {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.room-plan .grid-item {
+  height: 48px;
+}
+.selection-title {
+  text-align: center; /* タイトルの中央揃え */
+  color: #003366; /* タイトルの色 */
+  margin-bottom: 20px; /* タイトルとボタンの間の余白 */
+}
+
+/* カード */
+
+.y24-plan-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 48px;
+}
+.y24-plan-card {
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.y24-card-body__image-02 picture img {
+  border-radius: 12px;
+}
+
+.y24-card__details-03 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.y24-card__details-content {
+  display: contents;
+}
+
+.y24-card__schoolname {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.33;
+  border-bottom: solid 1px;
+  width: 234px;
+  margin: 0;
+}
+
+.y24-card-body-content-items {
+  display: flex;
+  align-items: center;
+}
+
+.y24-card-body-content-item {
+  margin: 0 12px 0 0;
+}
+
+.y24-card-body-content-box__kenmei {
+  font-size: 12px;
+  color: var(--textcolor-black);
+  border: solid 1px #d7d8db;
+  padding: 3px 6px;
+}
+
+.y24-card-body-content-box__date {
+  font-size: 14px;
+  padding-left: 22px;
+  background-image: url(../../images/icon-date.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center left;
+}
+
+.y24-card-body-content-box__weekday {
+  font-size: 12px;
+  padding-left: 22px;
+  background-image: url(../../images/icon-check-in.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center left;
+}
+
+.y24-card__type {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+}
+.y24-card__price-box {
+  margin: 0;
+}
+.y24-card__price {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.y24-card__price--red {
+  font-size: 14px;
+  color: #dd2020;
+  position: relative;
+  padding-left: 36px;
+  margin: 0;
+}
+
+.y24-card__price--red::before {
+  content: "税込";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #dd2020;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 2px 6px;
+}
+
+.y24-card-category__items {
+  display: flex;
+  list-style: none;
+  align-items: flex-start;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.y24-card-category__item {
+  font-size: 10px;
+  padding: 2px 6px;
+  border: solid 1px #d7d8db;
+  margin-right: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .y24-plan-search__grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .grid-item {
+    height: 48px;
+  }
+
+  /* カード */
+
+  .y24-card__details-03 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    height: 160px;
+  }
+
+  .y24-card-body__image-02 img {
+    width: 240px;
+    aspect-ratio: 240/180;
+  }
+
+  .y24-card__details-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .y24-card__price-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .y24-card__price {
+    margin-bottom: 0;
+  }
+
+  ul.y24-card-category__items {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .y24-plan-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+  ul.y24-card-category__items {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #y24-plan {
+    padding: 0 0 120px 0;
+  }
+
+  .y24-plan-inner {
+    padding: 72px 0 48px 0;
+  }
+
+  ul.y24-card-category__items {
+    margin-bottom: 50px;
+  }
+}

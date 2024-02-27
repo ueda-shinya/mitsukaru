@@ -1,0 +1,126 @@
+@charset "UTF-8";
+#y24-special.y24-section {
+  padding-top: 67px;
+  padding-bottom: 160px;
+}
+
+.y24-special_contents {
+  margin-top: 35px;
+  display: grid;
+  gap: 35px;
+}
+.y24-special_content {
+  text-align: center;
+  display: grid;
+  gap: 21px;
+}
+
+.y24-special_content-img img {
+  width: 100%;
+}
+
+.y24-special_content-title {
+  color: #f15779;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.y24-special_plan {
+  background: #d6e816;
+  border-radius: 8px;
+  margin-top: 48px;
+  padding: 24px;
+}
+.y24-section-title_special_plan {
+  font-size: 38px;
+  text-align: center;
+}
+.y24-section-title_special_plan_p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.y24-special_plan-content {
+  text-align: center;
+  margin-top: 24px;
+  margin: 30px 17px 0px;
+  display: grid;
+  gap: 28px;
+}
+
+.y24-special_plan-content li {
+  list-style: none;
+}
+
+.y24-searchplan-btn {
+  width: 100%;
+  background: #fff;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 11px;
+  border: #000 solid 2px;
+  border-radius: 2px;
+}
+.y24-pc {
+  display: none;
+}
+.y24-sp {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  /* スクリーンサイズが768px以上の場合に適用 */
+}
+@media (min-width: 992px) {
+  /* スクリーンサイズが992px以上の場合に適用 */
+  .y24-sp {
+    display: none;
+  }
+  .y24-pc {
+    display: block;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* スクリーンサイズが1440px以上の場合に適用 */
+  #y24-special.y24-section {
+    padding-top: 51px;
+    padding-bottom: 125px;
+  }
+  #y24-special .y24-special_contents {
+    margin-top: 16px;
+    row-gap: 50px;
+  }
+  #y24-special .y24-special_content {
+    gap: 20px;
+  }
+  .y24-special_contents,
+  .y24-special_plan-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .y24-special_content-img img {
+    height: 184px;
+    object-fit: cover;
+  }
+  .y24-section-title_special_plan {
+    font-size: 98px;
+  }
+  .y24-section-title_special_plan_p {
+    font-size: 36px;
+    margin-top: -8px;
+  }
+  #y24-special .y24-special_plan {
+    margin-top: 76px;
+  }
+  #y24-special .y24-special_plan-content {
+    margin: 31px 30px 0;
+  }
+  .y24-sp {
+    display: none;
+  }
+  .y24-pc {
+    display: block;
+  }
+}
